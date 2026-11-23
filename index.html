@@ -18,30 +18,46 @@
       </div>
     </div>
 
-    <!-- Navegação de Períodos -->
-    <div class="controls-section">
-      <div class="nav-controls">
-        <button id="btn-prev-period" class="btn btn-icon" title="Período Anterior">◀</button>
-        <span id="current-period-title" class="current-period-title">Maio de 2027</span>
-        <button id="btn-next-period" class="btn btn-icon" title="Próximo Período">▶</button>
-      </div>
-      <button id="btn-today" class="btn btn-outline">Hoje</button>
+    <!-- Navegação de Views Principais (Botões sob demanda) -->
+    <div class="top-nav-buttons" role="tablist" aria-label="Navegação Principal">
+      <button id="nav-btn-calendar" class="top-nav-btn active" title="Visualizar Grade do Calendário">
+        <span class="btn-nav-icon">📅</span> Calendário de Eventos
+      </button>
+      <button id="nav-btn-interacoes" class="top-nav-btn" title="Visualizar Feed de Interações com Expositores">
+        <span class="btn-nav-icon">💬</span> Interações
+        <span id="nav-interacoes-count" class="top-nav-badge">139</span>
+      </button>
     </div>
 
-    <!-- Seletor de Visões (1 Mês, 3 Meses, 6 Meses, 1 Ano) -->
-    <div class="view-selector-group" role="group" aria-label="Modo de Visualização">
-      <button class="view-btn active" data-view="1m">1 Mês</button>
-      <button class="view-btn" data-view="3m">3 Meses</button>
-      <button class="view-btn" data-view="6m">6 Meses</button>
-      <button class="view-btn" data-view="1y">1 Ano</button>
+    <!-- Controles Exclusivos do Calendário (Ocultados ao descarregar a view do calendário) -->
+    <div id="calendar-header-controls" class="calendar-header-controls">
+      <!-- Navegação de Períodos -->
+      <div class="controls-section">
+        <div class="nav-controls">
+          <button id="btn-prev-period" class="btn btn-icon" title="Período Anterior">◀</button>
+          <span id="current-period-title" class="current-period-title">Maio de 2027</span>
+          <button id="btn-next-period" class="btn btn-icon" title="Próximo Período">▶</button>
+        </div>
+        <button id="btn-today" class="btn btn-outline">Hoje</button>
+      </div>
+
+      <!-- Seletor de Visões (1 Mês, 3 Meses, 6 Meses, 1 Ano) -->
+      <div class="view-selector-group" role="group" aria-label="Modo de Visualização">
+        <button class="view-btn active" data-view="1m">1 Mês</button>
+        <button class="view-btn" data-view="3m">3 Meses</button>
+        <button class="view-btn" data-view="6m">6 Meses</button>
+        <button class="view-btn" data-view="1y">1 Ano</button>
+      </div>
     </div>
   </header>
 
-  <!-- Container do Calendário -->
-  <main class="calendar-wrapper">
-    <div id="calendar-container">
-      <!-- O calendário será renderizado dinamicamente aqui via JavaScript -->
-    </div>
+  <!-- Container Principal de Views -->
+  <main class="main-content-wrapper">
+    <!-- View do Calendário (renderizado e descarregado sob demanda) -->
+    <div id="calendar-container"></div>
+
+    <!-- View de Interações (renderizado e descarregado sob demanda) -->
+    <div id="interacoes-container"></div>
   </main>
 
   <!-- MODAL: Detalhes do Evento -->
@@ -76,10 +92,27 @@
     </div>
   </div>
 
+  <!-- MODAL FLUTUANTE: Histórico de Interações do Cliente no Evento -->
+  <div id="cliente-interacoes-modal" class="modal-backdrop">
+    <div class="modal-window modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-title">Tratamento Comercial com o Cliente</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Preenchido dinamicamente via modal.js (showClienteInteracoesModal) -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-close-btn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts da Aplicação -->
   <script src="js/colors.js"></script>
   <script src="js/data.js"></script>
   <script src="js/calendar.js"></script>
+  <script src="js/interacoes-view.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/app.js"></script>
 </body>

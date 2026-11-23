@@ -6,6 +6,7 @@ class ModalManager {
   constructor() {
     this.eventDetailModal = document.getElementById("event-detail-modal");
     this.dayEventsModal = document.getElementById("day-events-modal");
+    this.clienteInteracoesModal = document.getElementById("cliente-interacoes-modal");
 
     this.currentEvent = null;
     this.initCloseTriggers();
@@ -501,6 +502,117 @@ class ModalManager {
     }
 
     this.showModal(this.dayEventsModal);
+  }
+
+  /**
+   * Abre a view em modal flutuante das interações de um cliente específico em um evento
+   */
+  showClienteInteracoesModal(interacaoRef) {
+    if (!this.clienteInteracoesModal || !interacaoRef) return;
+
+    const allInteracoes = window.interacoesStore ? window.interacoesStore.getInteracoes() : [];
+    
+    // Filtrar interações do mesmo cliente no mesmo evento
+    const clienteInteracoes = allInteracoes.filter(i => {
+      const mesmoCliente = (interacaoRef.lead_id && i.lead_id === interacaoRef.lead_id) || 
+                           (i.empresa && interacaoRef.empresa && i.empresa.trim().toLowerCase() === interacaoRef.empresa.trim().toLowerCase());
+      
+      if (!mesmoCliente) return false;
+
+      if (interacaoRef.codigo_evento) {
+        return Number(i.codigo_evento) === Number(interacaoRef.codigo_evento);
+      } else {
+        return !i.codigo_evento;
+      }
+    }).sort((a, b) => {
+      const diff = (b.data_interacao || "").localeCompare(a.data_interacao || "");
+      if (diff !== 0) return diff;
+      return (b.id_interacao || 0) - (a.id_interacao || 0);
+    });
+
+    // Resolver Nome do Evento
+    let nomeEvento = "Relacionamento Institucional / Geral";
+    if (interacaoRef.codigo_evento) {
+      if (window.eventStore) {
+        const ev = window.eventStore.getEventById(interacaoRef.codigo_evento);
+        if (ev && ev.nome_evento) nomeEvento = ev.nome_evento;
+      }
+      if (nomeEvento === "Relacionamento Institucional / Geral" && window.propostasStore) {
+        const props = window.propostasStore.getPropostasByEventoId(interacaoRef.codigo_evento);
+        if (props.length > 0 && props[0].nome_evento) nomeEvento = props[0].nome_evento;
+      }
+    }
+
+    // Buscar proposta comercial deste cliente no evento (se existir)
+    let propostaVinculada = null;
+    if (window.propostasStore && interacaoRef.codigo_evento) {
+      const propsDoEvento = window.propostasStore.getPropostasByEventoId(interacaoRef.codigo_evento);
+      propostaVinculada = propsDoEvento.find(p => {
+        if (interacaoRef.id_proposta && p.id_proposta === interacaoRef.id_proposta) return true;
+        if (interacaoRef.lead_id && p.cliente?.lead_id === interacaoRef.lead_id) return true;
+        if (interacaoRef.empresa && p.cliente?.empresa && p.cliente.empresa.trim().toLowerCase() === interacaoRef.empresa.trim().toLowerCase()) return true;
+        return false;
+      });
+    }
+
+    // Atualizar título do modal
+    const modalTitleEl = this.clienteInteracoesModal.querySelector(".modal-title");
+    if (modalTitleEl) {
+      modalTitleEl.textContent = `Tratamento Comercial: ${interacaoRef.empresa}`;
+    }
+
+    // Montar o corpo do modal
+    const bodyEl = this.clienteInteracoesModal.querySelector(".modal-body");
+    if (!bodyEl) return;
+
+    let propostaSnippetHtml = "";
+    if (propostaVinculada) {
+      const tempClass = {
+        "Quente": "temp-hot",
+        "Morno": "temp-warm",
+        "Frio": "temp-cold"
+      }[propostaVinculada.comercial?.temperatura] || "temp-default";
+
+      propostaSnippetHtml = `
+        <div class="cliente-proposta-banner">
+          <div class="banner-left">
+            <span class="proposta-ref-tag">Proposta #${propostaVinculada.id_proposta}</span>
+            <span class="banner-estagio">📊 ${this.escapeHtml(propostaVinculada.comercial?.estagio_proposta || "Em Negociação")}</span>
+            ${propostaVinculada.estande?.metragem_m2 ? `<span class="banner-m2">🏗️ ${propostaVinculada.estande.metragem_m2} m² (${this.escapeHtml(propostaVinculada.estande.tipo_estande || "")})</span>` : ""}
+          </div>
+          <div class="banner-right">
+            <span class="temp-badge ${tempClass}">🔥 ${propostaVinculada.comercial?.temperatura || "Quente"}</span>
+            <span class="banner-valor">${this.formatCurrency(propostaVinculada.comercial?.valor_proposta)}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    bodyEl.innerHTML = `
+      <div class="cliente-interacoes-wrapper">
+        <!-- Cabeçalho do Cliente no Evento -->
+        <div class="cliente-interacoes-header">
+          <div class="cliente-header-left">
+            <span class="cliente-evento-badge">📅 ${this.escapeHtml(nomeEvento)}</span>
+            <h2 class="cliente-modal-empresa">${this.escapeHtml(interacaoRef.empresa)}</h2>
+            ${interacaoRef.contato ? `<p class="cliente-modal-contato">👤 <strong>Interlocutor Principal:</strong> ${this.escapeHtml(interacaoRef.contato)}</p>` : ""}
+          </div>
+          <div class="cliente-header-stats">
+            <span class="stats-total-badge">${clienteInteracoes.length} interações neste evento</span>
+          </div>
+        </div>
+
+        ${propostaSnippetHtml}
+
+        <!-- Linha do Tempo Cronológica Completa -->
+        <div class="cliente-timeline-container">
+          <h3 class="cliente-timeline-title">Linha do Tempo das Interações (Mais Recente no Topo)</h3>
+          ${this.renderInteracoesTimeline(clienteInteracoes)}
+        </div>
+      </div>
+    `;
+
+    this.showModal(this.clienteInteracoesModal);
   }
 
   escapeHtml(str) {

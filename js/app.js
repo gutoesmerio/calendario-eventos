@@ -1,22 +1,37 @@
 /**
  * app.js - Ponto de entrada e orquestração da aplicação
+ * Gerencia a alternância de views sob demanda (Calendário vs Interações)
  */
 
 document.addEventListener("DOMContentLoaded", async () => {
+  // Elementos de Navegação Principal no Topo
+  const navBtnCalendar = document.getElementById("nav-btn-calendar");
+  const navBtnInteracoes = document.getElementById("nav-btn-interacoes");
+  const navInteracoesCount = document.getElementById("nav-interacoes-count");
+  const calendarControlsWrapper = document.getElementById("calendar-header-controls");
+
+  const calendarContainer = document.getElementById("calendar-container");
+  const interacoesContainer = document.getElementById("interacoes-container");
+
+  // Elementos de Controle do Calendário
   const periodTitleEl = document.getElementById("current-period-title");
   const prevBtn = document.getElementById("btn-prev-period");
   const nextBtn = document.getElementById("btn-next-period");
   const todayBtn = document.getElementById("btn-today");
   const viewBtns = document.querySelectorAll(".view-btn");
 
+  // Gerenciadores de Modais e Views
   const modalManager = new window.ModalManager();
 
-  // Iniciar calendário no mês de Maio de 2027 com visão de 1 Mês
+  let activeAppView = "calendar"; // 'calendar' ou 'interacoes'
+
+  // Instância do Mecanismo de Renderização do Calendário
   const calendar = new window.CalendarRenderer("calendar-container", {
-    initialDate: new Date(2027, 4, 1),
+    initialDate: new Date(2027, 4, 1), // Maio de 2027
     initialView: "1m",
     maxVisibleTracks: 3,
     onEventClick: (event) => {
+      // Carrega sob demanda somente os dados daquele evento no modal
       modalManager.showEventDetails(event);
     },
     onMoreClick: ({ dateStr, events }) => {
@@ -33,8 +48,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
+  // Instância do Gerenciador de Interações
+  const interacoesView = new window.InteracoesViewManager({
+    onCardClick: (interacaoItem) => {
+      // Abre o modal flutuante com a linha do tempo do cliente naquele evento específico
+      modalManager.showClienteInteracoesModal(interacaoItem);
+    }
+  });
+
   function updatePeriodLabel() {
-    if (periodTitleEl) {
+    if (periodTitleEl && calendar) {
       periodTitleEl.textContent = calendar.getCurrentPeriodLabel();
     }
   }
@@ -49,50 +72,128 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // Controles de Navegação Anterior / Próximo (move 1 mês por clique em 1m, 3m e 6m)
+  function updateNavBadge() {
+    if (navInteracoesCount && window.interacoesStore) {
+      const total = window.interacoesStore.getInteracoes().length;
+      navInteracoesCount.textContent = total;
+    }
+  }
+
+  /**
+   * Alterna entre as views principais com ciclo de vida sob demanda (carregamento e descarregamento)
+   */
+  function switchAppView(targetView) {
+    if (activeAppView === targetView) return;
+
+    activeAppView = targetView;
+
+    if (activeAppView === "calendar") {
+      // 1. Atualizar botões de navegação no topo
+      navBtnCalendar.classList.add("active");
+      navBtnInteracoes.classList.remove("active");
+
+      // 2. Reexibir a barra de controles de período e visualização do calendário
+      if (calendarControlsWrapper) {
+        calendarControlsWrapper.style.display = "flex";
+      }
+
+      // 3. Descarregar completamente a view de interações do DOM
+      interacoesView.destroy();
+
+      // 4. Carregar e renderizar a view do calendário
+      calendar.render();
+      updatePeriodLabel();
+    } else if (activeAppView === "interacoes") {
+      // 1. Atualizar botões de navegação no topo
+      navBtnInteracoes.classList.add("active");
+      navBtnCalendar.classList.remove("active");
+
+      // 2. Ocultar controles exclusivos do calendário
+      if (calendarControlsWrapper) {
+        calendarControlsWrapper.style.display = "none";
+      }
+
+      // 3. Descarregar completamente a view do calendário do DOM
+      calendar.destroy();
+
+      // 4. Carregar e renderizar a view dos cards de interações em ordem decrescente
+      interacoesView.render(interacoesContainer);
+    }
+  }
+
+  // Event Listeners dos Botões de Navegação no Topo
+  navBtnCalendar.addEventListener("click", () => {
+    switchAppView("calendar");
+  });
+
+  navBtnInteracoes.addEventListener("click", () => {
+    switchAppView("interacoes");
+  });
+
+  // Controles de Navegação Anterior / Próximo do Calendário
   prevBtn.addEventListener("click", () => {
-    calendar.prev();
-    updatePeriodLabel();
+    if (activeAppView === "calendar") {
+      calendar.prev();
+      updatePeriodLabel();
+    }
   });
 
   nextBtn.addEventListener("click", () => {
-    calendar.next();
-    updatePeriodLabel();
+    if (activeAppView === "calendar") {
+      calendar.next();
+      updatePeriodLabel();
+    }
   });
 
   todayBtn.addEventListener("click", () => {
-    calendar.today();
-    updatePeriodLabel();
+    if (activeAppView === "calendar") {
+      calendar.today();
+      updatePeriodLabel();
+    }
   });
 
-  // Alternância de Visões (1 Mês, 3 Meses, 6 Meses, 1 Ano)
+  // Alternância de Visões do Calendário (1 Mês, 3 Meses, 6 Meses, 1 Ano)
   viewBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-      const selectedView = btn.getAttribute("data-view");
-      calendar.setView(selectedView);
-      updatePeriodLabel();
+      if (activeAppView === "calendar") {
+        const selectedView = btn.getAttribute("data-view");
+        calendar.setView(selectedView);
+        updatePeriodLabel();
+      }
     });
   });
 
-  // Re-renderizar ao atualizar a store de eventos
+  // Inscrições reativas nas Stores de dados
   window.eventStore.subscribe(() => {
-    calendar.render();
+    if (activeAppView === "calendar") {
+      calendar.render();
+    }
   });
 
-  // Re-renderizar modal se a store de propostas for atualizada
   window.propostasStore.subscribe(() => {
     if (modalManager.currentEvent) {
       modalManager.showEventDetails(modalManager.currentEvent);
     }
   });
 
-  // Render inicial com a base disponível
+  window.interacoesStore.subscribe(() => {
+    updateNavBadge();
+    if (activeAppView === "interacoes") {
+      interacoesView.renderCardsOnly();
+    }
+  });
+
+  // Render inicial: Calendário ativo
+  updateNavBadge();
   calendar.render();
   updatePeriodLabel();
 
-  // Carregar dados automaticamente dos arquivos data/eventos_ativos.json e data/propostas_ativas.json
+  // Carregar dados de arquivos locais se disponível
   if (typeof window.loadDataFromFiles === "function") {
     await window.loadDataFromFiles();
-    updatePeriodLabel();
+    updateNavBadge();
+    if (activeAppView === "calendar") {
+      updatePeriodLabel();
+    }
   }
 });

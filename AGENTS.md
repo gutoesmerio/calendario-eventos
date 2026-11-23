@@ -253,3 +253,21 @@ Dentro da visualização da proposta, há duas abas dedicadas:
 2. **`[💬 Histórico de Interações (N)]`:**
    - Linha do tempo cronológica decrescente de todas as interações vinculadas (`id_proposta` ou `lead_id + codigo_evento`).
    - Destaque visual do canal (WhatsApp com verde, E-mail com azul, etc.), sentido (Ativa vs Receptiva), tipo de interação, interlocutor, resumo, detalhes transcritos, chips de anexos (`.pdf`, etc.), caixa de próxima ação gerada e responsável.
+
+### D. Módulo de Navegação Principal e Feed de Interações sob Demanda
+1. **Botões de Navegação no Topo da Aplicação:**
+   - Em vez de abas estáticas no DOM, a alternância de módulos ocorre via **botões dedicados**:
+     - **`[ 📅 Calendário de Eventos ]`**
+     - **`[ 💬 Interações (N) ]`**
+2. **Ciclo de Vida e Descarregamento de Memória/DOM:**
+   - **Na View do Calendário:** Apenas a grade e os controles de período (1m, 3m, 6m, 1y) são carregados e renderizados.
+   - **Ao clicar em Interações:** A view do calendário e seus controles de período são completamente descarregados do DOM (`calendar.destroy()`), carregando dinamicamente o feed de cards de interações em ordem decrescente.
+   - **Ao voltar para o Calendário:** A view de interações é descarregada (`interacoesView.destroy()`) e a grade do calendário é renderizada novamente sob demanda.
+3. **Feed de Cards de Interações (Opção A):**
+   - Lista completa de contatos em ordem decrescente de data (e hora/ID).
+   - Cada card exibe: Data formatada, Tag do Evento associado, Canal e Direção (Ativa/Receptiva), Empresa Cliente, Interlocutor, Tipo de Contato, Resumo, Detalhes e Próxima Ação Gerada.
+   - Barra de busca em tempo real (filtra por empresa, contato, evento, tipo ou assunto) e filtro por canal de comunicação.
+4. **Visualização Detalhada do Cliente no Evento (Opção 2 - Modal Flutuante):**
+   - Ao clicar em qualquer card do feed, abre-se o modal flutuante de tratamento comercial.
+   - O modal carrega sob demanda **apenas as interações daquele cliente naquele evento específico em ordem decrescente**.
+   - Exibe o cabeçalho do cliente/evento, dados da proposta comercial ativa (se houver, com valor, estágio e metragem do estande) e a linha do tempo completa para acompanhamento da negociação.

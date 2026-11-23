@@ -53,6 +53,12 @@ class CalendarRenderer {
     this.render();
   }
 
+  destroy() {
+    if (this.container) {
+      this.container.innerHTML = "";
+    }
+  }
+
   getMonthName(monthIndex) {
     const months = [
       "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
