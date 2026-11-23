@@ -1,5 +1,5 @@
 /* ==========================================================================
-   styles.css - Design System e Grid do Calendário de Eventos (Trilhas Fixas)
+   styles.css - Design System e Grid do Calendário de Eventos (1M, 3M, 6M, 1A)
    ========================================================================== */
 
 :root {
@@ -20,7 +20,7 @@
   --slot-height: 26px;
   --slot-gap: 4px;
   --cell-header-height: 28px;
-  --cell-min-height: 120px;
+  --cell-min-height: 110px;
 
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -53,12 +53,15 @@ body {
 .app-header {
   background-color: var(--surface-color);
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 1.5rem;
+  padding: 0.875rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 .brand-section {
@@ -97,8 +100,39 @@ body {
 .current-period-title {
   font-size: 1.125rem;
   font-weight: 600;
-  min-width: 180px;
+  min-width: 220px;
   text-align: center;
+}
+
+/* Seletor Segmentado de Visualização */
+.view-selector-group {
+  display: inline-flex;
+  background-color: #F1F5F9;
+  padding: 3px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.view-btn {
+  border: none;
+  background: transparent;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: calc(var(--radius-md) - 2px);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.view-btn:hover {
+  color: var(--text-primary);
+}
+
+.view-btn.active {
+  background-color: var(--surface-color);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-sm);
 }
 
 .actions-section {
@@ -170,7 +204,7 @@ body {
    ========================================================================== */
 .calendar-wrapper {
   flex: 1;
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   margin: 1.5rem auto;
   padding: 0 1rem;
@@ -197,7 +231,7 @@ body {
 }
 
 .calendar-weekday {
-  padding: 0.75rem 0.5rem;
+  padding: 0.625rem 0.5rem;
   text-align: center;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -256,7 +290,7 @@ body {
 
 .calendar-day-cell.other-month .day-cell-number {
   color: var(--text-muted);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .calendar-day-cell.today .day-cell-number {
@@ -313,7 +347,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: var(--slot-height);
   row-gap: var(--slot-gap);
-  pointer-events: none; /* Permite cliques nas células por baixo, os eventos têm pointer-events: auto */
+  pointer-events: none;
 }
 
 .event-bar-slot {
@@ -348,7 +382,6 @@ body {
   width: 100%;
 }
 
-/* Continuidade entre semanas (Google Calendar Style) */
 .event-bar-slot.continues-prev {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -361,6 +394,267 @@ body {
   border-bottom-right-radius: 0;
   margin-right: 0;
   padding-right: 0.375rem;
+}
+
+/* ==========================================================================
+   Visualizações Multi-Mês (3 Meses e 6 Meses)
+   ========================================================================== */
+.multi-month-grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.multi-month-grid.count-3 {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.multi-month-grid.count-6 {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.multi-month-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+}
+
+.multi-month-header {
+  padding: 0.75rem 1rem;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multi-month-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.multi-month-title:hover {
+  color: var(--primary-color);
+}
+
+.compact-weekdays .calendar-weekday {
+  padding: 0.375rem 0.25rem;
+  font-size: 0.6875rem;
+}
+
+.compact-row {
+  min-height: 80px;
+}
+
+.compact-row .day-cell-header {
+  height: 20px;
+}
+
+.compact-row .day-cell-number {
+  font-size: 0.75rem;
+}
+
+.compact-events-layer {
+  margin-top: 24px;
+  grid-auto-rows: 20px;
+  row-gap: 3px;
+}
+
+.compact-bar {
+  height: 20px;
+  font-size: 0.6875rem;
+  padding: 0 0.375rem;
+}
+
+/* ==========================================================================
+   Visualização Anual (12 Meses)
+   ========================================================================== */
+.year-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.year-months-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.year-month-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.875rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.year-month-header {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.year-month-header:hover {
+  color: var(--primary-color);
+}
+
+.year-mini-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.375rem;
+}
+
+.year-mini-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.year-mini-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.year-mini-day:hover {
+  background-color: var(--border-light);
+}
+
+.year-mini-day.other-month {
+  opacity: 0.25;
+}
+
+.year-mini-day.today {
+  border: 1px solid var(--primary-color);
+  font-weight: 700;
+}
+
+.year-mini-day.has-events {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.year-mini-day.has-events:hover {
+  filter: brightness(1.15);
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.year-mini-day.multiple-events::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+/* Timeline Anual de Feiras */
+.year-timeline-section {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.year-timeline-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+}
+
+.year-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.year-timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-left-width: 5px;
+  border-radius: var(--radius-md);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.year-timeline-item:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .year-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.timeline-date-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-month {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.timeline-duration {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.timeline-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.timeline-event-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.timeline-loc, .timeline-segment {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
 }
 
 /* ==========================================================================

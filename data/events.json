@@ -1,5 +1,33 @@
 [
   {
+    "id": 31,
+    "nome_evento": "Expodireto Cotrijal 2027",
+    "sigla_ou_edicao": "27ª Feira Internacional do Agronegócio",
+    "periodo": {
+      "data_inicio": "2027-03-08",
+      "data_fim": "2027-03-12",
+      "duracao_dias": 5,
+      "periodo_formatado": "08 a 12 de março de 2027",
+      "dias_para_o_evento": 105
+    },
+    "localizacao": {
+      "recinto": "Parque da Expodireto",
+      "cidade": "Não-Me-Toque",
+      "estado": "RS",
+      "endereco": "RS-142, Km 24"
+    },
+    "segmento": "Agronegócio e Tecnologia no Campo",
+    "promotora": {
+      "organizadora": "Cotrijal Cooperativa Agropecuária",
+      "site_oficial": "https://www.expodireto.cotrijal.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "perfil_alvo_expositores": "Cooperativas e fabricantes de maquinário pesado",
+      "acao_comercial": "Estandes abertos de grande metragem"
+    }
+  },
+  {
     "id": 33,
     "nome_evento": "Agrishow 2027",
     "sigla_ou_edicao": "33ª Feira Internacional de Tecnologia Agrícola em Ação",
@@ -194,6 +222,174 @@
       "prioridade": "Alta",
       "perfil_alvo_expositores": "Laboratórios farmacêuticos e fabricantes de equipamentos de diagnóstico",
       "acao_comercial": "Foco em estandes de alto padrão arquitetônico"
+    }
+  },
+  {
+    "id": 41,
+    "nome_evento": "Fispal Tecnologia 2027",
+    "sigla_ou_edicao": "43ª Feira Internacional de Embalagens e Processos para Alimentos",
+    "periodo": {
+      "data_inicio": "2027-06-22",
+      "data_fim": "2027-06-25",
+      "duracao_dias": 4,
+      "periodo_formatado": "22 a 25 de junho de 2027",
+      "dias_para_o_evento": 215
+    },
+    "localizacao": {
+      "recinto": "São Paulo Expo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rodovia dos Imigrantes, KM 1,5"
+    },
+    "segmento": "Alimentos, Bebidas e Embalagens",
+    "promotora": {
+      "organizadora": "Informa Markets",
+      "site_oficial": "https://www.fispaltecnologia.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "perfil_alvo_expositores": "Fabricantes de envasadoras e empacotadoras industriais",
+      "acao_comercial": "Reuniões presenciais em feiras anteriores"
+    }
+  },
+  {
+    "id": 42,
+    "nome_evento": "FIPAN 2027",
+    "sigla_ou_edicao": "Feira Internacional da Panificação e Confeitaria",
+    "periodo": {
+      "data_inicio": "2027-07-20",
+      "data_fim": "2027-07-23",
+      "duracao_dias": 4,
+      "periodo_formatado": "20 a 23 de julho de 2027",
+      "dias_para_o_evento": 243
+    },
+    "localizacao": {
+      "recinto": "Expo Center Norte",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rua José Bernardo Pinto, 333"
+    },
+    "segmento": "Food Service e Panificação",
+    "promotora": {
+      "organizadora": "SAMPAPÃO",
+      "site_oficial": "https://www.fipan.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "perfil_alvo_expositores": "Fornos industriais e franquias de confeitaria",
+      "acao_comercial": "Estandes compactos com vitrines de vidro"
+    }
+  },
+  {
+    "id": 43,
+    "nome_evento": "Concrete Show South America 2027",
+    "sigla_ou_edicao": "18ª Edição",
+    "periodo": {
+      "data_inicio": "2027-08-17",
+      "data_fim": "2027-08-19",
+      "duracao_dias": 3,
+      "periodo_formatado": "17 a 19 de agosto de 2027",
+      "dias_para_o_evento": 271
+    },
+    "localizacao": {
+      "recinto": "São Paulo Expo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rodovia dos Imigrantes, KM 1,5"
+    },
+    "segmento": "Construção Civil e Cadeia do Concreto",
+    "promotora": {
+      "organizadora": "Informa Markets",
+      "site_oficial": "https://www.concreteshow.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "perfil_alvo_expositores": "Aditivos químicos, fôrmas metálicas e escoramentos",
+      "acao_comercial": "Contatos comerciais com engenheiros de obras"
+    }
+  },
+  {
+    "id": 44,
+    "nome_evento": "Expointer 2027",
+    "sigla_ou_edicao": "50ª Exposição Internacional de Animais e Máquinas",
+    "periodo": {
+      "data_inicio": "2027-09-04",
+      "data_fim": "2027-09-12",
+      "duracao_dias": 9,
+      "periodo_formatado": "04 a 12 de setembro de 2027",
+      "dias_para_o_evento": 289
+    },
+    "localizacao": {
+      "recinto": "Parque Estadual de Exposições Assis Brasil",
+      "cidade": "Esteio",
+      "estado": "RS",
+      "endereco": "BR-116, Km 257"
+    },
+    "segmento": "Agropecuária e Genética Bovina",
+    "promotora": {
+      "organizadora": "Secretaria da Agricultura do RS",
+      "site_oficial": "https://www.expointer.rs.gov.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "perfil_alvo_expositores": "Criadores de elite e bancos de fomento",
+      "acao_comercial": "Galpões rústicos e estandes institucionais"
+    }
+  },
+  {
+    "id": 45,
+    "nome_evento": "Futurecom 2027",
+    "sigla_ou_edicao": "Maior Evento de Conectividade e Telecom da América Latina",
+    "periodo": {
+      "data_inicio": "2027-10-05",
+      "data_fim": "2027-10-07",
+      "duracao_dias": 3,
+      "periodo_formatado": "05 a 07 de outubro de 2027",
+      "dias_para_o_evento": 320
+    },
+    "localizacao": {
+      "recinto": "São Paulo Expo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rodovia dos Imigrantes, KM 1,5"
+    },
+    "segmento": "Telecomunicações, 5G e Nuvem",
+    "promotora": {
+      "organizadora": "Informa Markets",
+      "site_oficial": "https://www.futurecom.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "perfil_alvo_expositores": "Operadoras, provedores de fibra e nuvem",
+      "acao_comercial": "Estandes futuristas com telões LED"
+    }
+  },
+  {
+    "id": 46,
+    "nome_evento": "Fenatran 2027",
+    "sigla_ou_edicao": "25º Salão Internacional do Transporte Rodoviário de Cargas",
+    "periodo": {
+      "data_inicio": "2027-11-08",
+      "data_fim": "2027-11-12",
+      "duracao_dias": 5,
+      "periodo_formatado": "08 a 12 de novembro de 2027",
+      "dias_para_o_evento": 354
+    },
+    "localizacao": {
+      "recinto": "São Paulo Expo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rodovia dos Imigrantes, KM 1,5"
+    },
+    "segmento": "Transporte, Logística e Frotas",
+    "promotora": {
+      "organizadora": "RX Brasil",
+      "site_oficial": "https://www.fenatran.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "perfil_alvo_expositores": "Montadoras de caminhões, implementos e rastreadores",
+      "acao_comercial": "Estandes gigantes para exibição de carretas"
     }
   }
 ]

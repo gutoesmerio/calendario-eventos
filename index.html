@@ -14,18 +14,26 @@
       <span class="brand-icon">📅</span>
       <div>
         <h1 class="brand-title">Calendário de Eventos</h1>
-        <p class="brand-subtitle">Visualização de feiras e eventos comerciais em trilhas contínuas</p>
+        <p class="brand-subtitle">Visualização de feiras comerciais e industriais</p>
       </div>
     </div>
 
-    <!-- Navegação de Meses -->
+    <!-- Navegação de Períodos -->
     <div class="controls-section">
       <div class="nav-controls">
-        <button id="btn-prev-month" class="btn btn-icon" title="Mês Anterior">◀</button>
-        <span id="current-month-title" class="current-period-title">Maio de 2027</span>
-        <button id="btn-next-month" class="btn btn-icon" title="Próximo Mês">▶</button>
+        <button id="btn-prev-period" class="btn btn-icon" title="Período Anterior">◀</button>
+        <span id="current-period-title" class="current-period-title">Maio de 2027</span>
+        <button id="btn-next-period" class="btn btn-icon" title="Próximo Período">▶</button>
       </div>
       <button id="btn-today" class="btn btn-outline">Hoje</button>
+    </div>
+
+    <!-- Seletor de Visões (1 Mês, 3 Meses, 6 Meses, 1 Ano) -->
+    <div class="view-selector-group" role="group" aria-label="Modo de Visualização">
+      <button class="view-btn active" data-view="1m">1 Mês</button>
+      <button class="view-btn" data-view="3m">3 Meses</button>
+      <button class="view-btn" data-view="6m">6 Meses</button>
+      <button class="view-btn" data-view="1y">1 Ano</button>
     </div>
 
     <!-- Ações e Integrações -->
@@ -38,7 +46,7 @@
 
   <!-- Container do Calendário -->
   <main class="calendar-wrapper">
-    <div class="calendar-card" id="calendar-container">
+    <div id="calendar-container">
       <!-- O calendário será renderizado dinamicamente aqui via JavaScript -->
     </div>
   </main>

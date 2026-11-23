@@ -1,15 +1,26 @@
 /**
- * calendar.js - Mecanismo de renderização de calendário com trilhas contínuas (Multi-Day Slots)
+ * calendar.js - Mecanismo de renderização de calendário com suporte a 1 Mês, 3 Meses, 6 Meses e 1 Ano
  */
 
 class CalendarRenderer {
   constructor(containerId, options = {}) {
     this.container = document.getElementById(containerId);
     this.maxVisibleTracks = options.maxVisibleTracks || 3;
-    this.currentDate = options.initialDate || new Date(2027, 4, 1); // Maio de 2027 como padrão da feira
+    this.currentDate = options.initialDate || new Date(2027, 4, 1); // Padrão Maio de 2027
+    this.currentView = options.initialView || "1m"; // "1m", "3m", "6m", "1y"
+    
     this.onEventClick = options.onEventClick || (() => {});
     this.onMoreClick = options.onMoreClick || (() => {});
     this.onDayClick = options.onDayClick || (() => {});
+    this.onViewChange = options.onViewChange || (() => {});
+  }
+
+  setView(viewMode) {
+    this.currentView = viewMode;
+    this.render();
+    if (this.onViewChange) {
+      this.onViewChange(this.currentView);
+    }
   }
 
   setDate(date) {
@@ -17,32 +28,80 @@ class CalendarRenderer {
     this.render();
   }
 
-  prevMonth() {
-    this.currentDate.setMonth(this.currentDate.getMonth() - 1);
+  prev() {
+    if (this.currentView === "1m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() - 1);
+    } else if (this.currentView === "3m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() - 3);
+    } else if (this.currentView === "6m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() - 6);
+    } else if (this.currentView === "1y") {
+      this.currentDate.setFullYear(this.currentDate.getFullYear() - 1);
+    }
     this.render();
   }
 
-  nextMonth() {
-    this.currentDate.setMonth(this.currentDate.getMonth() + 1);
+  next() {
+    if (this.currentView === "1m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() + 1);
+    } else if (this.currentView === "3m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() + 3);
+    } else if (this.currentView === "6m") {
+      this.currentDate.setMonth(this.currentDate.getMonth() + 6);
+    } else if (this.currentView === "1y") {
+      this.currentDate.setFullYear(this.currentDate.getFullYear() + 1);
+    }
     this.render();
   }
 
   today() {
-    this.currentDate = new Date();
+    this.currentDate = new Date(2027, 4, 1); // Fixando no ano do mock (ou new Date())
     this.render();
   }
 
-  getCurrentMonthYearLabel() {
+  getMonthName(monthIndex) {
     const months = [
       "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
       "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
     ];
-    return `${months[this.currentDate.getMonth()]} de ${this.currentDate.getFullYear()}`;
+    return months[monthIndex];
   }
 
-  /**
-   * Converte string YYYY-MM-DD em objeto Date UTC local
-   */
+  getCurrentPeriodLabel() {
+    const year = this.currentDate.getFullYear();
+    const month = this.currentDate.getMonth();
+
+    if (this.currentView === "1m") {
+      return `${this.getMonthName(month)} de ${year}`;
+    }
+
+    if (this.currentView === "3m") {
+      const endMonthDate = new Date(year, month + 2, 1);
+      const endMonth = endMonthDate.getMonth();
+      const endYear = endMonthDate.getFullYear();
+      if (year === endYear) {
+        return `${this.getMonthName(month)} – ${this.getMonthName(endMonth)} de ${year}`;
+      }
+      return `${this.getMonthName(month)}/${year} – ${this.getMonthName(endMonth)}/${endYear}`;
+    }
+
+    if (this.currentView === "6m") {
+      const endMonthDate = new Date(year, month + 5, 1);
+      const endMonth = endMonthDate.getMonth();
+      const endYear = endMonthDate.getFullYear();
+      if (year === endYear) {
+        return `${this.getMonthName(month)} – ${this.getMonthName(endMonth)} de ${year}`;
+      }
+      return `${this.getMonthName(month)}/${year} – ${this.getMonthName(endMonth)}/${endYear}`;
+    }
+
+    if (this.currentView === "1y") {
+      return `Ano de ${year}`;
+    }
+
+    return `${this.getMonthName(month)} de ${year}`;
+  }
+
   parseLocalDate(dateStr) {
     const [y, m, d] = dateStr.split("-").map(Number);
     return new Date(y, m - 1, d);
@@ -61,21 +120,13 @@ class CalendarRenderer {
            d1.getDate() === d2.getDate();
   }
 
-  /**
-   * Constrói a matriz de semanas para exibição do mês
-   */
-  buildWeeks() {
-    const year = this.currentDate.getFullYear();
-    const month = this.currentDate.getMonth();
-
+  buildWeeksForMonth(year, month) {
     const firstDayOfMonth = new Date(year, month, 1);
     const lastDayOfMonth = new Date(year, month + 1, 0);
 
-    // Começar no Domingo da primeira semana
     const startDate = new Date(firstDayOfMonth);
     startDate.setDate(firstDayOfMonth.getDate() - firstDayOfMonth.getDay());
 
-    // Terminar no Sábado da última semana
     const endDate = new Date(lastDayOfMonth);
     endDate.setDate(lastDayOfMonth.getDate() + (6 - lastDayOfMonth.getDay()));
 
@@ -96,15 +147,29 @@ class CalendarRenderer {
 
   render() {
     if (!this.container) return;
-
-    const events = window.eventStore.getEvents();
-    const weeks = this.buildWeeks();
-    const today = new Date();
-
-    // Renderiza a estrutura do calendário
     this.container.innerHTML = "";
 
-    // 1. Cabeçalho dos dias da semana
+    const events = window.eventStore.getEvents();
+
+    if (this.currentView === "1m") {
+      this.renderSingleMonthView(this.currentDate.getFullYear(), this.currentDate.getMonth(), events);
+    } else if (this.currentView === "3m") {
+      this.renderMultiMonthView(3, events);
+    } else if (this.currentView === "6m") {
+      this.renderMultiMonthView(6, events);
+    } else if (this.currentView === "1y") {
+      this.renderYearView(this.currentDate.getFullYear(), events);
+    }
+  }
+
+  /**
+   * VISÃO 1 MÊS - Detalhada com Trilhas de Slots Fixos
+   */
+  renderSingleMonthView(year, month, events) {
+    const card = document.createElement("div");
+    card.className = "calendar-card single-month-card";
+
+    // Cabeçalho dos dias da semana
     const headerRow = document.createElement("div");
     headerRow.className = "calendar-weekdays";
     const weekdays = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
@@ -114,39 +179,290 @@ class CalendarRenderer {
       col.textContent = day;
       headerRow.appendChild(col);
     });
-    this.container.appendChild(headerRow);
+    card.appendChild(headerRow);
 
-    // 2. Container das semanas
     const weeksContainer = document.createElement("div");
     weeksContainer.className = "calendar-weeks";
 
-    weeks.forEach((weekDays, weekIndex) => {
-      const weekRow = this.renderWeek(weekDays, events, today);
+    const weeks = this.buildWeeksForMonth(year, month);
+    const today = new Date();
+
+    weeks.forEach(weekDays => {
+      const weekRow = this.createWeekRow(weekDays, year, month, events, today, {
+        maxTracks: 3,
+        slotHeight: 26,
+        isCompact: false
+      });
       weeksContainer.appendChild(weekRow);
     });
 
-    this.container.appendChild(weeksContainer);
+    card.appendChild(weeksContainer);
+    this.container.appendChild(card);
   }
 
   /**
-   * Renderiza uma semana com fundo de células e camadas de faixas horizontais
+   * VISÃO 3 E 6 MESES - Grade Multi-Mês com Faixas Compactas
    */
-  renderWeek(weekDays, events, today) {
+  renderMultiMonthView(monthCount, events) {
+    const gridContainer = document.createElement("div");
+    gridContainer.className = `multi-month-grid count-${monthCount}`;
+
+    const startYear = this.currentDate.getFullYear();
+    const startMonth = this.currentDate.getMonth();
+    const today = new Date();
+
+    for (let i = 0; i < monthCount; i++) {
+      const targetDate = new Date(startYear, startMonth + i, 1);
+      const y = targetDate.getFullYear();
+      const m = targetDate.getMonth();
+
+      const monthCard = document.createElement("div");
+      monthCard.className = "calendar-card multi-month-card";
+
+      // Cabeçalho do Card do Mês
+      const monthHeader = document.createElement("div");
+      monthHeader.className = "multi-month-header";
+      
+      const monthTitle = document.createElement("h3");
+      monthTitle.className = "multi-month-title";
+      monthTitle.textContent = `${this.getMonthName(m)} ${y}`;
+      monthTitle.title = "Clique para abrir este mês no modo 1 Mês";
+      monthTitle.addEventListener("click", () => {
+        this.currentDate = new Date(y, m, 1);
+        this.setView("1m");
+      });
+      monthHeader.appendChild(monthTitle);
+
+      const expandBtn = document.createElement("button");
+      expandBtn.className = "btn-sm btn-outline";
+      expandBtn.textContent = "Focar Mês ↗";
+      expandBtn.addEventListener("click", () => {
+        this.currentDate = new Date(y, m, 1);
+        this.setView("1m");
+      });
+      monthHeader.appendChild(expandBtn);
+
+      monthCard.appendChild(monthHeader);
+
+      // Dias da semana
+      const headerRow = document.createElement("div");
+      headerRow.className = "calendar-weekdays compact-weekdays";
+      const weekdays = ["D", "S", "T", "Q", "Q", "S", "S"];
+      weekdays.forEach(day => {
+        const col = document.createElement("div");
+        col.className = "calendar-weekday";
+        col.textContent = day;
+        headerRow.appendChild(col);
+      });
+      monthCard.appendChild(headerRow);
+
+      // Semanas
+      const weeksContainer = document.createElement("div");
+      weeksContainer.className = "calendar-weeks compact-weeks";
+
+      const weeks = this.buildWeeksForMonth(y, m);
+      weeks.forEach(weekDays => {
+        const weekRow = this.createWeekRow(weekDays, y, m, events, today, {
+          maxTracks: 2,
+          slotHeight: 20,
+          isCompact: true
+        });
+        weeksContainer.appendChild(weekRow);
+      });
+
+      monthCard.appendChild(weeksContainer);
+      gridContainer.appendChild(monthCard);
+    }
+
+    this.container.appendChild(gridContainer);
+  }
+
+  /**
+   * VISÃO ANUAL (12 MESES) + Timeline de Eventos
+   */
+  renderYearView(year, events) {
+    const yearWrapper = document.createElement("div");
+    yearWrapper.className = "year-view-wrapper";
+
+    // 1. Grade de 12 meses
+    const monthsGrid = document.createElement("div");
+    monthsGrid.className = "year-months-grid";
+    const today = new Date();
+
+    for (let m = 0; m < 12; m++) {
+      const monthCard = document.createElement("div");
+      monthCard.className = "year-month-card";
+
+      // Header com link para o mês
+      const header = document.createElement("div");
+      header.className = "year-month-header";
+      header.textContent = this.getMonthName(m);
+      header.title = `Abrir ${this.getMonthName(m)} em detalhes`;
+      header.addEventListener("click", () => {
+        this.currentDate = new Date(year, m, 1);
+        this.setView("1m");
+      });
+      monthCard.appendChild(header);
+
+      // Mini-semana cabeçalho
+      const weekHeader = document.createElement("div");
+      weekHeader.className = "year-mini-weekdays";
+      ["D", "S", "T", "Q", "Q", "S", "S"].forEach(d => {
+        const s = document.createElement("span");
+        s.textContent = d;
+        weekHeader.appendChild(s);
+      });
+      monthCard.appendChild(weekHeader);
+
+      // Mini grade de dias
+      const daysGrid = document.createElement("div");
+      daysGrid.className = "year-mini-days-grid";
+
+      const weeks = this.buildWeeksForMonth(year, m);
+      weeks.forEach(week => {
+        week.forEach(day => {
+          const dayCell = document.createElement("div");
+          dayCell.className = "year-mini-day";
+          
+          const isCurrentMonth = day.getMonth() === m;
+          const isToday = this.isSameDay(day, today);
+
+          if (!isCurrentMonth) {
+            dayCell.classList.add("other-month");
+          }
+          if (isToday) {
+            dayCell.classList.add("today");
+          }
+
+          dayCell.textContent = day.getDate();
+
+          // Verificar se há eventos cobrindo este dia
+          const dayDateStr = this.formatDateKey(day);
+          const dayEvents = events.filter(ev => {
+            return ev.periodo.data_inicio <= dayDateStr && ev.periodo.data_fim >= dayDateStr;
+          });
+
+          if (isCurrentMonth && dayEvents.length > 0) {
+            dayCell.classList.add("has-events");
+            // Usa a cor do evento principal
+            const primaryColor = window.getEventColor(dayEvents[0].id);
+            dayCell.style.backgroundColor = primaryColor.bg;
+            dayCell.style.color = "#FFFFFF";
+            dayCell.style.fontWeight = "700";
+
+            // Se tiver múltiplos eventos
+            if (dayEvents.length > 1) {
+              dayCell.classList.add("multiple-events");
+            }
+
+            dayCell.title = `${dayDateStr}: ${dayEvents.map(e => e.nome_evento).join(" | ")}`;
+            dayCell.addEventListener("click", () => {
+              this.onDayClick({ date: day, dateStr: dayDateStr, events: dayEvents });
+            });
+          } else {
+            dayCell.addEventListener("click", () => {
+              this.currentDate = new Date(year, m, 1);
+              this.setView("1m");
+            });
+          }
+
+          daysGrid.appendChild(dayCell);
+        });
+      });
+
+      monthCard.appendChild(daysGrid);
+      monthsGrid.appendChild(monthCard);
+    }
+
+    yearWrapper.appendChild(monthsGrid);
+
+    // 2. Timeline Anual de Eventos
+    const timelineSection = document.createElement("section");
+    timelineSection.className = "year-timeline-section";
+
+    const timelineTitle = document.createElement("h2");
+    timelineTitle.className = "year-timeline-title";
+    timelineTitle.innerHTML = `<span>📋</span> Calendário Oficial de Feiras & Eventos de ${year}`;
+    timelineSection.appendChild(timelineTitle);
+
+    // Filtrar e ordenar eventos do ano
+    const yearEvents = events.filter(ev => {
+      const startYear = parseInt(ev.periodo.data_inicio.split("-")[0]);
+      const endYear = parseInt(ev.periodo.data_fim.split("-")[0]);
+      return startYear === year || endYear === year;
+    });
+
+    yearEvents.sort((a, b) => a.periodo.data_inicio.localeCompare(b.periodo.data_inicio));
+
+    if (yearEvents.length === 0) {
+      timelineSection.innerHTML += `<p class="empty-state">Nenhum evento registrado para o ano de ${year}.</p>`;
+    } else {
+      const list = document.createElement("div");
+      list.className = "year-timeline-list";
+
+      yearEvents.forEach(ev => {
+        const colors = window.getEventColor(ev.id);
+        const item = document.createElement("div");
+        item.className = "year-timeline-item";
+        item.style.borderLeftColor = colors.bg;
+
+        const prioridadeClass = {
+          "Alta": "priority-high",
+          "Média": "priority-medium",
+          "Baixa": "priority-low"
+        }[ev.estrategia_comercial?.prioridade] || "priority-default";
+
+        item.innerHTML = `
+          <div class="timeline-date-col">
+            <span class="timeline-month">${ev.periodo.periodo_formatado || ev.periodo.data_inicio}</span>
+            <span class="timeline-duration">${ev.periodo.duracao_dias ? `${ev.periodo.duracao_dias} dias` : ""}</span>
+          </div>
+          <div class="timeline-info-col">
+            <div class="timeline-title-row">
+              <h4 class="timeline-event-name">${this.escapeHtml(ev.nome_evento)}</h4>
+              <span class="priority-badge ${prioridadeClass}">${ev.estrategia_comercial?.prioridade ? `Prioridade ${ev.estrategia_comercial.prioridade}` : ""}</span>
+            </div>
+            <p class="timeline-loc">📍 ${this.escapeHtml(ev.localizacao.cidade)}/${this.escapeHtml(ev.localizacao.estado)} ${ev.localizacao.recinto ? `• ${this.escapeHtml(ev.localizacao.recinto)}` : ""}</p>
+            <p class="timeline-segment">🏷️ ${this.escapeHtml(ev.segmento)}</p>
+          </div>
+          <div class="timeline-action-col">
+            <button class="btn btn-sm btn-outline">Ver Detalhes</button>
+          </div>
+        `;
+
+        item.querySelector("button").addEventListener("click", () => {
+          this.onEventClick(ev);
+        });
+
+        list.appendChild(item);
+      });
+
+      timelineSection.appendChild(list);
+    }
+
+    yearWrapper.appendChild(timelineSection);
+    this.container.appendChild(yearWrapper);
+  }
+
+  /**
+   * Cria uma linha de semana com fundo de células e faixas de eventos
+   */
+  createWeekRow(weekDays, monthYear, monthIndex, events, today, options) {
+    const { maxTracks, slotHeight, isCompact } = options;
+
     const weekEl = document.createElement("div");
-    weekEl.className = "calendar-week-row";
+    weekEl.className = `calendar-week-row ${isCompact ? "compact-row" : ""}`;
 
     const weekStart = weekDays[0];
     const weekEnd = weekDays[6];
 
-    // Mapeamento dos eventos que ocorrem nesta semana
+    // Filtrar eventos da semana
     const weekEvents = events.filter(ev => {
       const start = this.parseLocalDate(ev.periodo.data_inicio);
       const end = this.parseLocalDate(ev.periodo.data_fim);
       return start <= weekEnd && end >= weekStart;
     });
 
-    // Ordenar eventos para atribuir trilhas de forma estável:
-    // Mais longos primeiro; em empate, menor data de início; em empate, ID
     weekEvents.sort((a, b) => {
       const durA = a.periodo.duracao_dias || 1;
       const durB = b.periodo.duracao_dias || 1;
@@ -157,8 +473,7 @@ class CalendarRenderer {
       return a.id - b.id;
     });
 
-    // Algoritmo de empacotamento de trilhas (Track allocation)
-    // tracks[trackIndex] = array de 7 booleanos (true se ocupado no dia da semana)
+    // Alocação de trilhas
     const tracks = [];
     const eventSpans = [];
 
@@ -166,31 +481,19 @@ class CalendarRenderer {
       const evStart = this.parseLocalDate(ev.periodo.data_inicio);
       const evEnd = this.parseLocalDate(ev.periodo.data_fim);
 
-      // Calcular o índice de início e fim dentro dos dias da semana (0 a 6)
       let startCol = 0;
       let endCol = 6;
 
-      for (let i = 0; i < 7; i++) {
-        if (this.isSameDay(weekDays[i], evStart)) startCol = i;
-        if (this.isSameDay(weekDays[i], evEnd)) endCol = i;
-      }
-
       if (evStart > weekStart) {
         startCol = weekDays.findIndex(d => this.isSameDay(d, evStart));
-      } else {
-        startCol = 0;
       }
-
       if (evEnd < weekEnd) {
         endCol = weekDays.findIndex(d => this.isSameDay(d, evEnd));
-      } else {
-        endCol = 6;
       }
 
       if (startCol === -1) startCol = 0;
       if (endCol === -1) endCol = 6;
 
-      // Encontrar a primeira trilha onde as colunas startCol..endCol estejam livres
       let assignedTrack = -1;
       for (let t = 0; t < tracks.length; t++) {
         let fits = true;
@@ -211,7 +514,6 @@ class CalendarRenderer {
         tracks.push(new Array(7).fill(false));
       }
 
-      // Marcar colunas como ocupadas nessa trilha
       for (let col = startCol; col <= endCol; col++) {
         tracks[assignedTrack][col] = true;
       }
@@ -229,7 +531,6 @@ class CalendarRenderer {
       });
     });
 
-    // Contagem de eventos por coluna para overflow (+N mais)
     const dayEventCount = new Array(7).fill(0);
     eventSpans.forEach(span => {
       for (let c = span.startCol; c <= span.endCol; c++) {
@@ -237,7 +538,7 @@ class CalendarRenderer {
       }
     });
 
-    // 1. Grid de fundo dos dias
+    // 1. Grid de fundo
     const bgGrid = document.createElement("div");
     bgGrid.className = "week-bg-grid";
 
@@ -245,13 +546,12 @@ class CalendarRenderer {
       const cell = document.createElement("div");
       cell.className = "calendar-day-cell";
       
-      const isOtherMonth = day.getMonth() !== this.currentDate.getMonth();
+      const isOtherMonth = day.getMonth() !== monthIndex;
       const isToday = this.isSameDay(day, today);
 
       if (isOtherMonth) cell.classList.add("other-month");
       if (isToday) cell.classList.add("today");
 
-      // Cabeçalho da célula (número do dia)
       const dayHeader = document.createElement("div");
       dayHeader.className = "day-cell-header";
 
@@ -260,12 +560,11 @@ class CalendarRenderer {
       dayNumber.textContent = String(day.getDate()).padStart(2, "0");
       dayHeader.appendChild(dayNumber);
 
-      // Overflow indicator (+N mais) se houver mais que maxVisibleTracks
-      const overflowCount = dayEventCount[colIdx] - this.maxVisibleTracks;
+      const overflowCount = dayEventCount[colIdx] - maxTracks;
       if (overflowCount > 0) {
         const moreBtn = document.createElement("button");
         moreBtn.className = "day-cell-more-btn";
-        moreBtn.textContent = `+${overflowCount} mais`;
+        moreBtn.textContent = `+${overflowCount}`;
         moreBtn.title = "Ver todos os eventos deste dia";
         moreBtn.addEventListener("click", (e) => {
           e.stopPropagation();
@@ -293,23 +592,17 @@ class CalendarRenderer {
 
     weekEl.appendChild(bgGrid);
 
-    // 2. Camada das Faixas Horizontais de Eventos (Event Bars Layer)
+    // 2. Camada das Faixas Horizontais
     const eventsLayer = document.createElement("div");
-    eventsLayer.className = "week-events-layer";
-
-    // Calcular altura total necessária para a camada baseado nas trilhas visíveis
-    const visibleTracksCount = Math.min(tracks.length, this.maxVisibleTracks);
-    // Cada trilha tem altura de 26px + 4px de gap
-    eventsLayer.style.setProperty("--visible-tracks", visibleTracksCount);
+    eventsLayer.className = `week-events-layer ${isCompact ? "compact-events-layer" : ""}`;
 
     eventSpans.forEach(span => {
-      // Se a trilha do evento for >= maxVisibleTracks, ela é ocultada para dar lugar ao "+N mais"
-      if (span.trackIndex >= this.maxVisibleTracks) {
+      if (span.trackIndex >= maxTracks) {
         return;
       }
 
       const bar = document.createElement("div");
-      bar.className = "event-bar-slot";
+      bar.className = `event-bar-slot ${isCompact ? "compact-bar" : ""}`;
       
       if (span.continuesFromPrevWeek) bar.classList.add("continues-prev");
       if (span.continuesToNextWeek) bar.classList.add("continues-next");
@@ -319,21 +612,16 @@ class CalendarRenderer {
       bar.style.borderColor = colors.border;
       bar.style.color = colors.text;
 
-      // Posicionamento no CSS Grid
-      // Colunas: 1 a 7 (startCol + 1 até endCol + 2)
       bar.style.gridColumn = `${span.startCol + 1} / ${span.endCol + 2}`;
       bar.style.gridRow = `${span.trackIndex + 1}`;
 
-      // Conteúdo da barra
       const titleSpan = document.createElement("span");
       titleSpan.className = "event-bar-title";
       titleSpan.textContent = span.event.nome_evento;
       bar.appendChild(titleSpan);
 
-      // Tooltip rápido nativo
       bar.title = `${span.event.nome_evento} (${span.event.periodo.periodo_formatado || span.event.periodo.data_inicio})`;
 
-      // Evento de clique para detalhes
       bar.addEventListener("click", (e) => {
         e.stopPropagation();
         this.onEventClick(span.event);
@@ -345,6 +633,16 @@ class CalendarRenderer {
     weekEl.appendChild(eventsLayer);
 
     return weekEl;
+  }
+
+  escapeHtml(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
   }
 }
 

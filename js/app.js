@@ -3,20 +3,22 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const monthTitleEl = document.getElementById("current-month-title");
-  const prevBtn = document.getElementById("btn-prev-month");
-  const nextBtn = document.getElementById("btn-next-month");
+  const periodTitleEl = document.getElementById("current-period-title");
+  const prevBtn = document.getElementById("btn-prev-period");
+  const nextBtn = document.getElementById("btn-next-period");
   const todayBtn = document.getElementById("btn-today");
   const importBtn = document.getElementById("btn-import-json");
   const saveJsonBtn = document.getElementById("btn-save-json");
   const jsonInputArea = document.getElementById("json-import-textarea");
   const jsonFileInput = document.getElementById("json-file-input");
+  const viewBtns = document.querySelectorAll(".view-btn");
 
   const modalManager = new window.ModalManager();
 
-  // Iniciar calendário no mês de Maio de 2027 (mês da EXPOMAFE 2027)
+  // Iniciar calendário no mês de Maio de 2027 (mês da EXPOMAFE 2027) com visão de 1 Mês
   const calendar = new window.CalendarRenderer("calendar-container", {
     initialDate: new Date(2027, 4, 1),
+    initialView: "1m",
     maxVisibleTracks: 3,
     onEventClick: (event) => {
       modalManager.showEventDetails(event);
@@ -28,29 +30,52 @@ document.addEventListener("DOMContentLoaded", () => {
       if (events.length > 0) {
         modalManager.showDayEvents(dateStr, events);
       }
+    },
+    onViewChange: (viewMode) => {
+      updateActiveViewButton(viewMode);
+      updatePeriodLabel();
     }
   });
 
-  function updateMonthLabel() {
-    if (monthTitleEl) {
-      monthTitleEl.textContent = calendar.getCurrentMonthYearLabel();
+  function updatePeriodLabel() {
+    if (periodTitleEl) {
+      periodTitleEl.textContent = calendar.getCurrentPeriodLabel();
     }
   }
 
-  // Controles de Navegação
+  function updateActiveViewButton(viewMode) {
+    viewBtns.forEach(btn => {
+      if (btn.getAttribute("data-view") === viewMode) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+  }
+
+  // Controles de Navegação Anterior / Próximo
   prevBtn.addEventListener("click", () => {
-    calendar.prevMonth();
-    updateMonthLabel();
+    calendar.prev();
+    updatePeriodLabel();
   });
 
   nextBtn.addEventListener("click", () => {
-    calendar.nextMonth();
-    updateMonthLabel();
+    calendar.next();
+    updatePeriodLabel();
   });
 
   todayBtn.addEventListener("click", () => {
     calendar.today();
-    updateMonthLabel();
+    updatePeriodLabel();
+  });
+
+  // Alternância de Visões (1 Mês, 3 Meses, 6 Meses, 1 Ano)
+  viewBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selectedView = btn.getAttribute("data-view");
+      calendar.setView(selectedView);
+      updatePeriodLabel();
+    });
   });
 
   // Re-renderizar ao atualizar a store de eventos
@@ -101,5 +126,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Render inicial
   calendar.render();
-  updateMonthLabel();
+  updatePeriodLabel();
 });
