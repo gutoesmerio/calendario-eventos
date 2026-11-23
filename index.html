@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário de Eventos Comerciais</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+  <header class="app-header">
+    <div class="brand-section">
+      <span class="brand-icon">📅</span>
+      <div>
+        <h1 class="brand-title">Calendário de Eventos</h1>
+        <p class="brand-subtitle">Visualização de feiras e eventos comerciais em trilhas contínuas</p>
+      </div>
+    </div>
+
+    <!-- Navegação de Meses -->
+    <div class="controls-section">
+      <div class="nav-controls">
+        <button id="btn-prev-month" class="btn btn-icon" title="Mês Anterior">◀</button>
+        <span id="current-month-title" class="current-period-title">Maio de 2027</span>
+        <button id="btn-next-month" class="btn btn-icon" title="Próximo Mês">▶</button>
+      </div>
+      <button id="btn-today" class="btn btn-outline">Hoje</button>
+    </div>
+
+    <!-- Ações e Integrações -->
+    <div class="actions-section">
+      <button id="btn-import-json" class="btn btn-primary">
+        <span>📥</span> Aplicar JSON de Eventos
+      </button>
+    </div>
+  </header>
+
+  <!-- Container do Calendário -->
+  <main class="calendar-wrapper">
+    <div class="calendar-card" id="calendar-container">
+      <!-- O calendário será renderizado dinamicamente aqui via JavaScript -->
+    </div>
+  </main>
+
+  <!-- MODAL: Detalhes do Evento -->
+  <div id="event-detail-modal" class="modal-backdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Detalhes da Feira / Evento</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Preenchido dinamicamente via modal.js -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-close-btn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Lista de Eventos do Dia (+N mais) -->
+  <div id="day-events-modal" class="modal-backdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Eventos do Dia</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Preenchido dinamicamente via modal.js -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-close-btn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Importador de JSON de Eventos -->
+  <div id="import-json-modal" class="modal-backdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Carregar Payload JSON de Eventos</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="import-help">Cole abaixo a lista de eventos no formato JSON ou carregue um arquivo local. O calendário atualizará imediatamente.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <input type="file" id="json-file-input" accept=".json" class="btn btn-sm btn-outline">
+        </div>
+        <textarea id="json-import-textarea" class="import-textarea" spellcheck="false" placeholder="[ { ... }, { ... } ]"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-close-btn">Cancelar</button>
+        <button id="btn-save-json" class="btn btn-primary">Aplicar Eventos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts da Aplicação -->
+  <script src="js/colors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
