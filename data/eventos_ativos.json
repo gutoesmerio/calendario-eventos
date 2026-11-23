@@ -144,7 +144,7 @@
     },
     "estrategia_comercial": {
       "prioridade": "Alta",
-      "total_oportunidades_ativas": 74,
+      "total_oportunidades_ativas": 77,
       "perfil_alvo_expositores": "Expositores de estandes construídos (marcenaria própria, climatização reforçada e entrega 24h antes)",
       "acao_comercial": "Fechamento da meta de 20 estandes construídos. Proposta ativa de R$ 78.000,00 na MSD Saúde Animal e 13 oportunidades quentes"
     }
@@ -507,6 +507,126 @@
       "total_oportunidades_ativas": 1,
       "perfil_alvo_expositores": "Indústrias de ordenha, resfriamento, silos e genética bovina",
       "acao_comercial": "Atendimento à Granfinale e captação de expositores de estandes em alvenaria e marcenaria"
+    }
+  },
+  {
+    "id": 39,
+    "nome_evento": "32ª ExpoCONAC 2027 (47º CONAC & 39º CONAEC)",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2027",
+    "periodo": {
+      "data_inicio": "2027-05-12",
+      "data_fim": "2027-05-14",
+      "duracao_dias": 3,
+      "periodo_formatado": "12 a 14 de maio de 2027",
+      "dias_para_o_evento": 170
+    },
+    "localizacao": {
+      "recinto": "Recanto Cataratas Thermas Resort & Convention",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Av. Costa e Silva, 3500 - Parque Pres. 1"
+    },
+    "segmento": "Condomínios, Mercado Imobiliário, Legaltechs e Proptechs",
+    "promotora": {
+      "organizadora": "Comitê Organizador CONAC / ExpoCONAC",
+      "iniciativa": "CONAC",
+      "site_oficial": "https://www.expoconac.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Legaltechs, proptechs e tecnologia condominial",
+      "acao_comercial": "Ativação de estandes customizados em Foz do Iguaçu com fábrica local própria e custo zero de frete"
+    }
+  },
+  {
+    "id": 40,
+    "nome_evento": "iBusiness 2028 (Redetelesul)",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2028",
+    "periodo": {
+      "data_inicio": "2028-05-15",
+      "data_fim": "2028-05-17",
+      "duracao_dias": 3,
+      "periodo_formatado": "15 a 17 de maio de 2028",
+      "dias_para_o_evento": 539
+    },
+    "localizacao": {
+      "recinto": "Centro de Convenções / Hotel de Eventos",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Foz do Iguaçu - Paraná"
+    },
+    "segmento": "Telecomunicações, Provedores de Internet (ISP) e Tecnologia",
+    "promotora": {
+      "organizadora": "Redetelesul / Camaleon Marketing",
+      "iniciativa": "Redetelesul",
+      "site_oficial": "https://redetelesul.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Fornecedores de telecom, fibra óptica, data centers e agências regionais",
+      "acao_comercial": "Follow-up programado em fevereiro com Jociandro Almeida para fornecimento oficial de cenografia local"
+    }
+  },
+  {
+    "id": 41,
+    "nome_evento": "Mercopar 2027",
+    "sigla_ou_edicao": "36ª Edição",
+    "periodo": {
+      "data_inicio": "2027-10-19",
+      "data_fim": "2027-10-22",
+      "duracao_dias": 4,
+      "periodo_formatado": "19 a 22 de outubro de 2027",
+      "dias_para_o_evento": 330
+    },
+    "localizacao": {
+      "recinto": "Centro de Eventos Festa da Uva",
+      "cidade": "Caxias do Sul",
+      "estado": "RS",
+      "endereco": "R. Ludovíco Cavinato, 431 - Nossa Sra. da Saúde, Caxias do Sul - RS"
+    },
+    "segmento": "Inovação Industrial, Metalmecânica, Automação e Energia",
+    "promotora": {
+      "organizadora": "Sebrae RS / FIERGS",
+      "iniciativa": "Sebrae RS",
+      "site_oficial": "https://mercopar.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "total_oportunidades_ativas": 2,
+      "perfil_alvo_expositores": "Indústrias metalmecânicas, caldeiraria, inox, automação e suprimentos industriais",
+      "acao_comercial": "Prospecção ativa de expositores industriais que demandam estandes construídos em marcenaria e estrutura mista"
+    }
+  },
+  {
+    "id": 42,
+    "nome_evento": "Congresso Brasileiro de Dermatologia Veterinária - SBDV 2027",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2027",
+    "periodo": {
+      "data_inicio": "2027-04-15",
+      "data_fim": "2027-04-17",
+      "duracao_dias": 3,
+      "periodo_formatado": "15 a 17 de abril de 2027",
+      "dias_para_o_evento": 143
+    },
+    "localizacao": {
+      "recinto": "Hotel Recanto Cataratas Thermas Resort & Convention",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Av. Costa e Silva, 3500 - Parque Pres. 1, Foz do Iguaçu - PR"
+    },
+    "segmento": "Medicina Veterinária, Dermatologia e Saúde Animal",
+    "promotora": {
+      "organizadora": "Sociedade Brasileira de Dermatologia Veterinária (SBDV)",
+      "iniciativa": "SBDV",
+      "site_oficial": "https://sbdv.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Laboratórios farmacêuticos veterinários, dermocosméticos e nutrição animal",
+      "acao_comercial": "Ativação direta como montadora fabril local em Foz do Iguaçu, oferecendo custo zero de frete e assistência presencial 24h durante o congresso"
     }
   }
 ]

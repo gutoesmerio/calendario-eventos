@@ -271,3 +271,10 @@ Dentro da visualização da proposta, há duas abas dedicadas:
    - Ao clicar em qualquer card do feed, abre-se o modal flutuante de tratamento comercial.
    - O modal carrega sob demanda **apenas as interações daquele cliente naquele evento específico em ordem decrescente**.
    - Exibe o cabeçalho do cliente/evento, dados da proposta comercial ativa (se houver, com valor, estágio e metragem do estande) e a linha do tempo completa para acompanhamento da negociação.
+
+### E. Execução e Atualização de Dados
+1. **Servidor Local Automático (`iniciar_servidor.bat`):**
+   - Inicia servidor HTTP local em `http://localhost:8080` com zero dependências externas.
+   - Lê os arquivos JSON da pasta `data/` dinamicamente a cada recarregamento de página (`F5`).
+2. **Sincronização para Acesso Direto (`sincronizar_dados.bat`):**
+   - Para execuções diretas por arquivo (`file:///C:/projs/CALENDÁRIO/index.html`), atualiza automaticamente o dataset base em `js/data.js` a partir dos arquivos JSON de `data/`.

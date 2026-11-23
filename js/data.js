@@ -149,7 +149,7 @@ const DEFAULT_EVENTS = [
     },
     "estrategia_comercial": {
       "prioridade": "Alta",
-      "total_oportunidades_ativas": 74,
+      "total_oportunidades_ativas": 77,
       "perfil_alvo_expositores": "Expositores de estandes construídos (marcenaria própria, climatização reforçada e entrega 24h antes)",
       "acao_comercial": "Fechamento da meta de 20 estandes construídos. Proposta ativa de R$ 78.000,00 na MSD Saúde Animal e 13 oportunidades quentes"
     }
@@ -513,6 +513,126 @@ const DEFAULT_EVENTS = [
       "perfil_alvo_expositores": "Indústrias de ordenha, resfriamento, silos e genética bovina",
       "acao_comercial": "Atendimento à Granfinale e captação de expositores de estandes em alvenaria e marcenaria"
     }
+  },
+  {
+    "id": 39,
+    "nome_evento": "32ª ExpoCONAC 2027 (47º CONAC & 39º CONAEC)",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2027",
+    "periodo": {
+      "data_inicio": "2027-05-12",
+      "data_fim": "2027-05-14",
+      "duracao_dias": 3,
+      "periodo_formatado": "12 a 14 de maio de 2027",
+      "dias_para_o_evento": 170
+    },
+    "localizacao": {
+      "recinto": "Recanto Cataratas Thermas Resort & Convention",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Av. Costa e Silva, 3500 - Parque Pres. 1"
+    },
+    "segmento": "Condomínios, Mercado Imobiliário, Legaltechs e Proptechs",
+    "promotora": {
+      "organizadora": "Comitê Organizador CONAC / ExpoCONAC",
+      "iniciativa": "CONAC",
+      "site_oficial": "https://www.expoconac.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Legaltechs, proptechs e tecnologia condominial",
+      "acao_comercial": "Ativação de estandes customizados em Foz do Iguaçu com fábrica local própria e custo zero de frete"
+    }
+  },
+  {
+    "id": 40,
+    "nome_evento": "iBusiness 2028 (Redetelesul)",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2028",
+    "periodo": {
+      "data_inicio": "2028-05-15",
+      "data_fim": "2028-05-17",
+      "duracao_dias": 3,
+      "periodo_formatado": "15 a 17 de maio de 2028",
+      "dias_para_o_evento": 539
+    },
+    "localizacao": {
+      "recinto": "Centro de Convenções / Hotel de Eventos",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Foz do Iguaçu - Paraná"
+    },
+    "segmento": "Telecomunicações, Provedores de Internet (ISP) e Tecnologia",
+    "promotora": {
+      "organizadora": "Redetelesul / Camaleon Marketing",
+      "iniciativa": "Redetelesul",
+      "site_oficial": "https://redetelesul.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Fornecedores de telecom, fibra óptica, data centers e agências regionais",
+      "acao_comercial": "Follow-up programado em fevereiro com Jociandro Almeida para fornecimento oficial de cenografia local"
+    }
+  },
+  {
+    "id": 41,
+    "nome_evento": "Mercopar 2027",
+    "sigla_ou_edicao": "36ª Edição",
+    "periodo": {
+      "data_inicio": "2027-10-19",
+      "data_fim": "2027-10-22",
+      "duracao_dias": 4,
+      "periodo_formatado": "19 a 22 de outubro de 2027",
+      "dias_para_o_evento": 330
+    },
+    "localizacao": {
+      "recinto": "Centro de Eventos Festa da Uva",
+      "cidade": "Caxias do Sul",
+      "estado": "RS",
+      "endereco": "R. Ludovíco Cavinato, 431 - Nossa Sra. da Saúde, Caxias do Sul - RS"
+    },
+    "segmento": "Inovação Industrial, Metalmecânica, Automação e Energia",
+    "promotora": {
+      "organizadora": "Sebrae RS / FIERGS",
+      "iniciativa": "Sebrae RS",
+      "site_oficial": "https://mercopar.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Média",
+      "total_oportunidades_ativas": 2,
+      "perfil_alvo_expositores": "Indústrias metalmecânicas, caldeiraria, inox, automação e suprimentos industriais",
+      "acao_comercial": "Prospecção ativa de expositores industriais que demandam estandes construídos em marcenaria e estrutura mista"
+    }
+  },
+  {
+    "id": 42,
+    "nome_evento": "Congresso Brasileiro de Dermatologia Veterinária - SBDV 2027",
+    "sigla_ou_edicao": "Edição Foz do Iguaçu 2027",
+    "periodo": {
+      "data_inicio": "2027-04-15",
+      "data_fim": "2027-04-17",
+      "duracao_dias": 3,
+      "periodo_formatado": "15 a 17 de abril de 2027",
+      "dias_para_o_evento": 143
+    },
+    "localizacao": {
+      "recinto": "Hotel Recanto Cataratas Thermas Resort & Convention",
+      "cidade": "Foz do Iguaçu",
+      "estado": "PR",
+      "endereco": "Av. Costa e Silva, 3500 - Parque Pres. 1, Foz do Iguaçu - PR"
+    },
+    "segmento": "Medicina Veterinária, Dermatologia e Saúde Animal",
+    "promotora": {
+      "organizadora": "Sociedade Brasileira de Dermatologia Veterinária (SBDV)",
+      "iniciativa": "SBDV",
+      "site_oficial": "https://sbdv.com.br"
+    },
+    "estrategia_comercial": {
+      "prioridade": "Alta",
+      "total_oportunidades_ativas": 1,
+      "perfil_alvo_expositores": "Laboratórios farmacêuticos veterinários, dermocosméticos e nutrição animal",
+      "acao_comercial": "Ativação direta como montadora fabril local em Foz do Iguaçu, oferecendo custo zero de frete e assistência presencial 24h durante o congresso"
+    }
   }
 ];
 
@@ -564,10 +684,10 @@ const DEFAULT_PROPOSTAS = [
       "tipo_estande": "Construído em Marcenaria",
       "metragem_m2": null,
       "localizacao_estande": "Polo CTC - Rio Verde/GO",
-      "status_projeto": "Modelagem 3D em Elaboração"
+      "status_projeto": "Projeto 3D Apresentado - Em Revisão"
     },
     "comercial": {
-      "estagio_proposta": "Briefing em Concepção",
+      "estagio_proposta": "Estudo 3D em Revisão",
       "temperatura": "Quente",
       "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
@@ -635,11 +755,11 @@ const DEFAULT_PROPOSTAS = [
     "responsavel": "Augusto E. da Silva"
   },
   {
-    "id_proposta": 14,
+    "id_proposta": 11,
     "codigo_evento": 11,
     "nome_evento": "Show Rural Coopavel 2027",
     "cliente": {
-      "lead_id": 14,
+      "lead_id": 16,
       "empresa": "Pippi Pneus",
       "contato_principal": "Stephani Simon",
       "cargo": "Marketing e Eventos",
@@ -649,17 +769,17 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": null,
+      "metragem_m2": 100,
       "localizacao_estande": "Rua Principal de Peças e Pneus",
-      "status_projeto": "Projeto 3D Apresentado"
+      "status_projeto": "Modelagem 3D em Finalização (Entrega 24/11)"
     },
     "comercial": {
-      "estagio_proposta": "Em Análise da Diretoria",
+      "estagio_proposta": "Modelagem 3D em Elaboração",
       "temperatura": "Quente",
       "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
       "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-11-30"
+      "data_previsao_fechamento": "2026-11-25"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -981,6 +1101,238 @@ const DEFAULT_PROPOSTAS = [
       "data_previsao_fechamento": "2026-12-05"
     },
     "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 122,
+    "codigo_evento": 39,
+    "nome_evento": "32ª ExpoCONAC 2027 (47º CONAC & 39º CONAEC)",
+    "cliente": {
+      "lead_id": 107,
+      "empresa": "Docket",
+      "contato_principal": "Docket Marketing",
+      "cargo": "Marketing e Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 11 9xxxx-xxxx",
+      "email": "marketing@docket.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 16,
+      "localizacao_estande": "Pavilhão de Exposições Recanto Cataratas",
+      "status_projeto": "Projeto em Revisão (Adequação ao Modelo 2026)"
+    },
+    "comercial": {
+      "estagio_proposta": "Estudo 3D em Revisão",
+      "temperatura": "Quente",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 60,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-11-27"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 123,
+    "codigo_evento": 40,
+    "nome_evento": "iBusiness 2028 (Redetelesul)",
+    "cliente": {
+      "lead_id": 108,
+      "empresa": "Camaleon Marketing / iBusiness",
+      "contato_principal": "Jociandro Almeida",
+      "cargo": "Diretor / Organizador de Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 46 9xxxx-xxxx",
+      "email": "jociandro@camaleonmkt.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Cenografia Customizada / Estande Institucional",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão iBusiness - Foz do Iguaçu",
+      "status_projeto": "Follow-up Agendado (Fevereiro)"
+    },
+    "comercial": {
+      "estagio_proposta": "Prospecção / Follow-up Futuro",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 40,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-02-28"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 124,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 109,
+      "empresa": "STEMAC Grupos Geradores",
+      "contato_principal": "Daiane Onorato da Silva",
+      "cargo": "Marketing / Analista Comercial",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 51 2131-3800 R: 3868",
+      "email": "daiane.silva@stemac.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 180,
+      "localizacao_estande": "Área Externa - Show Rural Coopavel",
+      "status_projeto": "Projeto 3D Apresentado"
+    },
+    "comercial": {
+      "estagio_proposta": "Em Análise da Diretoria",
+      "temperatura": "Quente",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 75,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-05"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 125,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 110,
+      "empresa": "Case IH",
+      "contato_principal": "Janaina",
+      "cargo": "Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 45 9xxxx-xxxx",
+      "email": "janaina.marketing@caseih.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Setor de Máquinas e Equipamentos - Show Rural Coopavel",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Briefing em Concepção",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 35,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 126,
+    "codigo_evento": 41,
+    "nome_evento": "Mercopar 2027",
+    "cliente": {
+      "lead_id": 111,
+      "empresa": "ACZ INOX",
+      "contato_principal": "Bárbara",
+      "cargo": "Diretoria",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 54 3xxxx-xxxx",
+      "email": "barbara@aczinox.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão Mercopar - Caxias do Sul/RS",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-04-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 127,
+    "codigo_evento": 41,
+    "nome_evento": "Mercopar 2027",
+    "cliente": {
+      "lead_id": 112,
+      "empresa": "Altus Sistemas de Automação",
+      "contato_principal": "Carol",
+      "cargo": "Marketing / Feiras e Eventos",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 51 3589-9500",
+      "email": "marketing@altus.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão Mercopar - Caxias do Sul/RS",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-04-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 128,
+    "codigo_evento": 42,
+    "nome_evento": "Congresso Brasileiro de Dermatologia Veterinária - SBDV 2027",
+    "cliente": {
+      "lead_id": 41,
+      "empresa": "Ourofino Saúde Animal",
+      "contato_principal": "Mariana de Castro Amancio",
+      "cargo": "Coordenação de Eventos / Feiras e Congressos",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 16 3518-2000",
+      "email": "mariana.amancio@ourofino.com"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão de Exposição SBDV - Foz do Iguaçu/PR",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-02-28"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 129,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 10,
+      "empresa": "Procer",
+      "contato_principal": "Gabrielle Cardoso",
+      "cargo": "Gestão de Eventos / Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 48 9xxxx-xxxx",
+      "email": "gabrielle@procer.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Setor de Armazenagem e Pós-Colheita - Show Rural Coopavel",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-20"
+    },
+    "responsavel": "Augusto E. da Silva"
   }
 ];
 
@@ -1172,20 +1524,20 @@ const DEFAULT_INTERACOES = [
   {
     "id_interacao": 10,
     "lead_id": 10,
-    "codigo_evento": null,
-    "id_proposta": null,
+    "codigo_evento": 11,
+    "id_proposta": 129,
     "empresa": "Procer",
     "contato": "Gabrielle Cardoso",
     "data_interacao": "2026-09-09",
     "canal": "WhatsApp",
-    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "direcao": "Receptiva (Retorno do Cliente)",
     "tipo_interacao": "Follow-up Comercial",
-    "resumo": "Status: Follow-up devido",
-    "detalhes": "Em 09/09 disse que o planejamento atrasou e ficou para outubro.",
+    "resumo": "Follow-up comercial com Gabrielle da Procer sobre definição do calendário de eventos de 2027; cliente informou adiamento para outubro",
+    "detalhes": "Augusto realizou follow-up em 09/09/2026 às 16:40/16:41 perguntando: \"Ja definiram os eventos que irão participar?\". Gabrielle respondeu às 16:48: \"Nãoo, planejamento atrasou. Ficou para outubro\". Augusto respondeu às 16:49: \"Tranquilo, vamos nos falando!\". Em novembro de 2026 o contato constava com status de férias no WhatsApp.",
     "anexos": [],
     "proxima_acao_gerada": {
-      "acao": "Identificar empresa e evento; retomar agora em outubro.",
-      "data_prevista": "2026-10-16"
+      "acao": "Retomar contato com Gabrielle Cardoso para verificar a conclusão da definição dos eventos de 2027 (Show Rural Coopavel 2027).",
+      "data_prevista": "2026-11-25"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -1338,7 +1690,7 @@ const DEFAULT_INTERACOES = [
     "contato": "Rogério Cardoso",
     "data_interacao": "2026-10-16",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Follow-up Comercial",
     "resumo": "Status: Encaminhamento interno",
     "detalhes": "Rogério respondeu em 16/10 que vai verificar com a pessoa responsável por esse evento e que, se necessário, ela retornará diretamente ao Augusto.",
@@ -1352,8 +1704,8 @@ const DEFAULT_INTERACOES = [
   {
     "id_interacao": 19,
     "lead_id": 19,
-    "codigo_evento": 10,
-    "id_proposta": 97,
+    "codigo_evento": 11,
+    "id_proposta": 19,
     "empresa": "The Group / BASF",
     "contato": "Rodrigo Barreto",
     "data_interacao": "2026-10-16",
@@ -1518,7 +1870,7 @@ const DEFAULT_INTERACOES = [
     "contato": "José Carlos Silva",
     "data_interacao": "2026-10-13",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Follow-up Comercial",
     "resumo": "Status: Encerrado",
     "detalhes": "Respondeu que a contratação do estande já estava concluída.",
@@ -1775,7 +2127,7 @@ const DEFAULT_INTERACOES = [
     "codigo_evento": 11,
     "id_proposta": 21,
     "empresa": "Ourofino Saúde Animal",
-    "contato": null,
+    "contato": "Mariana de Castro Amancio",
     "data_interacao": "2026-11-16",
     "canal": "Sistema / Mapeamento Interno",
     "direcao": "Interna (Registro de Sistema)",
@@ -2955,7 +3307,7 @@ const DEFAULT_INTERACOES = [
     "contato": "Eduardo Goerl (CEO)",
     "data_interacao": "2026-11-16",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Follow-up Comercial",
     "resumo": "Empresa encerrou atividades",
     "detalhes": "Abordagem enviada para +55 51 9725-3973. Eduardo Goerl respondeu às 17:34 confirmando que a ArPAC fechou as portas. Lead marcado como descartado.",
@@ -3009,7 +3361,7 @@ const DEFAULT_INTERACOES = [
     "contato": "Felipe Carreira — Marketing",
     "data_interacao": "2026-11-16",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Solicitação de Briefing",
     "resumo": "Felipe (Marketing) informou que aguarda retorno da diretoria para avançar",
     "detalhes": "Augusto contatou Felipe via WhatsApp as 11:16 perguntando sobre os preparativos e propondo criar o projeto para o Show Rural 2027. Felipe respondeu as 17:48: Infelizmente ainda nao tenho nenhum retorno da diretoria por aqui... Estou dependendo deles pra seguir. Augusto respondeu ficando no aguardo e destacando a importancia de ter um briefing com antecedencia para criar o projeto em tempo habil. Felipe confirmou as 17:56: Claro, pode deixar.",
@@ -3051,15 +3403,15 @@ const DEFAULT_INTERACOES = [
     "canal": "WhatsApp",
     "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Envio de Portfólio",
-    "resumo": "Contato com Gabriela (Marketing) e envio de portfólios",
-    "detalhes": "Após direcionamento interno, Augusto iniciou conversa no WhatsApp com Gabriela (Marketing da Bransales). Apresentou a DCarvalho, localização em Foz, enviou Portifolio.pdf (15 pág) e AGRO.pdf (28 pág) com foco em marcenaria construída, e perguntou sobre a criação e orçamento de projetos para o Show Rural.",
+    "resumo": "Contato com Gabriela (Marketing) e envio de portfólios no WhatsApp",
+    "detalhes": "Augusto iniciou contato às 10:37: \"Bom dia, Gabriela! Tudo bem? Me chamo Augusto, sou do time comercial da DCarvalho Eventos... A Bransales está criando e orçando projetos para o próximo Show Rural?\". Às 10:42 enviou Portifolio.pdf (15 pág) e às 10:44 AGRO.pdf (28 pág): \"Trabalhamos com projetos em marcenaria, tudo construído\". Sem resposta desde 17/11.",
     "anexos": [
       "Portifolio.pdf",
       "AGRO.pdf"
     ],
     "proxima_acao_gerada": {
-      "acao": "Aguardar resposta no WhatsApp até 20/11/2026 para follow-up",
-      "data_prevista": "2026-11-20"
+      "acao": "Realizar ligação telefônica para a Gabriela (Marketing) / João Paulo para cobrar retorno da apresentação do Show Rural 2027 enviada em 17/11.",
+      "data_prevista": "2026-11-24"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -3134,11 +3486,11 @@ const DEFAULT_INTERACOES = [
     "canal": "WhatsApp",
     "direcao": "Receptiva (Retorno do Cliente)",
     "tipo_interacao": "Follow-up Comercial",
-    "resumo": "Camila Pedroso solicitou envio de e-mail para conectar ao time responsável",
-    "detalhes": "Camila Pedroso respondeu positivamente no WhatsApp, solicitou o envio das informações por e-mail (camilapedroso@outras.com.br) para colocar a DCarvalho em contato direto com o time responsável pelo Show Rural 2027.",
+    "resumo": "Camila Pedroso respondeu no WhatsApp e forneceu e-mail para envio de apresentação",
+    "detalhes": "Após abordagem de Augusto apresentando a DCarvalho para o Show Rural 2027, Camila Pedroso respondeu às 15:34-15:35: \"Olá, boa tarde! Muito prazer. Por favor, você consegue me passar as informações via e-mail ai coloco você em contato com o time responsável: camilapedroso@outras.com.br\". Augusto confirmou às 15:35: \"Sim!\".",
     "anexos": [],
     "proxima_acao_gerada": {
-      "acao": "Disparar e-mail com apresentação e portfólios anexados para camilapedroso@outras.com.br",
+      "acao": "Disparar e-mail formal com Portifolio.pdf e AGRO.pdf para camilapedroso@outras.com.br.",
       "data_prevista": "2026-11-17"
     },
     "responsavel": "Augusto E. da Silva"
@@ -3173,9 +3525,9 @@ const DEFAULT_INTERACOES = [
     "data_interacao": "2026-11-17",
     "canal": "E-mail",
     "direcao": "Ativa (Enviada pela DCarvalho)",
-    "tipo_interacao": "Envio de Portfólio",
-    "resumo": "E-mail com portfólios institucionais e do agro enviado para Camila Pedroso",
-    "detalhes": "Augusto enviou e-mail para camilapedroso@outras.com.br com Portifolio.pdf e AGRO.pdf anexados, conforme solicitado por ela no WhatsApp, para conexão com a equipe responsável pelo estande no Show Rural 2027.",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "E-mail com portfólios institucionais enviado para Camila Pedroso às 17:34",
+    "detalhes": "Augusto enviou e-mail às 17:34 com o assunto \"Stand Solinftec / Show Rural 2027\" para camilapedroso@outras.com.br, com Portifolio.pdf (5 MB) e AGRO.pdf (9 MB) anexados, solicitando se possuem briefing definido para elaboração de projeto 3D e orçamento sem compromisso.",
     "anexos": [
       "Portifolio.pdf",
       "AGRO.pdf"
@@ -3217,13 +3569,13 @@ const DEFAULT_INTERACOES = [
     "canal": "WhatsApp",
     "direcao": "Receptiva (Retorno do Cliente)",
     "tipo_interacao": "Follow-up Comercial",
-    "resumo": "Tilara orientou retomar contato com Bruna na próxima semana; evento Show Rural 2027 confirmado",
-    "detalhes": "Tilara informou no WhatsApp da Equipe de Marketing que a Bruna não está disponível esta semana e pediu para entrar em contato na próxima semana. Augusto enviou o PDF AGRO.pdf relembrando que a DCarvalho já realizou montagens anteriores para a própria Maxloader.",
+    "resumo": "Tilara informou ausência de Bruna e pediu retorno na semana de 23/11; envio do AGRO.pdf",
+    "detalhes": "Augusto enviou bom dia às 09:52. Tilara respondeu às 09:53: \"Tilara: Bom dia! A Bruna não está disponível essa semana, por favor, entrar em contato na próxima semana.\". Augusto enviou AGRO.pdf (28 pág - 9 MB) às 09:55: \"Estes são algumas de nossas montagens com marcas Agro. Inclusive vocês estão entre elas!!!\".",
     "anexos": [
       "AGRO.pdf"
     ],
     "proxima_acao_gerada": {
-      "acao": "Entrar em contato com Bruna no WhatsApp na segunda-feira 23/11/2026 para alinhar o estande do Show Rural 2027.",
+      "acao": "Retomar contato com Bruna no WhatsApp hoje (23/11/2026) para alinhamento e cotação do estande do Show Rural 2027.",
       "data_prevista": "2026-11-23"
     },
     "responsavel": "Augusto E. da Silva"
@@ -3231,22 +3583,20 @@ const DEFAULT_INTERACOES = [
   {
     "id_interacao": 113,
     "lead_id": 94,
-    "codigo_evento": 26,
-    "id_proposta": 92,
+    "codigo_evento": 11,
+    "id_proposta": 74,
     "empresa": "MSD Saúde Animal",
     "contato": "Egle",
     "data_interacao": "2026-11-17",
     "canal": "WhatsApp",
     "direcao": "Ativa (Enviada pela DCarvalho)",
-    "tipo_interacao": "Envio de Proposta Financeira",
-    "resumo": "Proposta de R$ 78.000,00 entregue para o Show Rural; Egle cobrou stand de Rio Verde",
-    "detalhes": "Augusto entregou o projeto ESTANDE MSD-SHOW RURAL.pdf com proposta comercial de R$ 78.000,00 para o Show Rural 2027. Egle informou: Oie... até segunda teremos retorno. Egle também cobrou o status do projeto do estande de Rio Verde (Tecnoshow Comigo).",
-    "anexos": [
-      "ESTANDE MSD-SHOW RURAL.pdf"
-    ],
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Follow-up sobre aprovação da proposta de R$ 78.000,00 do Show Rural",
+    "detalhes": "Augusto enviou mensagem às 17:31: 'Boa tarde! Com relação ao Show Rural algum retorno?'. Mensagem recebida e lida por Egle no WhatsApp.",
+    "anexos": [],
     "proxima_acao_gerada": {
-      "acao": "Aguardar retorno de aprovação do Show Rural com Egle na segunda-feira 23/11 e alinhar projeto de Rio Verde com projetista.",
-      "data_prevista": "2026-11-23"
+      "acao": "Aguardar retorno da diretoria ou nova cobrança.",
+      "data_prevista": "2026-11-18"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -3300,7 +3650,7 @@ const DEFAULT_INTERACOES = [
     "data_interacao": "2026-09-30",
     "canal": "WhatsApp",
     "direcao": "Ativa (Enviada pela DCarvalho)",
-    "tipo_interacao": "Envio de Portfólio",
+    "tipo_interacao": "Primeiro Contato",
     "resumo": "Apresentação de parceria regional e envio do portfólio AGRO.pdf",
     "detalhes": "Augusto contatou Pedro Cezar apresentando a DCarvalho para Dia de Campo C.Vale e Show Rural, citando as contas da C&L (Syngenta, Golden Harvest, Nidera, NK, Ourofino). Pedro solicitou portfólio. Augusto enviou o AGRO.pdf (28 pág) no WhatsApp. Pedro confirmou recebimento: Opa deu certo ver sim.",
     "anexos": [
@@ -3441,7 +3791,7 @@ const DEFAULT_INTERACOES = [
     "contato": "Kauany — Marketing",
     "data_interacao": "2026-10-28",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Decisão / Fechamento",
     "resumo": "Kauany informou que o projeto está em análise da diretoria",
     "detalhes": "Kauany respondeu às 09:11: bom dia, eles estão em analise....se o seu projeto for o escolhido, entraremos em contato...mas até o momento não tem definição. obrigada. Projeto e orçamento da DCarvalho estão na mesa da diretoria concorrendo.",
@@ -3562,7 +3912,7 @@ const DEFAULT_INTERACOES = [
     "data_interacao": "2025-11-03",
     "canal": "WhatsApp",
     "direcao": "Ativa (Enviada pela DCarvalho)",
-    "tipo_interacao": "Envio de Portfólio",
+    "tipo_interacao": "Primeiro Contato",
     "resumo": "Apresentação institucional para maratona de eventos agro",
     "detalhes": "Augusto contatou Luis Elicker apresentando a DCarvalho para o Show Rural e oferecendo pacote para o calendário agro.",
     "anexos": [],
@@ -3581,7 +3931,7 @@ const DEFAULT_INTERACOES = [
     "contato": "Luis Elicker",
     "data_interacao": "2026-07-30",
     "canal": "WhatsApp",
-    "direcao": "Receptiva (Retorno do Cliente)",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
     "tipo_interacao": "Follow-up Comercial",
     "resumo": "Luis respondeu e Augusto perguntou sobre análise de projetos 2027",
     "detalhes": "Após tentativas em 27 e 28/07, Luis respondeu às 14:27: Boa Tarde, tudo bem!. Augusto perguntou às 14:28: Para os eventos de 2027, estão analisando projetos?",
@@ -3769,6 +4119,424 @@ const DEFAULT_INTERACOES = [
     "proxima_acao_gerada": {
       "acao": "Abordar atendimento/produção da agência oferecendo a DCarvalho como braço fabril e operacional local em Foz.",
       "data_prevista": "2026-11-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 140,
+    "lead_id": 94,
+    "codigo_evento": 26,
+    "id_proposta": 92,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-18",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Apresentação de Projeto 3D",
+    "resumo": "Apresentação das perspectivas 3D do estande de Rio Verde (Tecnoshow)",
+    "detalhes": "Augusto enviou às 09:40 pacote com 5 fotos de render 3D em marcenaria com lounge, testeira verde MSD e ativação com vaca Allflex: 'Bom dia! Egle este seria o projeto para Rio Verde'.",
+    "anexos": [
+      "Render 3D Fachada MSD Rio Verde.jpg",
+      "Render 3D Lounge Allflex.jpg"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar avaliação do layout pela Egle.",
+      "data_prevista": "2026-11-18"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 141,
+    "lead_id": 94,
+    "codigo_evento": 26,
+    "id_proposta": 92,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-18",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Negociação / Ajuste de Escopo",
+    "resumo": "Feedback de Egle sobre Rio Verde: solicitou ajustes na fachada e salas",
+    "detalhes": "Egle respondeu às 11:41: 'Bom dia. Não gostei da fachada, mas vou mandar como opção. Está muito aberto. Também o stand está muito igual. Dentro de cada sala tem uma imagem de produto pelo menos. Consegue mudar um pouco?'.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Alinhar com projetista os ajustes solicitados na fachada e imagens de produto nas salas.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 142,
+    "lead_id": 94,
+    "codigo_evento": 26,
+    "id_proposta": 92,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-18",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Áudio de alinhamento técnico (0:30) sobre as alterações do estande de Rio Verde",
+    "detalhes": "Augusto enviou mensagem de áudio de 30 segundos às 11:43 detalhando como serão feitas as adaptações na fachada e nos fechamentos de sala.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Executar ajustes na modelagem 3D com o projetista.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 143,
+    "lead_id": 94,
+    "codigo_evento": 11,
+    "id_proposta": 74,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-18",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retomada de status sobre a proposta do Show Rural",
+    "detalhes": "Augusto enviou às 18:04 (entregue às 18:07): 'Boa tarde. E o Show Rural?'. Cobrança de retorno da diretoria da MSD.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar posicionamento final de aprovação da diretoria.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 144,
+    "lead_id": 107,
+    "codigo_evento": 39,
+    "id_proposta": 122,
+    "empresa": "Docket",
+    "contato": "Docket Marketing",
+    "data_interacao": "2026-11-20",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Recebimento de Briefing",
+    "resumo": "Envio de checklist e manual de montagem da ExpoCONAC 2027",
+    "detalhes": "Docket Marketing enviou no WhatsApp às 15:00 os arquivos CHECK LIST ExpoCONAC 2027.pdf (3 pág) e ManualRegulamentoMontagem ExpoCONAC 2027.pdf (14 pág).",
+    "anexos": [
+      "CHECK LIST ExpoCONAC 2027.pdf",
+      "ManualRegulamentoMontagem ExpoCONAC 2027.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Avaliar regulamento técnico e mapear dimensões do estande.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 145,
+    "lead_id": 107,
+    "codigo_evento": 39,
+    "id_proposta": 122,
+    "empresa": "Docket",
+    "contato": "Docket Marketing",
+    "data_interacao": "2026-11-20",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Alinhamento de dimensões do estande (16m² vs 20m²)",
+    "detalhes": "Augusto alinhou às 15:11: \"Ok então o de 20m terá vizinhos em todos os lados menos na entrada, certo? E as dimensões deles, você teria?...\". Docket respondeu às 15:13 que no ano anterior fizeram 16m² (4x4m). Augusto definiu projeção de 4x4m.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Encaminhar para Cristiano Projetista elaborar a modelagem 3D.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 146,
+    "lead_id": 107,
+    "codigo_evento": 39,
+    "id_proposta": 122,
+    "empresa": "Docket",
+    "contato": "Docket Marketing",
+    "data_interacao": "2026-11-23",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Apresentação de Projeto 3D",
+    "resumo": "Entrega das perspectivas 3D do estande Docket para a ExpoCONAC 2027",
+    "detalhes": "Augusto enviou às 13:31 4 fotos de render 3D em marcenaria azul e branca com balcão, testeira e TV: \"Poderia analisar essas imagens, se gostaria de alterar alguma coisa. Se não quiser nenhuma alteração vou providenciar o orçamento\". Docket respondeu às 13:37: \"Boa tarde. Já irei analisar\".",
+    "anexos": [
+      "Render 3D Estande Docket ExpoCONAC.jpg"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno de validação da Docket e calcular planilha orçamentária.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 147,
+    "lead_id": 107,
+    "codigo_evento": 39,
+    "id_proposta": 122,
+    "empresa": "Docket",
+    "contato": "Docket Marketing",
+    "data_interacao": "2026-11-23",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Negociação / Ajuste de Escopo",
+    "resumo": "Envio de planta de referência do Conac anterior com pedido de adaptação do estande",
+    "detalhes": "Docket Marketing enviou às 14:25 o arquivo Docket _ Conac planta (1).pdf (11 pág, 3 MB) com a mensagem: \"Augusto, você conseguiria deixar o máximo parecido com esse stand? Foi o que fizemos ano passado no Conac e funcionou bem.\".",
+    "anexos": [
+      "Docket _ Conac planta (1).pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Encaminhar planta/referência ao Cristiano Projetista para replicar o padrão do ano anterior e rodar orçamento executivo.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 148,
+    "lead_id": 16,
+    "codigo_evento": 11,
+    "id_proposta": 11,
+    "empresa": "Pippi Pneus",
+    "contato": "Stephani Simon",
+    "data_interacao": "2026-11-23",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Apresentação de Projeto 3D",
+    "resumo": "Stephani cobrou urgência do projeto 3D para reunião de diretoria; Augusto alinhou entrega para 24/11",
+    "detalhes": "Stephani Simon enviou às 09:29: \"você tem o nosso projeto? Eu vou apresentar pra minha diretoria\". Às 10:14 reforçou: \"É que amanhã vou apresentar pra minha diretoria e queria apresentar o teu\". Augusto respondeu às 10:51: \"Terei o projeto amanhã no final da tarde, e o orçamento na quarta pela manhã\". Stephani enviou figurinha de choro com \"bahhh\" e respondeu às 10:52: \"ok, obrigada\".",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Finalizar modelagem 3D com Cristiano Projetista até 24/11 no fim da tarde e planilha de custos na manhã de 25/11.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 149,
+    "lead_id": 108,
+    "codigo_evento": 40,
+    "id_proposta": 123,
+    "empresa": "Camaleon Marketing / iBusiness",
+    "contato": "Jociandro Almeida",
+    "data_interacao": "2026-11-23",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Programação de contato em fevereiro para o Ibusiness 2028",
+    "detalhes": "Alinhamento com Jociandro Almeida (Camaleon Marketing / Pato Branco - jociandro@camaleonmkt.com.br). Augusto determinou agendamento de retorno comercial em fevereiro para estruturar a proposta de cenografia e montagem para o Ibusiness 2028.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Entrar em contato em fevereiro com Jociandro Almeida para o Ibusiness 2028.",
+      "data_prevista": "2027-02-01"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 150,
+    "lead_id": 109,
+    "codigo_evento": 11,
+    "id_proposta": 124,
+    "empresa": "STEMAC Grupos Geradores",
+    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "data_interacao": "2026-10-06",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Alinhamento com Jaqueline sobre solicitação de 180m² da Diane e necessidade de briefing das salas",
+    "detalhes": "Augusto contatou Jaqueline Rodrigues às 10:14 questionando se Diane possui briefing para o estande de 180m² solicitado para o Show Rural 2027, destacando que em 2026 o estande da Stemac foi de 100m² (10x10m sem salas) e que provavelmente agora necessitarão de salas fechadas. Enviou prints do e-mail da Diane e do orçamento anterior de 2026. Jaqueline respondeu às 10:17: \"Vou repassar esta informação para a Diane, mas retorna via e-mail para ela e pede para ela te ligar, informa sua dificuldade de contato.\".",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retornar e-mail para Diane solicitando ligação telefônica para validar briefing e salas do estande de 180m².",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 151,
+    "lead_id": 109,
+    "codigo_evento": 11,
+    "id_proposta": 124,
+    "empresa": "STEMAC Grupos Geradores",
+    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "data_interacao": "2026-11-16",
+    "canal": "E-mail",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Proposta Financeira",
+    "resumo": "Envio de proposta orçamentária e projeto 3D em layout PDF para Daiane (STEMAC) no Show Rural 2027",
+    "detalhes": "Augusto enviou e-mail às 10:37 para daiane.silva@stemac.com.br e às 10:39 para marketing@stemac.com.br com o assunto \"Show Rural Coopavel 2027 - Orçamento DCarvalho\". Foram anexados os arquivos LAYOUT-STEMAC.pdf (4 MB) e ORÇAMENTO SHOW RURAL 2027 - STEMAC.pdf (584 KB), além do Portifolio.pdf (5 MB) enviado na cópia do marketing. No corpo do e-mail, destacou: \"Segue em anexo nosso orçamento e projeto para a Stemac no Show Rural 2027. Os CLIMATIZADORES DE AR INDUSTRIAL no projeto são meramente ilustrativos, não constando no orçamento. Aguardo retorno, Augusto E. da Silva - Gestor de Contas\".",
+    "anexos": [
+      "LAYOUT-STEMAC.pdf",
+      "ORÇAMENTO SHOW RURAL 2027 - STEMAC.pdf",
+      "Portifolio.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Acompanhar confirmação de leitura e retorno de Daiane sobre o orçamento de 180m².",
+      "data_prevista": "2026-11-17"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 152,
+    "lead_id": 109,
+    "codigo_evento": 11,
+    "id_proposta": 124,
+    "empresa": "STEMAC Grupos Geradores",
+    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "data_interacao": "2026-11-17",
+    "canal": "E-mail",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retorno de Daiane da STEMAC confirmando recebimento do orçamento e envio para análise interna da diretoria",
+    "detalhes": "Confirmação de leitura recebida por e-mail em 17/11/2026 às 07:58 (lida por Daiane Onorato da Silva às 07:57:57). Às 09:45, Daiane respondeu formalmente ao e-mail: \"Bom dia, Augusto. Obrigada pelo envio do orçamento, vou enviar para análise e ti retorno. Atenciosamente, Daiane Onorato da Silva - Marketing / Analista Comercial, Fone: +55 (51) 2131-3800 R: 3868 - STEMAC Grupos Geradores\". Proposta em análise interna pela diretoria.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Follow-up comercial com Daiane para verificar o retorno da diretoria sobre o orçamento e projeto do Show Rural 2027.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 153,
+    "lead_id": 110,
+    "codigo_evento": 11,
+    "id_proposta": 125,
+    "empresa": "Case IH",
+    "contato": "Janaina",
+    "data_interacao": "2025-11-03",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Primeira abordagem comercial com Janaina para o Show Rural e maratona de eventos agro",
+    "detalhes": "Augusto iniciou contato via WhatsApp em 03/11/2025 às 16:50/16:51: \"Janaina, meu nome é Augusto, sou de uma empresa que cria, fabrica e monta stands para eventos. Meu contato hoje é sobre o Show Rural, mas minha proposta é fazer um pacote para a maratona de eventos rural que teremos esse ano. Posso te enviar um portfólio nosso, para que conheça o nosso trabalho ?\". Augusto enviou novo \"Bom dia\" em 05/11/2025.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retomar contato para o ciclo de eventos e montagens de 2027.",
+      "data_prevista": "2026-07-27"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 154,
+    "lead_id": 110,
+    "codigo_evento": 11,
+    "id_proposta": 125,
+    "empresa": "Case IH",
+    "contato": "Janaina",
+    "data_interacao": "2026-07-28",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Retomada de contato para o Show Rural 2027, apresentação institucional da DCarvalho e envio de portfólio para Janaina",
+    "detalhes": "Em 27/07/2026 às 15:55, Augusto questionou se a Case IH está analisando e cotando projetos de montagem de estandes para 2027. Em 28/07/2026 às 09:33, Janaina respondeu: \"Bom dia tudo bem? Desculpe A sua empresa é de que?\". Às 09:34, Augusto respondeu: \"Me chamo Augusto, faço parte da equipe comercial da DCarvalho Eventos, uma empresa que cria, constrói e monta cenografias e stands para feiras, eventos e congressos.\", enviando o arquivo Portifolio.pdf (5 MB) e detalhando no WhatsApp a experiência da empresa em eventos (Show Rural atendendo MSD, ATM e IMEVE; Expodireto; Tecnoshow atendendo Maxloader e Bioma; Agrodinamica; Innovar; Expo-Hospital; Varejo Experience, entre outros).",
+    "anexos": [
+      "Portifolio.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Follow-up comercial para propor reunião de alinhamento do briefing.",
+      "data_prevista": "2026-09-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 155,
+    "lead_id": 110,
+    "codigo_evento": 11,
+    "id_proposta": 125,
+    "empresa": "Case IH",
+    "contato": "Janaina",
+    "data_interacao": "2026-09-25",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Envio de mensagem de áudio (0:15) propondo reunião para alinhar o briefing da Case IH para 2027",
+    "detalhes": "Após saudação em 30/07/2026 sem resposta, Augusto enviou uma mensagem de áudio de 0:15 em 25/09/2026 às 17:02 com a transcrição: \"Boa tarde Janaína, tudo bem? Podemos marcar uma hora pra semana que vem pra gente verificar o briefing da case? Que que tu acha? Me dá um retorno.\". Em 13/11/2026 o WhatsApp registrou alteração de código de segurança do contato. O cliente permaneceu sem dar retorno ao áudio.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Realizar ligação telefônica para Janaina (Marketing CASE IH) para retomar contato e solicitar o briefing para o Show Rural 2027.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 156,
+    "lead_id": 111,
+    "codigo_evento": 41,
+    "id_proposta": 126,
+    "empresa": "ACZ INOX",
+    "contato": "Bárbara / Recepção ACZ",
+    "data_interacao": "2026-08-25",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Triagem via WhatsApp com atendimento da ACZ INOX obtendo contato de e-mail da diretora Bárbara para a Mercopar 2027",
+    "detalhes": "Augusto contatou a ACZ INOX via WhatsApp em 25/08/2026 às 15:16/15:17 apresentando a DCarvalho Eventos e solicitando o contato da pessoa ou setor responsável pela organização da empresa na Mercopar. Às 15:20/15:21 o atendimento respondeu: \"Boa tarde! Seria com nossa direção: barbara@aczinox.com.br\". Augusto questionou: \"Muito obrigado, só e-mail? Se eu ligar direto para a empresa, consigo falar com ela?\". O atendente respondeu de forma categórica: \"Sim!\", \"Contato com nossa diretoria somente por email!\". Augusto confirmou: \"ok\".",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Enviar e-mail formal de apresentação da DCarvalho e portfólio para barbara@aczinox.com.br referente à Mercopar 2027.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 157,
+    "lead_id": 112,
+    "codigo_evento": 41,
+    "id_proposta": 127,
+    "empresa": "Altus Sistemas de Automação",
+    "contato": "Carol",
+    "data_interacao": "2026-09-02",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Qualificação via WhatsApp com Carol da Altus (indicação de Nicolas) para a Mercopar 2027; solicitou portfólio por e-mail",
+    "detalhes": "Augusto contatou Carol via WhatsApp em 02/09/2026 às 10:05 citando a indicação de Nicolas e apresentando a DCarvalho Eventos. Às 10:06, Carol forneceu o e-mail marketing@altus.com.br e pediu: \"por favor enviar portfólio por e-mail, havendo oportunidade lhe contato\". Augusto perguntou se ela é quem organiza a Altus em feiras e eventos, ao que Carol respondeu: \"sim, mas para este ano já está tudo 100% contratado, obrigada\". Augusto agradeceu com \"Obrigado!\" e Carol reagiu com joinha (👍). Foco comercial alinhado para o planejamento de feiras de 2027 (Mercopar 2027).",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Enviar portfólio institucional para marketing@altus.com.br referente ao calendário de feiras de 2027.",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 158,
+    "lead_id": 41,
+    "codigo_evento": 42,
+    "id_proposta": 128,
+    "empresa": "Ourofino Saúde Animal",
+    "contato": "Mariana de Castro Amancio",
+    "data_interacao": "2026-09-04",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Triagem via WhatsApp com SAC Ourofino obtendo contato de Mariana de Castro Amancio para o Congresso SBDV Foz do Iguaçu",
+    "detalhes": "Augusto contatou o WhatsApp da Ourofino Saúde Animal em 04/09/2026 às 10:32/10:35 apresentando a DCarvalho Eventos e solicitando o contato da pessoa ou setor responsável pela organização da empresa no Congresso de Dermatologia Veterinária da SBDV em Foz do Iguaçu. A atendente Ana respondeu às 10:40/10:41 fornecendo o e-mail: \"Mariana de Castro Amancio\" <mariana.amancio@ourofino.com>. Às 12:50 o atendimento foi finalizado automaticamente.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Enviar e-mail formal de apresentação da DCarvalho com portfólio anexo para Mariana de Castro Amancio (mariana.amancio@ourofino.com).",
+      "data_prevista": "2026-11-24"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 159,
+    "lead_id": 10,
+    "codigo_evento": 11,
+    "id_proposta": 129,
+    "empresa": "Procer",
+    "contato": "Gabrielle Cardoso",
+    "data_interacao": "2026-07-27",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Primeira abordagem e qualificação com Gabrielle da Procer (indicação de Eduardo da Bum Agência) e envio de portfólio",
+    "detalhes": "Augusto abordou Gabrielle Cardoso em 27/07/2026 às 15:41/15:43 mencionando a indicação de Eduardo da Bum Agência e perguntando se ela está à frente dos eventos da Procer. Gabrielle confirmou às 15:44 (\"Nesse momento sim, no que posso ajudar?\"). Augusto apresentou a DCarvalho, perguntou se estão orçando projetos para 2027 e enviou o Portifolio.pdf (5 MB) às 15:46 com a lista de participações da empresa. Às 15:58 Gabrielle respondeu: \"Vamos definir os eventos em setembro\". Augusto combinou retorno para setembro e Gabrielle confirmou (\"Combinadooo\").",
+    "anexos": [
+      "Portifolio.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Follow-up em setembro para verificar a definição do calendário de eventos de 2027.",
+      "data_prevista": "2026-09-09"
     },
     "responsavel": "Augusto E. da Silva"
   }

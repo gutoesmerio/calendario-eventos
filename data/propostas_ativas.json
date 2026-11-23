@@ -14,16 +14,16 @@
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 72.0,
+      "metragem_m2": 72,
       "localizacao_estande": "Setor Pecuária / Aves e Suínos",
       "status_projeto": "Projeto 3D Apresentado"
     },
     "comercial": {
       "estagio_proposta": "Proposta Enviada",
       "temperatura": "Quente",
-      "valor_proposta": 78000.0,
+      "valor_proposta": 78000,
       "probabilidade_fechamento_pct": 85,
-      "valor_ponderado": 66300.0,
+      "valor_ponderado": 66300,
       "data_previsao_fechamento": "2026-11-23"
     },
     "responsavel": "Augusto E. da Silva"
@@ -45,14 +45,14 @@
       "tipo_estande": "Construído em Marcenaria",
       "metragem_m2": null,
       "localizacao_estande": "Polo CTC - Rio Verde/GO",
-      "status_projeto": "Modelagem 3D em Elaboração"
+      "status_projeto": "Projeto 3D Apresentado - Em Revisão"
     },
     "comercial": {
-      "estagio_proposta": "Briefing em Concepção",
+      "estagio_proposta": "Estudo 3D em Revisão",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
     "responsavel": "Augusto E. da Silva"
@@ -79,9 +79,9 @@
     "comercial": {
       "estagio_proposta": "Briefing em Concepção",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-10"
     },
     "responsavel": "Augusto E. da Silva"
@@ -108,19 +108,19 @@
     "comercial": {
       "estagio_proposta": "Em Análise da Diretoria",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-11-25"
     },
     "responsavel": "Augusto E. da Silva"
   },
   {
-    "id_proposta": 14,
+    "id_proposta": 11,
     "codigo_evento": 11,
     "nome_evento": "Show Rural Coopavel 2027",
     "cliente": {
-      "lead_id": 14,
+      "lead_id": 16,
       "empresa": "Pippi Pneus",
       "contato_principal": "Stephani Simon",
       "cargo": "Marketing e Eventos",
@@ -130,17 +130,17 @@
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": null,
+      "metragem_m2": 100,
       "localizacao_estande": "Rua Principal de Peças e Pneus",
-      "status_projeto": "Projeto 3D Apresentado"
+      "status_projeto": "Modelagem 3D em Finalização (Entrega 24/11)"
     },
     "comercial": {
-      "estagio_proposta": "Em Análise da Diretoria",
+      "estagio_proposta": "Modelagem 3D em Elaboração",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
-      "data_previsao_fechamento": "2026-11-30"
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-11-25"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -166,9 +166,9 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
     "responsavel": "Augusto E. da Silva"
@@ -195,9 +195,9 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-10"
     },
     "responsavel": "Augusto E. da Silva"
@@ -224,9 +224,9 @@
     "comercial": {
       "estagio_proposta": "Briefing em Concepção",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
     "responsavel": "Augusto E. da Silva"
@@ -253,9 +253,9 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
     "responsavel": "Augusto E. da Silva"
@@ -282,9 +282,9 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-20"
     },
     "responsavel": "Augusto E. da Silva"
@@ -311,9 +311,9 @@
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
     "responsavel": "Augusto E. da Silva"
@@ -340,9 +340,9 @@
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
     "responsavel": "Augusto E. da Silva"
@@ -369,9 +369,9 @@
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
     "responsavel": "Augusto E. da Silva"
@@ -398,9 +398,9 @@
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
     "responsavel": "Augusto E. da Silva"
@@ -427,9 +427,9 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
     "responsavel": "Augusto E. da Silva"
@@ -456,10 +456,242 @@
     "comercial": {
       "estagio_proposta": "Alinhamento Inicial / Triagem",
       "temperatura": "Quente",
-      "valor_proposta": 0.0,
+      "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
-      "valor_ponderado": 0.0,
+      "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 122,
+    "codigo_evento": 39,
+    "nome_evento": "32ª ExpoCONAC 2027 (47º CONAC & 39º CONAEC)",
+    "cliente": {
+      "lead_id": 107,
+      "empresa": "Docket",
+      "contato_principal": "Docket Marketing",
+      "cargo": "Marketing e Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 11 9xxxx-xxxx",
+      "email": "marketing@docket.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 16,
+      "localizacao_estande": "Pavilhão de Exposições Recanto Cataratas",
+      "status_projeto": "Projeto em Revisão (Adequação ao Modelo 2026)"
+    },
+    "comercial": {
+      "estagio_proposta": "Estudo 3D em Revisão",
+      "temperatura": "Quente",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 60,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-11-27"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 123,
+    "codigo_evento": 40,
+    "nome_evento": "iBusiness 2028 (Redetelesul)",
+    "cliente": {
+      "lead_id": 108,
+      "empresa": "Camaleon Marketing / iBusiness",
+      "contato_principal": "Jociandro Almeida",
+      "cargo": "Diretor / Organizador de Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 46 9xxxx-xxxx",
+      "email": "jociandro@camaleonmkt.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Cenografia Customizada / Estande Institucional",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão iBusiness - Foz do Iguaçu",
+      "status_projeto": "Follow-up Agendado (Fevereiro)"
+    },
+    "comercial": {
+      "estagio_proposta": "Prospecção / Follow-up Futuro",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 40,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-02-28"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 124,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 109,
+      "empresa": "STEMAC Grupos Geradores",
+      "contato_principal": "Daiane Onorato da Silva",
+      "cargo": "Marketing / Analista Comercial",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 51 2131-3800 R: 3868",
+      "email": "daiane.silva@stemac.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 180,
+      "localizacao_estande": "Área Externa - Show Rural Coopavel",
+      "status_projeto": "Projeto 3D Apresentado"
+    },
+    "comercial": {
+      "estagio_proposta": "Em Análise da Diretoria",
+      "temperatura": "Quente",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 75,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-05"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 125,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 110,
+      "empresa": "Case IH",
+      "contato_principal": "Janaina",
+      "cargo": "Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 45 9xxxx-xxxx",
+      "email": "janaina.marketing@caseih.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Setor de Máquinas e Equipamentos - Show Rural Coopavel",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Briefing em Concepção",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 35,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 126,
+    "codigo_evento": 41,
+    "nome_evento": "Mercopar 2027",
+    "cliente": {
+      "lead_id": 111,
+      "empresa": "ACZ INOX",
+      "contato_principal": "Bárbara",
+      "cargo": "Diretoria",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 54 3xxxx-xxxx",
+      "email": "barbara@aczinox.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão Mercopar - Caxias do Sul/RS",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-04-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 127,
+    "codigo_evento": 41,
+    "nome_evento": "Mercopar 2027",
+    "cliente": {
+      "lead_id": 112,
+      "empresa": "Altus Sistemas de Automação",
+      "contato_principal": "Carol",
+      "cargo": "Marketing / Feiras e Eventos",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 51 3589-9500",
+      "email": "marketing@altus.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão Mercopar - Caxias do Sul/RS",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-04-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 128,
+    "codigo_evento": 42,
+    "nome_evento": "Congresso Brasileiro de Dermatologia Veterinária - SBDV 2027",
+    "cliente": {
+      "lead_id": 41,
+      "empresa": "Ourofino Saúde Animal",
+      "contato_principal": "Mariana de Castro Amancio",
+      "cargo": "Coordenação de Eventos / Feiras e Congressos",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 16 3518-2000",
+      "email": "mariana.amancio@ourofino.com"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Pavilhão de Exposição SBDV - Foz do Iguaçu/PR",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2027-02-28"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_proposta": 129,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 10,
+      "empresa": "Procer",
+      "contato_principal": "Gabrielle Cardoso",
+      "cargo": "Gestão de Eventos / Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 48 9xxxx-xxxx",
+      "email": "gabrielle@procer.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": null,
+      "localizacao_estande": "Setor de Armazenagem e Pós-Colheita - Show Rural Coopavel",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Morno",
+      "valor_proposta": 0,
+      "probabilidade_fechamento_pct": 30,
+      "valor_ponderado": 0,
+      "data_previsao_fechamento": "2026-12-20"
     },
     "responsavel": "Augusto E. da Silva"
   }
