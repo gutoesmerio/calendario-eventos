@@ -29,27 +29,21 @@ class CalendarRenderer {
   }
 
   prev() {
-    if (this.currentView === "1m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() - 1);
-    } else if (this.currentView === "3m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() - 3);
-    } else if (this.currentView === "6m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() - 6);
-    } else if (this.currentView === "1y") {
+    if (this.currentView === "1y") {
       this.currentDate.setFullYear(this.currentDate.getFullYear() - 1);
+    } else {
+      // Nas visualizações de 1 mês, 3 meses e 6 meses, o período se move apenas 1 mês
+      this.currentDate.setMonth(this.currentDate.getMonth() - 1);
     }
     this.render();
   }
 
   next() {
-    if (this.currentView === "1m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() + 1);
-    } else if (this.currentView === "3m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() + 3);
-    } else if (this.currentView === "6m") {
-      this.currentDate.setMonth(this.currentDate.getMonth() + 6);
-    } else if (this.currentView === "1y") {
+    if (this.currentView === "1y") {
       this.currentDate.setFullYear(this.currentDate.getFullYear() + 1);
+    } else {
+      // Nas visualizações de 1 mês, 3 meses e 6 meses, o período se move apenas 1 mês
+      this.currentDate.setMonth(this.currentDate.getMonth() + 1);
     }
     this.render();
   }

@@ -149,7 +149,7 @@ As definições e gerações dos payloads JSON provêm de outro projeto/serviço
 
 6. **Modos de Visualização Alternáveis (1 Mês, 3 Meses, 6 Meses e 1 Ano):**
    - **1 Mês:** Visão detalhada completa com faixas horizontais de 26px e contador de excesso `+N mais`.
-   - **3 Meses & 6 Meses:** Grade multi-mês com trilhas compactas (20px) e botão para focar em 1 mês específico com 1 clique.
+   - **3 Meses & 6 Meses:** Grade multi-mês com trilhas compactas (20px), botão para focar em 1 mês específico com 1 clique e navegação com deslocamento contínuo de apenas 1 mês por clique (janela temporal deslizante).
    - **1 Ano:** Visão de 12 meses (Janeiro a Dezembro) com preenchimento colorido nos dias ocupados por eventos e Timeline executiva anual abaixo da grade contendo a listagem cronológica com status de prioridade comercial e detalhes.
 
 ---
