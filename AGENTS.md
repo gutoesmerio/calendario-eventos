@@ -1,7 +1,11 @@
 # Calendário de Eventos
 
 ## Visão Geral do Projeto
-Aplicação de visualização de calendário responsável por consumir um payload JSON com dados de eventos e exibi-los graficamente em uma grade de calendário.
+Aplicação de visualização de calendário responsável por consumir dados de eventos e propostas comerciais a partir de arquivos JSON locais e exibi-los graficamente em uma grade de calendário.
+
+Os dados são carregados automaticamente da pasta `data/`:
+* **`data/eventos_ativos.json`:** Cadastro e métricas dos eventos e feiras comerciais.
+* **`data/propostas_ativas.json`:** Cadastro das oportunidades e propostas comerciais ativas vinculadas pelo campo `codigo_evento === evento.id`.
 
 As definições e gerações dos payloads JSON provêm de outro projeto/serviço. Aqui, o foco é a fidelidade no consumo da entidade e clareza na renderização visual.
 

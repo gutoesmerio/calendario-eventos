@@ -6,8 +6,6 @@ class ModalManager {
   constructor() {
     this.eventDetailModal = document.getElementById("event-detail-modal");
     this.dayEventsModal = document.getElementById("day-events-modal");
-    this.importJsonModal = document.getElementById("import-json-modal");
-    this.importPropostasModal = document.getElementById("import-propostas-modal");
 
     this.currentEvent = null;
     this.initCloseTriggers();
@@ -387,14 +385,6 @@ class ModalManager {
     }
 
     this.showModal(this.dayEventsModal);
-  }
-
-  showImportModal() {
-    this.showModal(this.importJsonModal);
-  }
-
-  showImportPropostasModal() {
-    this.showModal(this.importPropostasModal);
   }
 
   escapeHtml(str) {

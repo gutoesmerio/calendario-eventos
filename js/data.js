@@ -1110,3 +1110,38 @@ class PropostasStore {
 
 window.eventStore = new EventStore();
 window.propostasStore = new PropostasStore();
+
+/**
+ * Carrega automaticamente os dados dos arquivos locais na pasta data/
+ * - data/eventos_ativos.json
+ * - data/propostas_ativas.json
+ */
+async function loadDataFromFiles() {
+  try {
+    const resEvents = await fetch("data/eventos_ativos.json");
+    if (resEvents.ok) {
+      const eventos = await resEvents.json();
+      if (Array.isArray(eventos)) {
+        window.eventStore.setEvents(eventos);
+        console.log(`[DataStore] ${eventos.length} eventos carregados de data/eventos_ativos.json`);
+      }
+    }
+  } catch (err) {
+    console.info("[DataStore] Fetch local bloqueado ou arquivo ausente; utilizando base embutida de eventos:", err.message);
+  }
+
+  try {
+    const resPropostas = await fetch("data/propostas_ativas.json");
+    if (resPropostas.ok) {
+      const propostas = await resPropostas.json();
+      if (Array.isArray(propostas)) {
+        window.propostasStore.setPropostas(propostas);
+        console.log(`[DataStore] ${propostas.length} propostas carregadas de data/propostas_ativas.json`);
+      }
+    }
+  } catch (err) {
+    console.info("[DataStore] Fetch local bloqueado ou arquivo ausente; utilizando base embutida de propostas:", err.message);
+  }
+}
+
+window.loadDataFromFiles = loadDataFromFiles;
