@@ -3,6 +3,9 @@
 ## Visão Geral do Projeto
 Aplicação web front-end de visualização de calendário responsável por consumir dados de feiras comerciais/industriais, propostas comerciais e histórico de interações com expositores a partir de arquivos JSON locais e exibi-los graficamente em uma grade de calendário interativa de alto desempenho.
 
+* **Repositório GitHub:** [https://github.com/gutoesmerio/calendario-eventos](https://github.com/gutoesmerio/calendario-eventos)
+* **Ambiente de Produção (Vercel):** [https://calendario-eventos-beige.vercel.app](https://calendario-eventos-beige.vercel.app)
+
 Os dados são carregados automaticamente da pasta `data/`:
 * **`data/eventos_ativos.json`:** Cadastro e métricas dos eventos e feiras comerciais.
 * **`data/propostas_ativas.json`:** Oportunidades e propostas comerciais ativas vinculadas pelo campo relacional `codigo_evento === evento.id`.
