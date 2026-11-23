@@ -1,0 +1,530 @@
+[
+  {
+    "id_proposta": 74,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 94,
+      "empresa": "MSD Saúde Animal",
+      "contato_principal": "Egle",
+      "cargo": "Gestão de Marketing e Feiras",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 11 9xxxx-xxxx",
+      "email": "egle@merck.com"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 72.0,
+      "localizacao_estande": "Setor Pecuária / Aves e Suínos",
+      "status_projeto": "Projeto 3D Apresentado"
+    },
+    "comercial": {
+      "estagio_proposta": "Proposta Enviada",
+      "temperatura": "Quente",
+      "valor_proposta": 78000.0,
+      "probabilidade_fechamento_pct": 85,
+      "valor_ponderado": 66300.0
+    },
+    "follow_up": {
+      "proxima_acao": "Follow-up de aprovação final da diretoria com Egle (documento ESTANDE MSD-SHOW RURAL.pdf)",
+      "data_proxima_acao": "2026-11-23",
+      "dias_para_follow_up": 0,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 92,
+    "codigo_evento": 26,
+    "nome_evento": "Tecnoshow Comigo 2027",
+    "cliente": {
+      "lead_id": 94,
+      "empresa": "MSD Saúde Animal",
+      "contato_principal": "Egle",
+      "cargo": "Gestão de Marketing e Feiras",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 11 9xxxx-xxxx",
+      "email": "egle@merck.com"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 60.0,
+      "localizacao_estande": "Polo CTC - Rio Verde/GO",
+      "status_projeto": "Modelagem 3D em Elaboração"
+    },
+    "comercial": {
+      "estagio_proposta": "Briefing em Concepção",
+      "temperatura": "Quente",
+      "valor_proposta": 65000.0,
+      "probabilidade_fechamento_pct": 70,
+      "valor_ponderado": 45500.0
+    },
+    "follow_up": {
+      "proxima_acao": "Alinhar e renderizar projeto 3D do estande de Rio Verde com Cristiano Projetista para apresentação à Egle",
+      "data_proxima_acao": "2026-11-24",
+      "dias_para_follow_up": 1,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 75,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 95,
+      "empresa": "Next Implementos",
+      "contato_principal": "Equipe de Marketing",
+      "cargo": "Trade Marketing / Eventos",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 45 9xxxx-xxxx",
+      "email": "marketing@nextimplementos.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 50.0,
+      "localizacao_estande": "Pavilhão de Máquinas e Implementos",
+      "status_projeto": "Briefing Recebido"
+    },
+    "comercial": {
+      "estagio_proposta": "Briefing em Concepção",
+      "temperatura": "Quente",
+      "valor_proposta": 45000.0,
+      "probabilidade_fechamento_pct": 65,
+      "valor_ponderado": 29250.0
+    },
+    "follow_up": {
+      "proxima_acao": "Estruturar memorial descritivo com base nos anexos recebidos por e-mail e encaminhar ao projetista 3D",
+      "data_proxima_acao": "2026-11-24",
+      "dias_para_follow_up": 1,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 4,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 6,
+      "empresa": "Bianchi Lubrificantes",
+      "contato_principal": "Kauany",
+      "cargo": "Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 45 9xxxx-xxxx",
+      "email": "marketing@bianchilubrificantes.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 45.0,
+      "localizacao_estande": "Setor Comercial / Automotivo",
+      "status_projeto": "Projeto 3D Apresentado"
+    },
+    "comercial": {
+      "estagio_proposta": "Em Análise da Diretoria",
+      "temperatura": "Quente",
+      "valor_proposta": 52000.0,
+      "probabilidade_fechamento_pct": 65,
+      "valor_ponderado": 33800.0
+    },
+    "follow_up": {
+      "proxima_acao": "Follow-up de alinhamento com Kauany sobre a análise da diretoria e ajustes de escopo",
+      "data_proxima_acao": "2026-11-25",
+      "dias_para_follow_up": 2,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 14,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 14,
+      "empresa": "Pippi Pneus",
+      "contato_principal": "Stephani Simon",
+      "cargo": "Marketing e Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 55 9xxxx-xxxx",
+      "email": "marketing@pippipneus.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 40.0,
+      "localizacao_estande": "Rua Principal de Peças e Pneus",
+      "status_projeto": "Projeto 3D Apresentado"
+    },
+    "comercial": {
+      "estagio_proposta": "Em Análise da Diretoria",
+      "temperatura": "Quente",
+      "valor_proposta": 48000.0,
+      "probabilidade_fechamento_pct": 60,
+      "valor_ponderado": 28800.0
+    },
+    "follow_up": {
+      "proxima_acao": "Retomada com Stephani Simon para verificar deliberação final da diretoria sobre orçamento apresentado",
+      "data_proxima_acao": "2026-11-24",
+      "dias_para_follow_up": 1,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 3,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 5,
+      "empresa": "Bouwman",
+      "contato_principal": "Luis Elicker",
+      "cargo": "Gestão de Marketing / Feiras",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 42 9xxxx-xxxx",
+      "email": "luis@bouwman.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 60.0,
+      "localizacao_estande": "Setor de Máquinas e Forrageiras",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 55000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 27500.0
+    },
+    "follow_up": {
+      "proxima_acao": "Follow-up no WhatsApp com Luis para receber medidas do espaço e criar projeto 3D gratuito",
+      "data_proxima_acao": "2026-11-24",
+      "dias_para_follow_up": 1,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 5,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 7,
+      "empresa": "ATM Energia",
+      "contato_principal": "Felipe Carreira",
+      "cargo": "Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 45 9xxxx-xxxx",
+      "email": "felipe@atmenergia.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Misto (Marcenaria + Estrutura Metálica)",
+      "metragem_m2": 35.0,
+      "localizacao_estande": "Pavilhão de Energia Solar e Sustentabilidade",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 38000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 19000.0
+    },
+    "follow_up": {
+      "proxima_acao": "Retomada agendada com Felipe após reunião com a diretoria (Helton) para recebimento do briefing",
+      "data_proxima_acao": "2026-12-01",
+      "dias_para_follow_up": 8,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 91,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 35,
+      "empresa": "IMEVE",
+      "contato_principal": "Thais",
+      "cargo": "Marketing e Eventos",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 16 9xxxx-xxxx",
+      "email": "thais@imeve.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 40.0,
+      "localizacao_estande": "Setor Veterinário e Nutrição Animal",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Briefing em Concepção",
+      "temperatura": "Quente",
+      "valor_proposta": 42000.0,
+      "probabilidade_fechamento_pct": 55,
+      "valor_ponderado": 23100.0
+    },
+    "follow_up": {
+      "proxima_acao": "Cobrar briefing oficial e medidas de planta com Thais para início da modelagem 3D",
+      "data_proxima_acao": "2026-11-24",
+      "dias_para_follow_up": 1,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 19,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 19,
+      "empresa": "The Group Comunicação (Conta BASF)",
+      "contato_principal": "Rodrigo Barreto",
+      "cargo": "Produção Executiva / Atendimento Live Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 11 9xxxx-xxxx",
+      "email": "rodrigo.barreto@thegroup.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 80.0,
+      "localizacao_estande": "Área de Defensivos e Biotecnologia",
+      "status_projeto": "Em Ajuste de Escopo"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 68000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 34000.0
+    },
+    "follow_up": {
+      "proxima_acao": "Acompanhar batida de martelo da montagem da BASF no Show Rural para cotar o projeto executivo local",
+      "data_proxima_acao": "2026-11-25",
+      "dias_para_follow_up": 2,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 98,
+    "codigo_evento": 11,
+    "nome_evento": "Show Rural Coopavel 2027",
+    "cliente": {
+      "lead_id": 21,
+      "empresa": "C&L Eventos (Agência Syngenta, Ourofino, NK, Nidera)",
+      "contato_principal": "Pedro Cezar",
+      "cargo": "Diretor de Operações e Feiras",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 19 9xxxx-xxxx",
+      "email": "pedro@cleventos.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 100.0,
+      "localizacao_estande": "Polo de Sementes e Proteção de Cultivos",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 75000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 37500.0
+    },
+    "follow_up": {
+      "proxima_acao": "Acompanhar inclusão da DCarvalho nas cotações de montagem para as contas atendidas pela agência",
+      "data_proxima_acao": "2026-11-25",
+      "dias_para_follow_up": 2,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 110,
+    "codigo_evento": 34,
+    "nome_evento": "EXPOMAFE 2027",
+    "cliente": {
+      "lead_id": 101,
+      "empresa": "Brasfixo",
+      "contato_principal": "Diretoria Comercial / Marketing",
+      "cargo": "Diretoria",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 19 3429-xxxx",
+      "email": "comercial@brasfixo.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 40.0,
+      "localizacao_estande": "Estande I050",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Oportunidade Mapeada",
+      "temperatura": "Quente",
+      "valor_proposta": 38000.0,
+      "probabilidade_fechamento_pct": 45,
+      "valor_ponderado": 17100.0
+    },
+    "follow_up": {
+      "proxima_acao": "Abordagem com oferta de projeto 3D gratuito antecipado para o estande confirmado I050 no São Paulo Expo",
+      "data_proxima_acao": "2026-11-26",
+      "dias_para_follow_up": 3,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 111,
+    "codigo_evento": 34,
+    "nome_evento": "EXPOMAFE 2027",
+    "cliente": {
+      "lead_id": 102,
+      "empresa": "Balmer",
+      "contato_principal": "Gestão de Marketing e Vendas",
+      "cargo": "Gerência de Marketing",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 55 3331-xxxx",
+      "email": "marketing@balmer.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Misto (Marcenaria + Estrutura Metálica)",
+      "metragem_m2": 60.0,
+      "localizacao_estande": "Estande D208",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Oportunidade Mapeada",
+      "temperatura": "Quente",
+      "valor_proposta": 50000.0,
+      "probabilidade_fechamento_pct": 45,
+      "valor_ponderado": 22500.0
+    },
+    "follow_up": {
+      "proxima_acao": "Propor estudo cenográfico para área de soldagem ao vivo no estande D208 com fechamento anti-faísca",
+      "data_proxima_acao": "2026-11-26",
+      "dias_para_follow_up": 3,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 112,
+    "codigo_evento": 34,
+    "nome_evento": "EXPOMAFE 2027",
+    "cliente": {
+      "lead_id": 103,
+      "empresa": "Erzinger",
+      "contato_principal": "Coordenação de Marketing",
+      "cargo": "Marketing",
+      "canal_preferencial": "WhatsApp",
+      "telefone": "+55 47 2107-xxxx",
+      "email": "marketing@erzinger.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 50.0,
+      "localizacao_estande": "Estande H018",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Oportunidade Mapeada",
+      "temperatura": "Quente",
+      "valor_proposta": 44000.0,
+      "probabilidade_fechamento_pct": 45,
+      "valor_ponderado": 19800.0
+    },
+    "follow_up": {
+      "proxima_acao": "Apresentação institucional e oferta de cenografia e sala de reuniões privativa para o estande H018",
+      "data_proxima_acao": "2026-11-26",
+      "dias_para_follow_up": 3,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 113,
+    "codigo_evento": 34,
+    "nome_evento": "EXPOMAFE 2027",
+    "cliente": {
+      "lead_id": 104,
+      "empresa": "Schulz S.A.",
+      "contato_principal": "Gerência de Eventos Corporativos",
+      "cargo": "Eventos e Trade Marketing",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 47 3451-xxxx",
+      "email": "eventos@schulz.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Construído em Marcenaria",
+      "metragem_m2": 80.0,
+      "localizacao_estande": "Estande D110",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Oportunidade Mapeada",
+      "temperatura": "Quente",
+      "valor_proposta": 65000.0,
+      "probabilidade_fechamento_pct": 40,
+      "valor_ponderado": 26000.0
+    },
+    "follow_up": {
+      "proxima_acao": "Contato com setor de feiras para participar da concorrência de montagem do estande D110",
+      "data_proxima_acao": "2026-11-26",
+      "dias_para_follow_up": 3,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 120,
+    "codigo_evento": 25,
+    "nome_evento": "54º Encontro Nacional de Economia (ANPEC) & 48º EBE (SBE)",
+    "cliente": {
+      "lead_id": 105,
+      "empresa": "SRCOM (Agência Fundação Itaú)",
+      "contato_principal": "Diretoria de Produção e Operações",
+      "cargo": "Produção Executiva",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 11 3094-xxxx",
+      "email": "producao@srcom.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Cenografia de Palco / Plenária",
+      "metragem_m2": 30.0,
+      "localizacao_estande": "Foyer Centro de Convenções - Recanto Cataratas",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 32000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 16000.0
+    },
+    "follow_up": {
+      "proxima_acao": "Abordagem da agência como braço operacional fabril local em Foz para montagem de lounge e painéis",
+      "data_proxima_acao": "2026-11-27",
+      "dias_para_follow_up": 4,
+      "responsavel": "Augusto E. da Silva"
+    }
+  },
+  {
+    "id_proposta": 121,
+    "codigo_evento": 25,
+    "nome_evento": "54º Encontro Nacional de Economia (ANPEC) & 48º EBE (SBE)",
+    "cliente": {
+      "lead_id": 106,
+      "empresa": "AKM Performma (Agência Bradesco)",
+      "contato_principal": "Equipe de Operações e Cenografia",
+      "cargo": "Operações",
+      "canal_preferencial": "E-mail",
+      "telefone": "+55 11 3897-xxxx",
+      "email": "cenografia@akmperformma.com.br"
+    },
+    "estande": {
+      "tipo_estande": "Modular Customizado",
+      "metragem_m2": 25.0,
+      "localizacao_estande": "Área de Patrocinadores - Recanto Cataratas",
+      "status_projeto": "Aguardando Briefing"
+    },
+    "comercial": {
+      "estagio_proposta": "Alinhamento Inicial / Triagem",
+      "temperatura": "Quente",
+      "valor_proposta": 28000.0,
+      "probabilidade_fechamento_pct": 50,
+      "valor_ponderado": 14000.0
+    },
+    "follow_up": {
+      "proxima_acao": "Oferta de estrutura de cenografia e mobiliário próprio com custo zero de frete pesado interestadual",
+      "data_proxima_acao": "2026-11-27",
+      "dias_para_follow_up": 4,
+      "responsavel": "Augusto E. da Silva"
+    }
+  }
+]

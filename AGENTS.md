@@ -141,13 +141,16 @@ As definições e gerações dos payloads JSON provêm de outro projeto/serviço
    - Textos que ultrapassarem a largura do bloco devem ser truncados com reticências (`text-overflow: ellipsis`).
 
 5. **Detalhamento (Card / Tooltip / Modal):**
-   - Ao interagir com o evento (hover ou clique na faixa), exibir popover/card contendo os detalhes complementares:
-     - Nome e edição (`sigla_ou_edicao`)
-     - Período formatado (`periodo.periodo_formatado` ou cálculo com `duracao_dias`)
-     - Localização (`recinto`, `cidade`/`estado`)
-     - Segmento e Prioridade (`estrategia_comercial.prioridade`)
+   - Ao interagir com o evento (hover ou clique na faixa), exibir modal contendo duas abas principais:
+     - **Aba Detalhes do Evento:** Nome, edição (`sigla_ou_edicao`), período formatado, localização, segmento e estratégia comercial do evento.
+     - **Aba Propostas Ativas:** Lista filtrada de propostas comerciais vinculadas (`codigo_evento === evento.id`).
 
-6. **Modos de Visualização Alternáveis (1 Mês, 3 Meses, 6 Meses e 1 Ano):**
+6. **Regras da Aba de Propostas Comerciais:**
+   - Ao clicar na aba "Propostas Ativas", exibir **somente a lista das empresas** com propostas abertas naquele evento.
+   - Cada empresa exibe seu status (temperatura com badge Quente/Morno/Frio, valor cotado em R$, contato e estágio).
+   - Ao clicar no nome da empresa, o modal transiciona para a visualização completa da proposta: dados do lead/cliente, especificações do estande (metragem m², tipo, localização), situação comercial (valor, probabilidade %, valor ponderado), follow-up (ação, data agendada, responsável) e botão de retorno para a listagem.
+
+7. **Modos de Visualização Alternáveis (1 Mês, 3 Meses, 6 Meses e 1 Ano):**
    - **1 Mês:** Visão detalhada completa com faixas horizontais de 26px e contador de excesso `+N mais`.
    - **3 Meses & 6 Meses:** Grade multi-mês com trilhas compactas (20px), botão para focar em 1 mês específico com 1 clique e navegação com deslocamento contínuo de apenas 1 mês por clique (janela temporal deslizante).
    - **1 Ano:** Visão de 12 meses (Janeiro a Dezembro) com preenchimento colorido nos dias ocupados por eventos e Timeline executiva anual abaixo da grade contendo a listagem cronológica com status de prioridade comercial e detalhes.

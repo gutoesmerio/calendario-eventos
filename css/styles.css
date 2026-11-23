@@ -688,7 +688,7 @@ body {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   width: 100%;
-  max-width: 600px;
+  max-width: 760px;
   max-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -908,4 +908,297 @@ body {
 .import-help {
   font-size: 0.8125rem;
   color: var(--text-secondary);
+}
+
+
+/* ==========================================================================
+   Abas do Modal de Eventos (Tabs)
+   ========================================================================== */
+.modal-tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.25rem;
+}
+
+.modal-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.modal-tab-btn:hover {
+  color: var(--primary-color);
+  background-color: #F1F5F9;
+}
+
+.modal-tab-btn.active {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.modal-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.tab-badge {
+  background-color: #E2E8F0;
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 9999px;
+}
+
+.modal-tab-btn.active .tab-badge {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+.modal-tab-pane {
+  display: none;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.modal-tab-pane.active {
+  display: flex;
+}
+
+/* ==========================================================================
+   Aba Propostas Comerciais
+   ========================================================================== */
+.empty-propostas-state {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #F8FAFC;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.propostas-summary-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #F1F5F9;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.8125rem;
+}
+
+.summary-label {
+  color: var(--text-secondary);
+  margin-right: 0.25rem;
+}
+
+.text-success {
+  color: #059669;
+  font-weight: 700;
+}
+
+.text-danger {
+  color: #DC2626;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.propostas-list-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.propostas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.proposta-company-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background-color: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.proposta-company-card:hover {
+  background-color: #FFFFFF;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.proposta-company-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.proposta-company-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.proposta-company-card:hover .company-name {
+  color: var(--primary-color);
+}
+
+.proposta-company-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.proposta-company-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.375rem;
+}
+
+.proposta-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #059669;
+}
+
+/* Badges de Temperatura */
+.temp-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.temp-hot {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.temp-warm {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.temp-cold {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+/* Detalhe da Proposta Individual */
+.proposta-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-back {
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.proposta-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: #F1F5F9;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.proposta-id-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.proposta-company-title {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.proposta-event-name {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.proposta-header-commercial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.proposta-big-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #059669;
+}
+
+.proposta-prob {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.badge-status {
+  display: inline-block;
+  background-color: #DBEAFE;
+  color: #1E40AF;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
 }
