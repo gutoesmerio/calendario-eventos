@@ -249,7 +249,7 @@ class ModalManager {
   }
 
   /**
-   * Renderiza os dados detalhados da proposta de uma empresa específica
+   * Renderiza os dados detalhados da proposta de uma empresa específica com abas de Dados e Interações
    */
   renderPropostaDetails(prop, propostasList) {
     const container = document.getElementById("propostas-container");
@@ -261,9 +261,11 @@ class ModalManager {
       "Frio": "temp-cold"
     }[prop.comercial?.temperatura] || "temp-default";
 
+    const interacoes = window.interacoesStore ? window.interacoesStore.getInteracoesByProposta(prop) : [];
+
     container.innerHTML = `
       <div class="proposta-detail-wrapper">
-        <!-- Botão de Voltar -->
+        <!-- Botão de Voltar para lista de empresas -->
         <button id="btn-back-to-propostas" class="btn btn-sm btn-outline btn-back">
           ◀ Voltar para lista de empresas
         </button>
@@ -276,66 +278,180 @@ class ModalManager {
             <p class="proposta-event-name">Evento: ${this.escapeHtml(prop.nome_evento)}</p>
           </div>
           <div class="proposta-header-commercial">
-            <span class="temp-badge ${tempClass}">Temperatura: ${prop.comercial?.temperatura}</span>
+            <span class="temp-badge ${tempClass}">Temperatura: ${prop.comercial?.temperatura || "N/D"}</span>
             <span class="proposta-big-value">${this.formatCurrency(prop.comercial?.valor_proposta)}</span>
-            <span class="proposta-prob">Probabilidade: ${prop.comercial?.probabilidade_fechamento_pct}% (Ponderado: ${this.formatCurrency(prop.comercial?.valor_ponderado)})</span>
+            <span class="proposta-prob">Probabilidade: ${prop.comercial?.probabilidade_fechamento_pct || 0}% (Ponderado: ${this.formatCurrency(prop.comercial?.valor_ponderado)})</span>
           </div>
         </div>
 
-        <!-- Grade de Seções da Proposta -->
-        <div class="detail-grid">
-          <!-- 1. Dados do Cliente / Lead -->
-          <div class="detail-section">
-            <h3>👤 Dados do Cliente / Contato</h3>
-            <p><strong>Empresa:</strong> ${this.escapeHtml(prop.cliente.empresa)}</p>
-            <p><strong>Contato Principal:</strong> ${this.escapeHtml(prop.cliente.contato_principal)}</p>
-            ${prop.cliente.cargo ? `<p><strong>Cargo:</strong> ${this.escapeHtml(prop.cliente.cargo)}</p>` : ""}
-            ${prop.cliente.canal_preferencial ? `<p><strong>Canal Preferencial:</strong> ${this.escapeHtml(prop.cliente.canal_preferencial)}</p>` : ""}
-            ${prop.cliente.telefone ? `<p><strong>Telefone:</strong> ${this.escapeHtml(prop.cliente.telefone)}</p>` : ""}
-            ${prop.cliente.email ? `<p><strong>E-mail:</strong> <a href="mailto:${this.escapeHtml(prop.cliente.email)}">${this.escapeHtml(prop.cliente.email)}</a></p>` : ""}
+        <!-- Abas Internas da Proposta (Dados Comerciais vs Interações) -->
+        <div class="proposta-tabs-nav">
+          <button class="prop-tab-btn active" data-proptab="dados">
+            <span>📋</span> Dados da Proposta
+          </button>
+          <button class="prop-tab-btn" data-proptab="interacoes">
+            <span>💬</span> Histórico de Interações <span class="tab-badge">${interacoes.length}</span>
+          </button>
+        </div>
+
+        <!-- ABA 1: Dados da Proposta -->
+        <div id="prop-tab-pane-dados" class="prop-tab-pane active">
+          <div class="detail-grid">
+            <!-- 1. Dados do Cliente / Lead -->
+            <div class="detail-section">
+              <h3>👤 Dados do Cliente / Contato</h3>
+              <p><strong>Empresa:</strong> ${this.escapeHtml(prop.cliente.empresa)}</p>
+              <p><strong>Contato Principal:</strong> ${this.escapeHtml(prop.cliente.contato_principal || "N/D")}</p>
+              ${prop.cliente.cargo ? `<p><strong>Cargo:</strong> ${this.escapeHtml(prop.cliente.cargo)}</p>` : ""}
+              ${prop.cliente.canal_preferencial ? `<p><strong>Canal Preferencial:</strong> ${this.escapeHtml(prop.cliente.canal_preferencial)}</p>` : ""}
+              ${prop.cliente.telefone ? `<p><strong>Telefone:</strong> ${this.escapeHtml(prop.cliente.telefone)}</p>` : ""}
+              ${prop.cliente.email ? `<p><strong>E-mail:</strong> <a href="mailto:${this.escapeHtml(prop.cliente.email)}">${this.escapeHtml(prop.cliente.email)}</a></p>` : ""}
+            </div>
+
+            <!-- 2. Dados do Estande -->
+            <div class="detail-section">
+              <h3>🏗️ Especificações do Estande</h3>
+              <p><strong>Tipo:</strong> ${this.escapeHtml(prop.estande?.tipo_estande || "A definir")}</p>
+              <p><strong>Metragem:</strong> ${prop.estande?.metragem_m2 ? `${prop.estande.metragem_m2} m²` : "A definir"}</p>
+              ${prop.estande?.localizacao_estande ? `<p><strong>Localização / Número:</strong> ${this.escapeHtml(prop.estande.localizacao_estande)}</p>` : ""}
+              ${prop.estande?.status_projeto ? `<p><strong>Status do Projeto 3D:</strong> <span class="badge-status">${this.escapeHtml(prop.estande.status_projeto)}</span></p>` : ""}
+            </div>
+
+            <!-- 3. Situação Comercial -->
+            <div class="detail-section">
+              <h3>📊 Status Comercial</h3>
+              <p><strong>Estágio da Proposta:</strong> ${this.escapeHtml(prop.comercial?.estagio_proposta || "N/D")}</p>
+              <p><strong>Valor Proposta:</strong> ${this.formatCurrency(prop.comercial?.valor_proposta)}</p>
+              <p><strong>Probabilidade de Fechamento:</strong> ${prop.comercial?.probabilidade_fechamento_pct || 0}%</p>
+              <p><strong>Valor Ponderado:</strong> ${this.formatCurrency(prop.comercial?.valor_ponderado)}</p>
+              ${prop.comercial?.data_previsao_fechamento ? `<p><strong>Previsão de Fechamento:</strong> ${this.formatDateBR(prop.comercial.data_previsao_fechamento)}</p>` : ""}
+            </div>
+
+            <!-- 4. Responsável e Gestão -->
+            <div class="detail-section">
+              <h3>👔 Gestão da Conta</h3>
+              <p><strong>Responsável:</strong> ${this.escapeHtml(prop.responsavel || "Augusto E. da Silva")}</p>
+              <p><strong>Status do Relacionamento:</strong> ${prop.comercial?.temperatura ? `Oportunidade ${prop.comercial.temperatura}` : "Ativa"}</p>
+              ${interacoes.length > 0 && interacoes[0].proxima_acao_gerada?.acao ? `
+                <div class="next-action-box" style="margin-top: 0.5rem;">
+                  <strong>⏰ Próxima Ação:</strong> ${this.escapeHtml(interacoes[0].proxima_acao_gerada.acao)}
+                  ${interacoes[0].proxima_acao_gerada.data_prevista ? `<br><small>Previsão: ${this.formatDateBR(interacoes[0].proxima_acao_gerada.data_prevista)}</small>` : ""}
+                </div>
+              ` : ""}
+            </div>
           </div>
 
-          <!-- 2. Dados do Estande -->
-          <div class="detail-section">
-            <h3>🏗️ Especificações do Estande</h3>
-            <p><strong>Tipo:</strong> ${this.escapeHtml(prop.estande?.tipo_estande || "A definir")}</p>
-            <p><strong>Metragem:</strong> ${prop.estande?.metragem_m2 ? `${prop.estande.metragem_m2} m²` : "N/D"}</p>
-            ${prop.estande?.localizacao_estande ? `<p><strong>Localização / Número:</strong> ${this.escapeHtml(prop.estande.localizacao_estande)}</p>` : ""}
-            ${prop.estande?.status_projeto ? `<p><strong>Status do Projeto 3D:</strong> <span class="badge-status">${this.escapeHtml(prop.estande.status_projeto)}</span></p>` : ""}
-          </div>
-
-          <!-- 3. Situação Comercial -->
-          <div class="detail-section">
-            <h3>📊 Status Comercial</h3>
-            <p><strong>Estágio da Proposta:</strong> ${this.escapeHtml(prop.comercial?.estagio_proposta)}</p>
-            <p><strong>Valor Proposta:</strong> ${this.formatCurrency(prop.comercial?.valor_proposta)}</p>
-            <p><strong>Probabilidade de Fechamento:</strong> ${prop.comercial?.probabilidade_fechamento_pct}%</p>
-            <p><strong>Valor Ponderado:</strong> ${this.formatCurrency(prop.comercial?.valor_ponderado)}</p>
-          </div>
-
-          <!-- 4. Follow-up e Próximos Passos -->
-          <div class="detail-section">
-            <h3>⏰ Follow-up & Próxima Ação</h3>
-            <p><strong>Ação Agendada:</strong> ${this.escapeHtml(prop.follow_up?.proxima_acao)}</p>
-            <p><strong>Data da Ação:</strong> ${this.formatDateBR(prop.follow_up?.data_proxima_acao)}</p>
-            ${prop.follow_up?.dias_para_follow_up !== undefined ? `<p><strong>Urgência:</strong> ${prop.follow_up.dias_para_follow_up === 0 ? '<span class="text-danger font-bold">HOJE</span>' : `em ${prop.follow_up.dias_para_follow_up} dia(s)`}</p>` : ""}
-            ${prop.follow_up?.responsavel ? `<p><strong>Responsável:</strong> ${this.escapeHtml(prop.follow_up.responsavel)}</p>` : ""}
+          <!-- JSON Completo da Proposta -->
+          <div class="detail-json-toggle">
+            <details>
+              <summary>Ver JSON Completo da Proposta Comercial</summary>
+              <pre class="json-code"><code>${this.escapeHtml(JSON.stringify(prop, null, 2))}</code></pre>
+            </details>
           </div>
         </div>
 
-        <!-- JSON Completo da Proposta -->
-        <div class="detail-json-toggle">
-          <details>
-            <summary>Ver JSON Completo da Proposta Comercial</summary>
-            <pre class="json-code"><code>${this.escapeHtml(JSON.stringify(prop, null, 2))}</code></pre>
-          </details>
+        <!-- ABA 2: Histórico de Interações (Timeline) -->
+        <div id="prop-tab-pane-interacoes" class="prop-tab-pane">
+          ${this.renderInteracoesTimeline(interacoes)}
         </div>
       </div>
     `;
 
+    // Listener do botão de voltar
     document.getElementById("btn-back-to-propostas").addEventListener("click", () => {
       this.renderPropostasList(propostasList);
     });
+
+    // Listeners das Abas Internas da Proposta
+    const propTabBtns = container.querySelectorAll(".prop-tab-btn");
+    propTabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tab = btn.getAttribute("data-proptab");
+        propTabBtns.forEach(b => b.classList.remove("active"));
+        container.querySelectorAll(".prop-tab-pane").forEach(p => p.classList.remove("active"));
+
+        btn.classList.add("active");
+        const pane = container.querySelector(`#prop-tab-pane-${tab}`);
+        if (pane) pane.classList.add("active");
+      });
+    });
+  }
+
+  /**
+   * Renderiza a Timeline cronológica das interações de uma proposta
+   */
+  renderInteracoesTimeline(interacoes) {
+    if (!interacoes || interacoes.length === 0) {
+      return `
+        <div class="empty-propostas-state">
+          <span style="font-size: 2rem;">💬</span>
+          <p>Nenhuma interação registrada para esta proposta até o momento.</p>
+        </div>
+      `;
+    }
+
+    const channelIcons = {
+      "WhatsApp": "🟢 WhatsApp",
+      "E-mail": "✉️ E-mail",
+      "Ligação Telefônica": "📞 Ligação Telefônica",
+      "Presencial / Reunião": "👥 Presencial / Reunião",
+      "Reunião Online": "💻 Reunião Online"
+    };
+
+    let html = `
+      <div class="interacoes-timeline-header">
+        <span class="timeline-count-badge">${interacoes.length} interações registradas</span>
+      </div>
+      <div class="interacoes-timeline">
+    `;
+
+    interacoes.forEach(item => {
+      const isReceptiva = item.direcao && item.direcao.includes("Receptiva");
+      const direcaoClass = isReceptiva ? "dir-inbound" : "dir-outbound";
+      const canalLabel = channelIcons[item.canal] || item.canal || "Contato";
+
+      html += `
+        <div class="timeline-interaction-card">
+          <div class="interaction-top-bar">
+            <div class="interaction-meta">
+              <span class="interaction-channel">${canalLabel}</span>
+              <span class="interaction-date">📅 ${this.formatDateBR(item.data_interacao)}</span>
+              <span class="interaction-dir ${direcaoClass}">${this.escapeHtml(item.direcao || "Contato")}</span>
+            </div>
+            <span class="interaction-type-badge">${this.escapeHtml(item.tipo_interacao || "Interação")}</span>
+          </div>
+
+          ${item.contato ? `<p class="interaction-contact">👤 <strong>Interlocutor:</strong> ${this.escapeHtml(item.contato)}</p>` : ""}
+
+          <div class="interaction-body">
+            <h4 class="interaction-summary">${this.escapeHtml(item.resumo)}</h4>
+            ${item.detalhes ? `<p class="interaction-details">${this.escapeHtml(item.detalhes)}</p>` : ""}
+          </div>
+
+          ${item.anexos && item.anexos.length > 0 ? `
+            <div class="interaction-attachments">
+              <span class="attach-label">📎 Anexos:</span>
+              ${item.anexos.map(anexo => `<span class="attach-chip">${this.escapeHtml(anexo)}</span>`).join("")}
+            </div>
+          ` : ""}
+
+          ${item.proxima_acao_gerada && item.proxima_acao_gerada.acao ? `
+            <div class="interaction-next-action">
+              <span class="next-action-title">⏰ Próxima Ação Gerada:</span>
+              <p class="next-action-text">${this.escapeHtml(item.proxima_acao_gerada.acao)}</p>
+              ${item.proxima_acao_gerada.data_prevista ? `<span class="next-action-date">Previsão: ${this.formatDateBR(item.proxima_acao_gerada.data_prevista)}</span>` : ""}
+            </div>
+          ` : ""}
+
+          <div class="interaction-footer">
+            <small class="interaction-author">Responsável: ${this.escapeHtml(item.responsavel || "Augusto E. da Silva")}</small>
+          </div>
+        </div>
+      `;
+    });
+
+    html += `</div>`;
+    return html;
   }
 
   /**

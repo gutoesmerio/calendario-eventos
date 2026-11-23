@@ -1,7 +1,8 @@
 /**
- * data.js - Repositório de dados e manipulador de eventos e propostas ativas
+ * data.js - Repositório de dados e manipulador de eventos, propostas e interações
  */
 
+// Fallbacks de inicialização caso o navegador restrinja fetch local via file:///
 const DEFAULT_EVENTS = [
   {
     "id": 10,
@@ -515,6 +516,7 @@ const DEFAULT_EVENTS = [
   }
 ];
 
+// Fallback de propostas ativas (novo schema oficial)
 const DEFAULT_PROPOSTAS = [
   {
     "id_proposta": 74,
@@ -540,14 +542,10 @@ const DEFAULT_PROPOSTAS = [
       "temperatura": "Quente",
       "valor_proposta": 78000.0,
       "probabilidade_fechamento_pct": 85,
-      "valor_ponderado": 66300.0
+      "valor_ponderado": 66300.0,
+      "data_previsao_fechamento": "2026-11-23"
     },
-    "follow_up": {
-      "proxima_acao": "Follow-up de aprovação final da diretoria com Egle (documento ESTANDE MSD-SHOW RURAL.pdf)",
-      "data_proxima_acao": "2026-11-23",
-      "dias_para_follow_up": 0,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   },
   {
     "id_proposta": 92,
@@ -564,287 +562,19 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 60.0,
+      "metragem_m2": null,
       "localizacao_estande": "Polo CTC - Rio Verde/GO",
       "status_projeto": "Modelagem 3D em Elaboração"
     },
     "comercial": {
       "estagio_proposta": "Briefing em Concepção",
       "temperatura": "Quente",
-      "valor_proposta": 65000.0,
-      "probabilidade_fechamento_pct": 70,
-      "valor_ponderado": 45500.0
+      "valor_proposta": 0.0,
+      "probabilidade_fechamento_pct": 0,
+      "valor_ponderado": 0.0,
+      "data_previsao_fechamento": "2026-12-15"
     },
-    "follow_up": {
-      "proxima_acao": "Alinhar e renderizar projeto 3D do estande de Rio Verde com Cristiano Projetista para apresentação à Egle",
-      "data_proxima_acao": "2026-11-24",
-      "dias_para_follow_up": 1,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 75,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 95,
-      "empresa": "Next Implementos",
-      "contato_principal": "Equipe de Marketing",
-      "cargo": "Trade Marketing / Eventos",
-      "canal_preferencial": "E-mail",
-      "telefone": "+55 45 9xxxx-xxxx",
-      "email": "marketing@nextimplementos.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 50.0,
-      "localizacao_estande": "Pavilhão de Máquinas e Implementos",
-      "status_projeto": "Briefing Recebido"
-    },
-    "comercial": {
-      "estagio_proposta": "Briefing em Concepção",
-      "temperatura": "Quente",
-      "valor_proposta": 45000.0,
-      "probabilidade_fechamento_pct": 65,
-      "valor_ponderado": 29250.0
-    },
-    "follow_up": {
-      "proxima_acao": "Estruturar memorial descritivo com base nos anexos recebidos por e-mail e encaminhar ao projetista 3D",
-      "data_proxima_acao": "2026-11-24",
-      "dias_para_follow_up": 1,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 4,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 6,
-      "empresa": "Bianchi Lubrificantes",
-      "contato_principal": "Kauany",
-      "cargo": "Marketing",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 45 9xxxx-xxxx",
-      "email": "marketing@bianchilubrificantes.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 45.0,
-      "localizacao_estande": "Setor Comercial / Automotivo",
-      "status_projeto": "Projeto 3D Apresentado"
-    },
-    "comercial": {
-      "estagio_proposta": "Em Análise da Diretoria",
-      "temperatura": "Quente",
-      "valor_proposta": 52000.0,
-      "probabilidade_fechamento_pct": 65,
-      "valor_ponderado": 33800.0
-    },
-    "follow_up": {
-      "proxima_acao": "Follow-up de alinhamento com Kauany sobre a análise da diretoria e ajustes de escopo",
-      "data_proxima_acao": "2026-11-25",
-      "dias_para_follow_up": 2,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 14,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 14,
-      "empresa": "Pippi Pneus",
-      "contato_principal": "Stephani Simon",
-      "cargo": "Marketing e Eventos",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 55 9xxxx-xxxx",
-      "email": "marketing@pippipneus.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 40.0,
-      "localizacao_estande": "Rua Principal de Peças e Pneus",
-      "status_projeto": "Projeto 3D Apresentado"
-    },
-    "comercial": {
-      "estagio_proposta": "Em Análise da Diretoria",
-      "temperatura": "Quente",
-      "valor_proposta": 48000.0,
-      "probabilidade_fechamento_pct": 60,
-      "valor_ponderado": 28800.0
-    },
-    "follow_up": {
-      "proxima_acao": "Retomada com Stephani Simon para verificar deliberação final da diretoria sobre orçamento apresentado",
-      "data_proxima_acao": "2026-11-24",
-      "dias_para_follow_up": 1,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 3,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 5,
-      "empresa": "Bouwman",
-      "contato_principal": "Luis Elicker",
-      "cargo": "Gestão de Marketing / Feiras",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 42 9xxxx-xxxx",
-      "email": "luis@bouwman.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 60.0,
-      "localizacao_estande": "Setor de Máquinas e Forrageiras",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 55000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 27500.0
-    },
-    "follow_up": {
-      "proxima_acao": "Follow-up no WhatsApp com Luis para receber medidas do espaço e criar projeto 3D gratuito",
-      "data_proxima_acao": "2026-11-24",
-      "dias_para_follow_up": 1,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 5,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 7,
-      "empresa": "ATM Energia",
-      "contato_principal": "Felipe Carreira",
-      "cargo": "Marketing",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 45 9xxxx-xxxx",
-      "email": "felipe@atmenergia.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Misto (Marcenaria + Estrutura Metálica)",
-      "metragem_m2": 35.0,
-      "localizacao_estande": "Pavilhão de Energia Solar e Sustentabilidade",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 38000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 19000.0
-    },
-    "follow_up": {
-      "proxima_acao": "Retomada agendada com Felipe após reunião com a diretoria (Helton) para recebimento do briefing",
-      "data_proxima_acao": "2026-12-01",
-      "dias_para_follow_up": 8,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 91,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 35,
-      "empresa": "IMEVE",
-      "contato_principal": "Thais",
-      "cargo": "Marketing e Eventos",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 16 9xxxx-xxxx",
-      "email": "thais@imeve.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 40.0,
-      "localizacao_estande": "Setor Veterinário e Nutrição Animal",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Briefing em Concepção",
-      "temperatura": "Quente",
-      "valor_proposta": 42000.0,
-      "probabilidade_fechamento_pct": 55,
-      "valor_ponderado": 23100.0
-    },
-    "follow_up": {
-      "proxima_acao": "Cobrar briefing oficial e medidas de planta com Thais para início da modelagem 3D",
-      "data_proxima_acao": "2026-11-24",
-      "dias_para_follow_up": 1,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 19,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 19,
-      "empresa": "The Group Comunicação (Conta BASF)",
-      "contato_principal": "Rodrigo Barreto",
-      "cargo": "Produção Executiva / Atendimento Live Marketing",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 11 9xxxx-xxxx",
-      "email": "rodrigo.barreto@thegroup.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 80.0,
-      "localizacao_estande": "Área de Defensivos e Biotecnologia",
-      "status_projeto": "Em Ajuste de Escopo"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 68000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 34000.0
-    },
-    "follow_up": {
-      "proxima_acao": "Acompanhar batida de martelo da montagem da BASF no Show Rural para cotar o projeto executivo local",
-      "data_proxima_acao": "2026-11-25",
-      "dias_para_follow_up": 2,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 98,
-    "codigo_evento": 11,
-    "nome_evento": "Show Rural Coopavel 2027",
-    "cliente": {
-      "lead_id": 21,
-      "empresa": "C&L Eventos (Agência Syngenta, Ourofino, NK, Nidera)",
-      "contato_principal": "Pedro Cezar",
-      "cargo": "Diretor de Operações e Feiras",
-      "canal_preferencial": "WhatsApp",
-      "telefone": "+55 19 9xxxx-xxxx",
-      "email": "pedro@cleventos.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 100.0,
-      "localizacao_estande": "Polo de Sementes e Proteção de Cultivos",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 75000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 37500.0
-    },
-    "follow_up": {
-      "proxima_acao": "Acompanhar inclusão da DCarvalho nas cotações de montagem para as contas atendidas pela agência",
-      "data_proxima_acao": "2026-11-25",
-      "dias_para_follow_up": 2,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   },
   {
     "id_proposta": 110,
@@ -861,23 +591,19 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 40.0,
+      "metragem_m2": null,
       "localizacao_estande": "Estande I050",
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 38000.0,
-      "probabilidade_fechamento_pct": 45,
-      "valor_ponderado": 17100.0
+      "valor_proposta": 0.0,
+      "probabilidade_fechamento_pct": 0,
+      "valor_ponderado": 0.0,
+      "data_previsao_fechamento": "2027-01-30"
     },
-    "follow_up": {
-      "proxima_acao": "Abordagem com oferta de projeto 3D gratuito antecipado para o estande confirmado I050 no São Paulo Expo",
-      "data_proxima_acao": "2026-11-26",
-      "dias_para_follow_up": 3,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   },
   {
     "id_proposta": 111,
@@ -894,23 +620,19 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Misto (Marcenaria + Estrutura Metálica)",
-      "metragem_m2": 60.0,
+      "metragem_m2": null,
       "localizacao_estande": "Estande D208",
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 50000.0,
-      "probabilidade_fechamento_pct": 45,
-      "valor_ponderado": 22500.0
+      "valor_proposta": 0.0,
+      "probabilidade_fechamento_pct": 0,
+      "valor_ponderado": 0.0,
+      "data_previsao_fechamento": "2027-01-30"
     },
-    "follow_up": {
-      "proxima_acao": "Propor estudo cenográfico para área de soldagem ao vivo no estande D208 com fechamento anti-faísca",
-      "data_proxima_acao": "2026-11-26",
-      "dias_para_follow_up": 3,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   },
   {
     "id_proposta": 112,
@@ -927,23 +649,19 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 50.0,
+      "metragem_m2": null,
       "localizacao_estande": "Estande H018",
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 44000.0,
-      "probabilidade_fechamento_pct": 45,
-      "valor_ponderado": 19800.0
+      "valor_proposta": 0.0,
+      "probabilidade_fechamento_pct": 0,
+      "valor_ponderado": 0.0,
+      "data_previsao_fechamento": "2027-01-30"
     },
-    "follow_up": {
-      "proxima_acao": "Apresentação institucional e oferta de cenografia e sala de reuniões privativa para o estande H018",
-      "data_proxima_acao": "2026-11-26",
-      "dias_para_follow_up": 3,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   },
   {
     "id_proposta": 113,
@@ -960,89 +678,19 @@ const DEFAULT_PROPOSTAS = [
     },
     "estande": {
       "tipo_estande": "Construído em Marcenaria",
-      "metragem_m2": 80.0,
+      "metragem_m2": null,
       "localizacao_estande": "Estande D110",
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
       "estagio_proposta": "Oportunidade Mapeada",
       "temperatura": "Quente",
-      "valor_proposta": 65000.0,
-      "probabilidade_fechamento_pct": 40,
-      "valor_ponderado": 26000.0
+      "valor_proposta": 0.0,
+      "probabilidade_fechamento_pct": 0,
+      "valor_ponderado": 0.0,
+      "data_previsao_fechamento": "2027-01-30"
     },
-    "follow_up": {
-      "proxima_acao": "Contato com setor de feiras para participar da concorrência de montagem do estande D110",
-      "data_proxima_acao": "2026-11-26",
-      "dias_para_follow_up": 3,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 120,
-    "codigo_evento": 25,
-    "nome_evento": "54º Encontro Nacional de Economia (ANPEC) & 48º EBE (SBE)",
-    "cliente": {
-      "lead_id": 105,
-      "empresa": "SRCOM (Agência Fundação Itaú)",
-      "contato_principal": "Diretoria de Produção e Operações",
-      "cargo": "Produção Executiva",
-      "canal_preferencial": "E-mail",
-      "telefone": "+55 11 3094-xxxx",
-      "email": "producao@srcom.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Cenografia de Palco / Plenária",
-      "metragem_m2": 30.0,
-      "localizacao_estande": "Foyer Centro de Convenções - Recanto Cataratas",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 32000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 16000.0
-    },
-    "follow_up": {
-      "proxima_acao": "Abordagem da agência como braço operacional fabril local em Foz para montagem de lounge e painéis",
-      "data_proxima_acao": "2026-11-27",
-      "dias_para_follow_up": 4,
-      "responsavel": "Augusto E. da Silva"
-    }
-  },
-  {
-    "id_proposta": 121,
-    "codigo_evento": 25,
-    "nome_evento": "54º Encontro Nacional de Economia (ANPEC) & 48º EBE (SBE)",
-    "cliente": {
-      "lead_id": 106,
-      "empresa": "AKM Performma (Agência Bradesco)",
-      "contato_principal": "Equipe de Operações e Cenografia",
-      "cargo": "Operações",
-      "canal_preferencial": "E-mail",
-      "telefone": "+55 11 3897-xxxx",
-      "email": "cenografia@akmperformma.com.br"
-    },
-    "estande": {
-      "tipo_estande": "Modular Customizado",
-      "metragem_m2": 25.0,
-      "localizacao_estande": "Área de Patrocinadores - Recanto Cataratas",
-      "status_projeto": "Aguardando Briefing"
-    },
-    "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
-      "valor_proposta": 28000.0,
-      "probabilidade_fechamento_pct": 50,
-      "valor_ponderado": 14000.0
-    },
-    "follow_up": {
-      "proxima_acao": "Oferta de estrutura de cenografia e mobiliário próprio com custo zero de frete pesado interestadual",
-      "data_proxima_acao": "2026-11-27",
-      "dias_para_follow_up": 4,
-      "responsavel": "Augusto E. da Silva"
-    }
+    "responsavel": "Augusto E. da Silva"
   }
 ];
 
@@ -1108,13 +756,61 @@ class PropostasStore {
   }
 }
 
+class InteracoesStore {
+  constructor() {
+    this.interacoes = [];
+    this.listeners = [];
+  }
+
+  getInteracoes() {
+    return this.interacoes;
+  }
+
+  /**
+   * Retorna as interações filtradas para uma proposta específica
+   * Conecta por id_proposta OU (lead_id + codigo_evento)
+   */
+  getInteracoesByProposta(prop) {
+    if (!prop) return [];
+    return this.interacoes.filter(item => {
+      if (item.id_proposta && prop.id_proposta && Number(item.id_proposta) === Number(prop.id_proposta)) {
+        return true;
+      }
+      if (item.lead_id && prop.cliente?.lead_id && Number(item.lead_id) === Number(prop.cliente.lead_id)) {
+        if (!item.codigo_evento || Number(item.codigo_evento) === Number(prop.codigo_evento)) {
+          return true;
+        }
+      }
+      return false;
+    }).sort((a, b) => (b.data_interacao || "").localeCompare(a.data_interacao || ""));
+  }
+
+  setInteracoes(newInteracoes) {
+    if (!Array.isArray(newInteracoes)) {
+      throw new Error("O payload deve ser uma lista (array) de interações.");
+    }
+    this.interacoes = newInteracoes;
+    this.notifyListeners();
+  }
+
+  subscribe(callback) {
+    this.listeners.push(callback);
+  }
+
+  notifyListeners() {
+    this.listeners.forEach(cb => cb(this.interacoes));
+  }
+}
+
 window.eventStore = new EventStore();
 window.propostasStore = new PropostasStore();
+window.interacoesStore = new InteracoesStore();
 
 /**
  * Carrega automaticamente os dados dos arquivos locais na pasta data/
  * - data/eventos_ativos.json
  * - data/propostas_ativas.json
+ * - data/interacoes.json
  */
 async function loadDataFromFiles() {
   try {
@@ -1127,7 +823,7 @@ async function loadDataFromFiles() {
       }
     }
   } catch (err) {
-    console.info("[DataStore] Fetch local bloqueado ou arquivo ausente; utilizando base embutida de eventos:", err.message);
+    console.info("[DataStore] Fetch local de eventos_ativos.json:", err.message);
   }
 
   try {
@@ -1140,7 +836,20 @@ async function loadDataFromFiles() {
       }
     }
   } catch (err) {
-    console.info("[DataStore] Fetch local bloqueado ou arquivo ausente; utilizando base embutida de propostas:", err.message);
+    console.info("[DataStore] Fetch local de propostas_ativas.json:", err.message);
+  }
+
+  try {
+    const resInteracoes = await fetch("data/interacoes.json");
+    if (resInteracoes.ok) {
+      const interacoes = await resInteracoes.json();
+      if (Array.isArray(interacoes)) {
+        window.interacoesStore.setInteracoes(interacoes);
+        console.log(`[DataStore] ${interacoes.length} interações carregadas de data/interacoes.json`);
+      }
+    }
+  } catch (err) {
+    console.info("[DataStore] Fetch local de interacoes.json:", err.message);
   }
 }
 

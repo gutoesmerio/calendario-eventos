@@ -1,19 +1,18 @@
-# Calendário de Eventos
+# Calendário de Eventos Comerciais
 
 ## Visão Geral do Projeto
-Aplicação de visualização de calendário responsável por consumir dados de eventos e propostas comerciais a partir de arquivos JSON locais e exibi-los graficamente em uma grade de calendário.
+Aplicação web front-end de visualização de calendário responsável por consumir dados de feiras comerciais/industriais, propostas comerciais e histórico de interações com expositores a partir de arquivos JSON locais e exibi-los graficamente em uma grade de calendário interativa de alto desempenho.
 
 Os dados são carregados automaticamente da pasta `data/`:
 * **`data/eventos_ativos.json`:** Cadastro e métricas dos eventos e feiras comerciais.
-* **`data/propostas_ativas.json`:** Cadastro das oportunidades e propostas comerciais ativas vinculadas pelo campo `codigo_evento === evento.id`.
-
-As definições e gerações dos payloads JSON provêm de outro projeto/serviço. Aqui, o foco é a fidelidade no consumo da entidade e clareza na renderização visual.
+* **`data/propostas_ativas.json`:** Oportunidades e propostas comerciais ativas vinculadas pelo campo relacional `codigo_evento === evento.id`.
+* **`data/interacoes.json`:** Linha do tempo e histórico de conversas/contatos comerciais vinculados à proposta (`id_proposta === proposta.id_proposta` ou `lead_id + codigo_evento`).
 
 ---
 
-## Especificação da Entidade de Evento
+## 1. Especificação da Entidade de Evento (`eventos_ativos.json`)
 
-### 1. Exemplo de Instância Concreta (JSON)
+### Exemplo de Instância Concreta (JSON)
 ```json
 {
   "id": 34,
@@ -46,121 +45,211 @@ As definições e gerações dos payloads JSON provêm de outro projeto/serviço
 }
 ```
 
----
-
-### 2. Dicionário de Dados (Data Dictionary)
-
+### Dicionário de Dados
 | Campo | Tipo | Obrigatório | Formato / Valores | Uso no Calendário |
 | :--- | :--- | :---: | :--- | :--- |
-| `id` | `integer` | Sim | Auto-incremental | Identificador único do evento (usado para indexação, chaves de renderização e chave de cor). |
-| `nome_evento` | `string` | Sim | Texto livre (3-100 car.) | Nome canônico exibido diretamente nas células/barras do calendário. |
-| `sigla_ou_edicao` | `string` | Não | Texto livre | Subtítulo ou edição exibido em detalhes/tooltip do evento. |
+| `id` | `integer` | Sim | Auto-incremental | Identificador único do evento (indexação, chave de cor determinística e chave de relacionamento). |
+| `nome_evento` | `string` | Sim | Texto livre | Nome canônico exibido diretamente nas células e faixas contínuas do calendário. |
+| `sigla_ou_edicao` | `string` | Não | Texto livre | Subtítulo ou edição exibido nos modais e tooltips. |
 | `periodo` | `object` | Sim | Objeto estruturado | Bloco de datas que determina o posicionamento no calendário. |
-| `periodo.data_inicio` | `string` | Sim | `YYYY-MM-DD` (ISO-8601) | Data de início da cobertura visual do evento no grid. |
-| `periodo.data_fim` | `string` | Sim | `YYYY-MM-DD` (ISO-8601) | Data de término da cobertura visual no grid (`data_fim >= data_inicio`). |
-| `periodo.duracao_dias` | `integer` | Não | Inteiro positivo (`>= 1`) | Total de dias corridos do evento. |
-| `periodo.periodo_formatado` | `string` | Não | Formato amigável | Texto para exibição no card de detalhes ou tooltip. |
-| `periodo.dias_para_o_evento`| `integer` | Não | Inteiro | Contagem regressiva de dias. |
-| `localizacao.recinto` | `string` | Não | Texto livre | Local específico (exibido em detalhes). |
-| `localizacao.cidade` | `string` | Sim | Texto livre | Cidade (exibida no card de detalhes). |
-| `localizacao.estado` | `string` | Sim | UF (2 letras) | Estado / UF. |
+| `periodo.data_inicio` | `string` | Sim | `YYYY-MM-DD` | Data de início da cobertura visual do evento no grid. |
+| `periodo.data_fim` | `string` | Sim | `YYYY-MM-DD` | Data de término da cobertura visual no grid (`data_fim >= data_inicio`). |
+| `periodo.duracao_dias` | `integer` | Não | Inteiro positivo | Duração em dias corridos do evento. |
+| `localizacao.cidade` | `string` | Sim | Texto livre | Cidade da montagem. |
+| `localizacao.estado` | `string` | Sim | UF (2 letras) | UF do evento. |
 | `segmento` | `string` | Sim | Texto livre | Segmento comercial do evento. |
-| `promotora.organizadora` | `string` | Não | Texto livre | Organizadora do evento. |
-| `estrategia_comercial.prioridade` | `string` | Sim | `Alta` \| `Média` \| `Baixa` | Nível de prioridade comercial. |
+| `estrategia_comercial.prioridade` | `string` | Sim | `Alta` \| `Média` \| `Baixa` | Grau de relevância comercial no funil. |
 
 ---
 
-### 3. Validação JSON Schema (Draft 2020-12)
+## 2. Especificação da Entidade de Proposta Comercial (`propostas_ativas.json`)
+
+### Exemplo de Instância Concreta (JSON)
+```json
+{
+  "id_proposta": 74,
+  "codigo_evento": 11,
+  "nome_evento": "Show Rural Coopavel 2027",
+  "cliente": {
+    "lead_id": 94,
+    "empresa": "MSD Saúde Animal",
+    "contato_principal": "Egle",
+    "cargo": "Gestão de Marketing e Feiras",
+    "canal_preferencial": "WhatsApp",
+    "telefone": "+55 11 9xxxx-xxxx",
+    "email": "egle@merck.com"
+  },
+  "estande": {
+    "tipo_estande": "Construído em Marcenaria",
+    "metragem_m2": 72.0,
+    "localizacao_estande": "Setor Pecuária / Aves e Suínos",
+    "status_projeto": "Projeto 3D Apresentado"
+  },
+  "comercial": {
+    "estagio_proposta": "Proposta Enviada",
+    "temperatura": "Quente",
+    "valor_proposta": 78000.0,
+    "probabilidade_fechamento_pct": 85,
+    "valor_ponderado": 66300.0,
+    "data_previsao_fechamento": "2026-11-28"
+  },
+  "responsavel": "Augusto E. da Silva"
+}
+```
+
+### JSON Schema (Draft 2020-12)
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "EventoComercial",
+  "title": "PropostaComercialEvento",
   "type": "object",
-  "required": ["id", "nome_evento", "periodo", "localizacao", "segmento"],
+  "required": [
+    "id_proposta",
+    "codigo_evento",
+    "nome_evento",
+    "cliente",
+    "estande",
+    "comercial"
+  ],
   "properties": {
-    "id": { "type": "integer" },
+    "id_proposta": { "type": "integer" },
+    "codigo_evento": { "type": "integer" },
     "nome_evento": { "type": "string" },
-    "sigla_ou_edicao": { "type": "string" },
-    "periodo": {
+    "cliente": {
       "type": "object",
-      "required": ["data_inicio", "data_fim"],
+      "required": ["lead_id", "empresa"],
       "properties": {
-        "data_inicio": { "type": "string", "format": "date", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-        "data_fim": { "type": "string", "format": "date", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-        "duracao_dias": { "type": "integer", "minimum": 1 },
-        "periodo_formatado": { "type": "string" },
-        "dias_para_o_evento": { "type": "integer" }
+        "lead_id": { "type": "integer" },
+        "empresa": { "type": "string" },
+        "contato_principal": { "type": "string" },
+        "cargo": { "type": "string" },
+        "canal_preferencial": { "type": "string", "enum": ["WhatsApp", "E-mail", "Telefone", "Presencial"] },
+        "telefone": { "type": "string" },
+        "email": { "type": "string" }
       }
     },
-    "localizacao": {
+    "estande": {
       "type": "object",
-      "required": ["cidade", "estado"],
       "properties": {
-        "recinto": { "type": "string" },
-        "cidade": { "type": "string" },
-        "estado": { "type": "string", "pattern": "^[A-Z]{2}$" },
-        "endereco": { "type": "string" }
+        "tipo_estande": { "type": "string" },
+        "metragem_m2": { "type": ["number", "null"] },
+        "localizacao_estande": { "type": "string" },
+        "status_projeto": { "type": "string" }
       }
     },
-    "segmento": { "type": "string" },
-    "promotora": {
+    "comercial": {
       "type": "object",
+      "required": ["estagio_proposta", "temperatura", "valor_proposta"],
       "properties": {
-        "organizadora": { "type": "string" },
-        "iniciativa": { "type": "string" },
-        "site_oficial": { "type": "string" }
+        "estagio_proposta": { "type": "string" },
+        "temperatura": { "type": "string", "enum": ["Quente", "Morno", "Frio"] },
+        "valor_proposta": { "type": "number", "minimum": 0 },
+        "probabilidade_fechamento_pct": { "type": "integer" },
+        "valor_ponderado": { "type": "number" },
+        "data_previsao_fechamento": { "type": ["string", "null"], "format": "date" }
       }
     },
-    "estrategia_comercial": {
-      "type": "object",
-      "properties": {
-        "prioridade": { "type": "string", "enum": ["Alta", "Média", "Baixa"] },
-        "perfil_alvo_expositores": { "type": "string" },
-        "acao_comercial": { "type": "string" }
-      }
-    }
+    "responsavel": { "type": "string" }
   }
 }
 ```
 
 ---
 
-## Regras de Renderização no Calendário (Padrão de Trilhas / Slots Fixos)
+## 3. Especificação da Entidade de Interações (`interacoes.json`)
 
-1. **Sistema de Trilhas Contínuas (Multi-Day Slots):**
-   - Para cada evento, o grid identifica o intervalo entre `periodo.data_inicio` e `periodo.data_fim` (inclusive).
-   - Eventos de múltiplos dias são renderizados em **faixas horizontais contínuas** que atravessam os dias da semana na mesma trilha/linha.
-   - Cada faixa possui **altura fixa** (ex: 24px a 28px) e espaçamento vertical fixo entre trilhas (gap de ~4px), garantindo alinhamento visual perfeito e eliminando variações bruscas de espessura entre dias vizinhos.
+### Exemplo de Instância Concreta (JSON)
+```json
+{
+  "id_interacao": 201,
+  "lead_id": 94,
+  "codigo_evento": 11,
+  "id_proposta": 74,
+  "empresa": "MSD Saúde Animal",
+  "contato": "Egle",
+  "data_interacao": "2026-11-23",
+  "canal": "WhatsApp",
+  "direcao": "Ativa (Enviada pela DCarvalho)",
+  "tipo_interacao": "Follow-up Comercial",
+  "resumo": "Follow-up de aprovação final da diretoria com envio da proposta atualizada.",
+  "detalhes": "Enviado o PDF com ajuste solicitado na iluminação do estande de 72m². Aguardando reunião da diretoria na quinta-feira.",
+  "anexos": ["ESTANDE MSD-SHOW RURAL.pdf"],
+  "proxima_acao_gerada": {
+    "acao": "Reunião de alinhamento pós-diretoria",
+    "data_prevista": "2026-11-27"
+  },
+  "responsavel": "Augusto E. da Silva"
+}
+```
 
-2. **Área Reservada do Dia:**
-   - O topo de cada célula do dia (primeiros ~24px) é reservado para exibição do número do dia (ex: `"04"`, `"05"`). As faixas de eventos são empilhadas abaixo dessa área.
-
-3. **Capacidade da Célula e Overflow (+N mais):**
-   - Caso um dia possua mais eventos do que a altura máxima visível da célula comporta, o calendário renderiza as primeiras faixas e um botão/link indicador (ex: `"+2 mais"`).
-   - Ao clicar no indicador de excesso, abre-se um popover ou modal com a listagem completa dos eventos daquele dia.
-
-4. **Identificação Visual, Cores e Tipografia:**
-   - Cada evento possui uma cor distinta e consistente (calculada com base no seu `id` ou paleta predefinida).
-   - O `nome_evento` é exibido dentro da faixa com contraste adequado de cor de texto.
-   - Textos que ultrapassarem a largura do bloco devem ser truncados com reticências (`text-overflow: ellipsis`).
-
-5. **Detalhamento (Card / Tooltip / Modal):**
-   - Ao interagir com o evento (hover ou clique na faixa), exibir modal contendo duas abas principais:
-     - **Aba Detalhes do Evento:** Nome, edição (`sigla_ou_edicao`), período formatado, localização, segmento e estratégia comercial do evento.
-     - **Aba Propostas Ativas:** Lista filtrada de propostas comerciais vinculadas (`codigo_evento === evento.id`).
-
-6. **Regras da Aba de Propostas Comerciais:**
-   - Ao clicar na aba "Propostas Ativas", exibir **somente a lista das empresas** com propostas abertas naquele evento.
-   - Cada empresa exibe seu status (temperatura com badge Quente/Morno/Frio, valor cotado em R$, contato e estágio).
-   - Ao clicar no nome da empresa, o modal transiciona para a visualização completa da proposta: dados do lead/cliente, especificações do estande (metragem m², tipo, localização), situação comercial (valor, probabilidade %, valor ponderado), follow-up (ação, data agendada, responsável) e botão de retorno para a listagem.
-
-7. **Modos de Visualização Alternáveis (1 Mês, 3 Meses, 6 Meses e 1 Ano):**
-   - **1 Mês:** Visão detalhada completa com faixas horizontais de 26px e contador de excesso `+N mais`.
-   - **3 Meses & 6 Meses:** Grade multi-mês com trilhas compactas (20px), botão para focar em 1 mês específico com 1 clique e navegação com deslocamento contínuo de apenas 1 mês por clique (janela temporal deslizante).
-   - **1 Ano:** Visão de 12 meses (Janeiro a Dezembro) com preenchimento colorido nos dias ocupados por eventos e Timeline executiva anual abaixo da grade contendo a listagem cronológica com status de prioridade comercial e detalhes.
+### JSON Schema (Draft 2020-12)
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InteracaoClienteEvento",
+  "type": "object",
+  "required": [
+    "id_interacao",
+    "lead_id",
+    "codigo_evento",
+    "empresa",
+    "data_interacao",
+    "canal",
+    "tipo_interacao",
+    "resumo"
+  ],
+  "properties": {
+    "id_interacao": { "type": "integer" },
+    "lead_id": { "type": "integer" },
+    "codigo_evento": { "type": "integer" },
+    "id_proposta": { "type": ["integer", "null"] },
+    "empresa": { "type": "string" },
+    "contato": { "type": "string" },
+    "data_interacao": { "type": "string", "format": "date", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "canal": { "type": "string", "enum": ["WhatsApp", "E-mail", "Ligação Telefônica", "Presencial / Reunião", "Reunião Online"] },
+    "direcao": { "type": "string", "enum": ["Ativa (Enviada pela DCarvalho)", "Receptiva (Retorno do Cliente)"] },
+    "tipo_interacao": { "type": "string" },
+    "resumo": { "type": "string" },
+    "detalhes": { "type": "string" },
+    "anexos": { "type": "array", "items": { "type": "string" } },
+    "proxima_acao_gerada": {
+      "type": "object",
+      "properties": {
+        "acao": { "type": "string" },
+        "data_prevista": { "type": "string", "format": "date" }
+      }
+    },
+    "responsavel": { "type": "string" }
+  }
+}
+```
 
 ---
 
-## Diretrizes Técnicas para Agentes
-- **Operação Direta:** Desenvolvimento sem necessidade de governança ou Oráculo externo.
-- **Isolamento de Responsabilidade:** Tratar o payload como fonte de verdade de dados. O projeto não gera e nem altera o schema original, apenas valida e renderiza as entidades recebidas.
+## 4. Regras de Interface e Renderização
+
+### A. Grade do Calendário (Trilhas Contínuas e Multi-Mês)
+1. **Trilhas Contínuas (Multi-Day Slots):** Faixas horizontais contínuas por linha de semana para eventos que cruzam vários dias. Altura fixa (26px em 1 Mês, 20px em Multi-Mês), espaçamento padronizado e cores determinísticas por `id`.
+2. **Capacidade da Célula e Overflow (+N mais):** Células com mais faixas do que a altura permite exibem o indicador `+N mais`, que abre modal com a lista completa do dia.
+3. **Modos de Visualização:**
+   - **1 Mês:** Grade completa detalhada com slots fixos.
+   - **3 Meses / 6 Meses:** Múltiplos meses compactos com foco em 1 clique e deslocamento contínuo de apenas 1 mês por clique nos botões de navegação (`◀` e `▶`).
+   - **1 Ano:** Visão anual de 12 meses com preenchimento de dias e Timeline executiva anual cronológica.
+
+### B. Modal de Detalhes do Evento e Propostas Comerciais
+1. **Aba "Detalhes do Evento":** Período, localização, promotora, segmento e estratégia comercial.
+2. **Aba "Propostas Ativas":**
+   - Exibe a lista das empresas expositoras com propostas abertas naquele evento (`codigo_evento === evento.id`), com temperatura, estágio e valor total em R$.
+   - Ao clicar na empresa, transiciona para a visualização da proposta detalhada com botão de retorno `◀ Voltar para lista de empresas`.
+
+### C. Abas Internas da Proposta Comercial
+Dentro da visualização da proposta, há duas abas dedicadas:
+1. **`[📋 Dados da Proposta]`:**
+   - Dados do cliente/contato (nome, cargo, canal preferencial, telefone, e-mail).
+   - Especificações do estande (tipo, metragem m², localização física, status do 3D).
+   - Situação comercial (estágio, probabilidade %, valor da proposta, valor ponderado, previsão).
+   - Gestão da conta e próxima ação de follow-up.
+   - Bloco colapsável com o JSON completo da proposta.
+2. **`[💬 Histórico de Interações (N)]`:**
+   - Linha do tempo cronológica decrescente de todas as interações vinculadas (`id_proposta` ou `lead_id + codigo_evento`).
+   - Destaque visual do canal (WhatsApp com verde, E-mail com azul, etc.), sentido (Ativa vs Receptiva), tipo de interação, interlocutor, resumo, detalhes transcritos, chips de anexos (`.pdf`, etc.), caixa de próxima ação gerada e responsável.

@@ -1,0 +1,2788 @@
+[
+  {
+    "id_interacao": 1,
+    "lead_id": 1,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "FACIAP",
+    "contato": "Financeiro FACIAP / Bruna Eventos",
+    "data_interacao": "2026-10-15",
+    "canal": "Ligação Telefônica",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Status: Relacionamento 2027",
+    "detalhes": "Ligação realizada com Bruna: contratação do congresso 2026 ocorre no início do ano; pediu apresentação institucional.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Confirmar envio da apresentação; retomar no início de jan/2027.",
+      "data_prevista": "2027-01-05"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 2,
+    "lead_id": 2,
+    "codigo_evento": 11,
+    "id_proposta": 1,
+    "empresa": "Coopavel / Show Rural",
+    "contato": "Zimara Show Rural",
+    "data_interacao": "2026-10-09",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Follow-up devido",
+    "detalhes": "Zimara informou em 09/10 para aguardar até a semana seguinte.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Revisar exatamente a pendência do credenciamento/termo antes de contatar.",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 3,
+    "lead_id": 3,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "Incomagri",
+    "contato": "Laura — Recepção Incomagri",
+    "data_interacao": "2026-10-15",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardando retorno",
+    "detalhes": "Mensagem de follow-up enviada em 15/10 perguntando se avançaram na avaliação das cotações.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta; se não houver retorno, novo toque curto.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 4,
+    "lead_id": 4,
+    "codigo_evento": 11,
+    "id_proposta": 2,
+    "empresa": "ProSolus",
+    "contato": "Rafaela Santos",
+    "data_interacao": "2026-10-15",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retomada Show Rural e inclusão na cotação",
+    "detalhes": "Augusto enviou às 12:20: Bom dia, Rafaela! Tudo bem? Quando conversamos em agosto você comentou que ainda não tinham definido os eventos de 2027. Como o planejamento do Show Rural já está avançando e as montadoras já estão se preparando para fevereiro, queria saber se a ProSolus já definiu se participará desta edição. Se estiverem trabalhando o projeto do estande, gostaria de colocar a DCarvalho novamente na cotação deste ano.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 5,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-10-21",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Alinhamento Telefônico",
+    "resumo": "Ligação com Luis e envio de Portifolio.pdf e AGRO.pdf no WhatsApp",
+    "detalhes": "Ligação em 21/10: Luis atendeu e informou que a Bouwman está iniciando a concepção do estande do Show Rural 2027. Às 15:54-15:55, Augusto enviou no WhatsApp o Portifolio.pdf (15 pág) e o AGRO.pdf (28 pág) com os projetos executados no setor agro.",
+    "anexos": [
+      "Portifolio.pdf",
+      "AGRO.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno. Se Luis não responder, retomar contato em 8 dias para acompanhar a evolução da ideia/projeto do Show Rural 2027 e verificar abertura para cotação/montagem.",
+      "data_prevista": "2026-10-29"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 6,
+    "lead_id": 6,
+    "codigo_evento": 11,
+    "id_proposta": 4,
+    "empresa": "Bianchi Lubrificantes",
+    "contato": "Kauany — Marketing",
+    "data_interacao": "2026-10-19",
+    "canal": "Ligação Telefônica",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Alinhamento Telefônico",
+    "resumo": "Status: Tentativa de ligação — sem atendimento",
+    "detalhes": "Ligação em 19/10: chamou até cair e Kauany não atendeu. Não houve conversa; oportunidade continua pendente.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Tentar nova ligação mais tarde, em outro horário. Se não atender novamente, não acumular mensagens no WhatsApp hoje; manter acompanhamento do projeto/orçamento com a diretoria.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 7,
+    "lead_id": 7,
+    "codigo_evento": 11,
+    "id_proposta": 5,
+    "empresa": "ATM Energia",
+    "contato": "Felipe Carreira — Marketing",
+    "data_interacao": "2026-10-19",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardar",
+    "detalhes": "Mensagem de follow-up enviada em 19/10 perguntando se a diretoria já definiu a participação da ATM no Show Rural 2027 e, caso confirmada, se a cotação do estande já foi aberta.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retomar Felipe a partir de 05/11/2026. Prioridade: confirmar participação da ATM no Show Rural 2027 e, se confirmada, verificar se já abriu o processo de projeto/cotação do estande.",
+      "data_prevista": "2026-11-05"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 8,
+    "lead_id": 8,
+    "codigo_evento": 11,
+    "id_proposta": 6,
+    "empresa": "Vaccinar",
+    "contato": "Rebeca Scotta",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardando confirmação de encaminhamento",
+    "detalhes": "Mensagem enviada em 16/10 perguntando se ela conseguiu encaminhar a DCarvalho ao time de Suprimentos; caso não, solicitado o e-mail do setor para cadastro/apresentação.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta. Não perguntar novamente sobre participação em Show Rural/C.Vale enquanto ela não responder ou surgir confirmação pública concreta.",
+      "data_prevista": "2026-10-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 9,
+    "lead_id": 9,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "Feira Construir Aí",
+    "contato": "Fernando Costa",
+    "data_interacao": "2026-07-30",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Futuro 2027",
+    "detalhes": "Material enviado ao endereço indicado; follow-up sem retorno.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retomar em janela comercial de 2027, não é prioridade para fev/2027.",
+      "data_prevista": "2027-01-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 10,
+    "lead_id": 10,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "Procer",
+    "contato": "Gabrielle Cardoso",
+    "data_interacao": "2026-09-09",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Follow-up devido",
+    "detalhes": "Em 09/09 disse que o planejamento atrasou e ficou para outubro.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar empresa e evento; retomar agora em outubro.",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 11,
+    "lead_id": 11,
+    "codigo_evento": 11,
+    "id_proposta": 7,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-09-29",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Cobrança de briefing calendário 2027",
+    "detalhes": "Augusto enviou às 17:11-17:13: Boa tarde, Gislana! Tudo tranquilo? Estou aguardando o seu briefing esta semana, para os eventos que a Granfinale irá participar no calendário 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "6ª ligação da fila: ligar por telefone. Houve várias tentativas sem resposta desde o último retorno; confirmar calendário 2027 e se já abriram briefing/cotações para Show Rural/Agrishow.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 12,
+    "lead_id": 12,
+    "codigo_evento": 33,
+    "id_proposta": 8,
+    "empresa": "Show Rural Digital / Coopavel",
+    "contato": "Gustavo Teixeira",
+    "data_interacao": "2026-10-09",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Decisão / Fechamento",
+    "resumo": "Status: Encerrado — outra montadora",
+    "detalhes": "Decisão do Show Rural Digital 2027 concluída: segundo Rodrigo Rottava, a diretoria fechou a montagem com outra montadora. Motivo informado: preço.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Não cobrar Gustavo nem Rodrigo sobre esta edição. Preservar relacionamento para futuras oportunidades e usar a perda por preço como inteligência comercial.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 13,
+    "lead_id": 13,
+    "codigo_evento": 33,
+    "id_proposta": 9,
+    "empresa": "Show Rural Digital / Coopavel",
+    "contato": "Rodrigo Rottava",
+    "data_interacao": "2026-10-15",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado — outra montadora",
+    "detalhes": "Rodrigo informou que a diretoria do Show Rural Digital 2027 fechou a montagem com outra montadora. Motivo informado por Augusto em 19/10/2026: preço.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Encerrar esta edição. Manter Rodrigo como relacionamento para futuras oportunidades e registrar preço como fator de perda para revisão de estratégia comercial.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 14,
+    "lead_id": 14,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "Laboratório Prado",
+    "contato": "Daniele Vicari — Marketing",
+    "data_interacao": "2026-09-23",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Relacionamento futuro",
+    "detalhes": "Informou que atualmente trabalha com fornecedor existente e guardaria o contato.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Monitorar novos congressos/feiras; não pressionar agora.",
+      "data_prevista": "2027-01-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 15,
+    "lead_id": 15,
+    "codigo_evento": 11,
+    "id_proposta": 10,
+    "empresa": "MAXLOADER",
+    "contato": "Bruna (Marketing) / Tilara",
+    "data_interacao": "2026-09-29",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Em análise",
+    "detalhes": "Responderam que ainda estavam analisando o material.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar evento/participação e fazer follow-up com contexto.",
+      "data_prevista": "2026-10-17"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 16,
+    "lead_id": 16,
+    "codigo_evento": 11,
+    "id_proposta": 11,
+    "empresa": "Pippi Pneus",
+    "contato": "Stephani Simon",
+    "data_interacao": "2026-10-02",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Status: Oportunidade ativa — briefing recebido",
+    "detalhes": "Conversa revisada: Stephani confirmou a participação da Pippi Pneus no Show Rural 2027, pediu cotação do estande, enviou briefing, referências visuais e arquivos de marca. Em 02/10 informou terreno 12x20 e área de montagem 10x10. Não há registro no WhatsApp exportado de envio de projeto/orçamento até 15/10.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Priorizar elaboração/checagem interna do projeto e orçamento. Não fazer follow-up genérico; contatar Stephani para entregar proposta ou sanar dúvida objetiva do briefing.",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 17,
+    "lead_id": 17,
+    "codigo_evento": 10,
+    "id_proposta": 77,
+    "empresa": "Carbom Brasil",
+    "contato": "Cenyra Amorim Souto Domingues",
+    "data_interacao": "2026-10-19",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Alinhamento Telefônico",
+    "resumo": "Status: Encerrado 2026 — apresentação enviada / relacionamento 2027",
+    "detalhes": "Ligação em 19/10: Cenyra informou que o contrato do estande para o Dia de Campo C.Vale 2026 já está fechado e que a análise para esse tipo de evento acontece cedo, depois de junho. Após a ligação, Augusto enviou pelo WhatsApp a apresentação da DCarvalho e a mensagem de relacionamento para o próximo ciclo.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Não insistir no C.Vale 2026. Retomar preventivamente no fim de junho/início de julho de 2027, antes da janela de análise, aplicando a premissa comercial: primeiro entender objetivo/necessidade do espaço e só depois propor projeto.",
+      "data_prevista": "2027-06-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 18,
+    "lead_id": 18,
+    "codigo_evento": 11,
+    "id_proposta": 12,
+    "empresa": "IHARA",
+    "contato": "Rogério Cardoso",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encaminhamento interno",
+    "detalhes": "Rogério respondeu em 16/10 que vai verificar com a pessoa responsável por esse evento e que, se necessário, ela retornará diretamente ao Augusto.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar contato da pessoa responsável pelo Dia de Campo C.Vale. Não cobrar Rogério agora; se ninguém retornar até 20/10, fazer um toque curto.",
+      "data_prevista": "2026-10-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 19,
+    "lead_id": 19,
+    "codigo_evento": 10,
+    "id_proposta": 97,
+    "empresa": "The Group / BASF",
+    "contato": "Rodrigo Barreto",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retomada sobre C.Vale e Show Rural",
+    "detalhes": "Augusto enviou às 14:48: Boa tarde, Rodrigo! Tudo bem? Retomando meu contato de algumas semanas atrás. Como a TG já atua nos projetos da BASF no Dia de Campo C.Vale, queria verificar se vocês já estão estruturando a operação da edição de dezembro em Palotina e como está a mobilização para o próximo Show Rural em Cascavel. A DCarvalho atende a região e pode apoiar a TG como parceira local de produção e montagem, caso estejam abrindo fornecedores para essas entregas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "4ª ligação da fila: ligar por telefone. Duas abordagens sem resposta; validar se a TG já está mobilizando C.Vale/BASF e Show Rural e se há espaço para fornecedor regional.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 20,
+    "lead_id": 20,
+    "codigo_evento": 10,
+    "id_proposta": null,
+    "empresa": "ARGEPASI",
+    "contato": "Bárbara — Marketing",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardando retorno",
+    "detalhes": "Mensagem enviada em 16/10 retomando o contato e perguntando se a ARGEPASI já definiu participação no Dia de Campo C.Vale 2026 e a montagem do estande.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno. Se não houver resposta, reavaliar follow-up com base na proximidade do evento e possível participação confirmada.",
+      "data_prevista": "2026-10-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 21,
+    "lead_id": 21,
+    "codigo_evento": 11,
+    "id_proposta": 98,
+    "empresa": "C&L Eventos (Agência Syngenta, Ourofino, NK, Nidera)",
+    "contato": "Pedro Cezar",
+    "data_interacao": "2026-10-06",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Follow-up de análise dos projetos executados",
+    "detalhes": "Augusto enviou às 10:11: Bom dia, Pedro! Tudo tranquilo!? Conseguiu analisar nossos projetos executados?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Pesquisar eventos ativos da agência e retomar com oportunidade específica.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 22,
+    "lead_id": 22,
+    "codigo_evento": null,
+    "id_proposta": null,
+    "empresa": "Missner",
+    "contato": "Kauana Tironi",
+    "data_interacao": "2026-10-19",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Alinhamento Telefônico",
+    "resumo": "Status: Tentativa de ligação — aguardando retorno",
+    "detalhes": "Em 19/10 Augusto tentou contato telefônico com Kauana, mas ela não atendeu. Em seguida enviou WhatsApp: “Boa tarde, Kauana! Tudo bem? Algum retorno?”. Projeto/orçamento seguem em avaliação interna pela gestora.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno ao WhatsApp até amanhã. Não enviar nova mensagem hoje. Se não houver retorno, fazer nova tentativa de ligação em horário diferente e buscar uma definição objetiva sobre aprovação, ajustes ou perda da oportunidade.",
+      "data_prevista": "2026-10-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 23,
+    "lead_id": 23,
+    "codigo_evento": 7,
+    "id_proposta": 79,
+    "empresa": "Abrasel Oeste Paraná",
+    "contato": "Márcio",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Status: Reunião/orçamento a agendar",
+    "detalhes": "Retorno por áudio em 16/10: Márcio informou que está no Mato Grosso, estará em Foz na terça-feira e que pretende sentar com a DCarvalho para fazer o orçamento da cenografia.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar. Se ele não confirmar antes, na segunda-feira à tarde combinar o horário da conversa de terça.",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 24,
+    "lead_id": 24,
+    "codigo_evento": 17,
+    "id_proposta": 80,
+    "empresa": "Extratos Alergênicos MQ",
+    "contato": "Laboratório Extratos",
+    "data_interacao": "2026-10-14",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Follow-up devido",
+    "detalhes": "Primeiro WhatsApp enviado e lido; sem resposta registrada.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Enviar follow-up curto pedindo a pessoa responsável por eventos/estandes.",
+      "data_prevista": "2026-10-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 25,
+    "lead_id": 25,
+    "codigo_evento": 17,
+    "id_proposta": 81,
+    "empresa": "Immuno Vita",
+    "contato": "Jorge",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Informou que o estande do ASBAI 2026 já havia sido contratado com a montadora oficial.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Não insistir no ASBAI 2026; manter contato para futuros congressos.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 26,
+    "lead_id": 26,
+    "codigo_evento": 17,
+    "id_proposta": 82,
+    "empresa": "Diagnóstica Brasil",
+    "contato": "Fábio Arcuri",
+    "data_interacao": "2026-10-13",
+    "canal": "E-mail",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardando retorno",
+    "detalhes": "E-mail enviado apresentando a DCarvalho para o ASBAI 2026.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno e fazer acompanhamento sem excesso.",
+      "data_prevista": "2026-10-17"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 27,
+    "lead_id": 27,
+    "codigo_evento": 17,
+    "id_proposta": 83,
+    "empresa": "FDA Allergenic Group",
+    "contato": "José Carlos Silva",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Respondeu que a contratação do estande já estava concluída.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Encerrar 2026 e manter relacionamento para próximos congressos.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 28,
+    "lead_id": 28,
+    "codigo_evento": 17,
+    "id_proposta": 84,
+    "empresa": "IPI / ASAC Brasil",
+    "contato": "Patricia Frosini Cambraia",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Contato indicado por Isamara. Orçamento do ASBAI já havia sido finalizado com a montadora oficial.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Manter Patricia como contato para eventos futuros.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 29,
+    "lead_id": 29,
+    "codigo_evento": 17,
+    "id_proposta": 85,
+    "empresa": "Salute Vita",
+    "contato": "Cintia Pedrussian",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Informou que o stand já estava fechado com outra empresa.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Não contornar a decisão; cultivar para eventos futuros.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 30,
+    "lead_id": 30,
+    "codigo_evento": 17,
+    "id_proposta": 86,
+    "empresa": "Supri",
+    "contato": "Cris — Marketing",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Contato encaminhado pelo WhatsApp oficial; informou por áudio que projeto e montagem já estavam fechados.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Manter relacionamento para próximos eventos.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 31,
+    "lead_id": 31,
+    "codigo_evento": 17,
+    "id_proposta": 87,
+    "empresa": "Multicare Pharma",
+    "contato": "Priscila Bivanco",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Relacionamento futuro",
+    "detalhes": "Informou que a Multicare não participará do ASBAI 2026 e encaminhou o e-mail aos gerentes de marketing e produto para futuras cotações.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Acompanhar oportunidades futuras; não cobrar participação no ASBAI.",
+      "data_prevista": "2026-11-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 32,
+    "lead_id": 32,
+    "codigo_evento": 17,
+    "id_proposta": 88,
+    "empresa": "ALKO do Brasil",
+    "contato": "Juliana",
+    "data_interacao": "2026-10-13",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Encerrado",
+    "detalhes": "Informou que fecharam com a montadora oficial poucos dias antes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Manter contato para próximos congressos.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 33,
+    "lead_id": 33,
+    "codigo_evento": 17,
+    "id_proposta": 89,
+    "empresa": "Alergolatina / Grupo Alergofar",
+    "contato": "Contato geral",
+    "data_interacao": "2026-10-14",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: A confirmar",
+    "detalhes": "Contato e canais localizados, mas participação no ASBAI 2026 não foi comprovada.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Pesquisar participação antes de abordar como expositor.",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 34,
+    "lead_id": 34,
+    "codigo_evento": 32,
+    "id_proposta": 90,
+    "empresa": "Copacol",
+    "contato": "Néia Pinheiro — Eventos",
+    "data_interacao": "2026-10-30",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Status: Aguardar",
+    "detalhes": "WhatsApp enviado em 30/10/2026 para Néia Pinheiro apresentando a DCarvalho e perguntando quem conduz o projeto e a contratação da montagem do espaço institucional da própria Copacol na Copacol Agro 2027. Até o momento, a mensagem ainda não foi entregue/recebida; pode ser apenas indisponibilidade de internet.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retomar na terça-feira, 03/11/2026. Verificar se a mensagem foi entregue e, se necessário, fazer novo toque curto. Objetivo: identificar quem define o briefing e quem conduz a contratação do estande institucional.",
+      "data_prevista": "2026-11-03"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 35,
+    "lead_id": 36,
+    "codigo_evento": 11,
+    "id_proposta": 16,
+    "empresa": "De Heus",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 120 m² a 200 m². Segmento: Nutrição Animal.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear decisor de Trade Marketing / Eventos no LinkedIn/Apollo para verificar concorrência de montagem.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 36,
+    "lead_id": 37,
+    "codigo_evento": 11,
+    "id_proposta": 17,
+    "empresa": "Tortuga / dsm-firmenich",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Nutrição e Suplementação Animal.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar coordenador de eventos da marca Tortuga para sondar processo de cotação do estande de pecuária.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 37,
+    "lead_id": 38,
+    "codigo_evento": 11,
+    "id_proposta": 18,
+    "empresa": "Cargill / Nutron",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 200 m². Segmento: Nutrição Animal e Premixes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Buscar contato de compras/marketing corporativo de eventos da Nutron/Cargill.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 38,
+    "lead_id": 39,
+    "codigo_evento": 11,
+    "id_proposta": 19,
+    "empresa": "Trouw Nutrition",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 150 m². Segmento: Nutrição e Saúde Animal.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Levantar contato de eventos/marketing para apresentar portfólio fabril da DCarvalho.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 39,
+    "lead_id": 40,
+    "codigo_evento": 11,
+    "id_proposta": 20,
+    "empresa": "Matsuda",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 180 m². Segmento: Sementes para Pastagem e Nutrição Animal.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar regional de vendas/eventos do Paraná para sondar montagem do estande 2027.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 40,
+    "lead_id": 41,
+    "codigo_evento": 11,
+    "id_proposta": 21,
+    "empresa": "Ourofino Saúde Animal",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 120 m² a 200 m². Segmento: Medicamentos Veterinários e Biológicos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear analista/coordenador de eventos no LinkedIn para apresentar credenciamento DCarvalho.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 41,
+    "lead_id": 42,
+    "codigo_evento": 11,
+    "id_proposta": 22,
+    "empresa": "Premix",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 120 m². Segmento: Nutrição Animal de Precisão.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar responsável comercial/eventos regional PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 42,
+    "lead_id": 43,
+    "codigo_evento": 11,
+    "id_proposta": 23,
+    "empresa": "Vetanco",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 120 m². Segmento: Saúde Animal e Aditivos Biológicos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear decisor de Trade Marketing na matriz brasileira (Chapecó/SC) com atuação no PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 43,
+    "lead_id": 44,
+    "codigo_evento": 11,
+    "id_proposta": 24,
+    "empresa": "Biocamp",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 50 m² a 80 m². Segmento: Probióticos e Vacinas Avícolas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Sondar participação no pavilhão de pecuária ou área comercial.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 44,
+    "lead_id": 45,
+    "codigo_evento": 11,
+    "id_proposta": 25,
+    "empresa": "Phibro Animal Health",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 120 m². Segmento: Saúde e Nutrição Animal.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Localizar equipe de marketing da Phibro Brasil para apresentação de proposta regional.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 45,
+    "lead_id": 46,
+    "codigo_evento": 11,
+    "id_proposta": 26,
+    "empresa": "Bransales Pneus",
+    "contato": "Gabriela (Marketing) / João Paulo Gonsales (VP)",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 150 m². Segmento: Distribuição de Pneus de Carga e Agrícola.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar diretoria comercial em Cascavel/PR para oferecer projeto cenográfico completo.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 46,
+    "lead_id": 47,
+    "codigo_evento": 11,
+    "id_proposta": 27,
+    "empresa": "Titan Pneus / Goodyear Farm",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Fabricação de Pneus Agrícolas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear agência ou coordenador de feiras da Titan América Latina.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 47,
+    "lead_id": 48,
+    "codigo_evento": 11,
+    "id_proposta": 28,
+    "empresa": "Pirelli Agro / Prometeon",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Pneus Agrícolas e Transporte Pesado.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear área de feiras e trade da Prometeon Tyre Group.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 48,
+    "lead_id": 49,
+    "codigo_evento": 11,
+    "id_proposta": 29,
+    "empresa": "BKT Pneus",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 180 m². Segmento: Pneus Off-Highway e Máquinas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar importador e gerente de marketing BKT Brasil.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 49,
+    "lead_id": 50,
+    "codigo_evento": 11,
+    "id_proposta": 30,
+    "empresa": "Trelleborg / Yokohama",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 150 m². Segmento: Pneus Agrícolas Especiais e Florestais.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar departamento de marketing da Trelleborg Wheel Systems.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 50,
+    "lead_id": 51,
+    "codigo_evento": 11,
+    "id_proposta": 31,
+    "empresa": "Ipiranga / Rodoil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 120 m² a 200 m². Segmento: Distribuição de Combustíveis e Lubrificantes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear área de eventos do canal B2B/Agro da distribuidora.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 51,
+    "lead_id": 52,
+    "codigo_evento": 11,
+    "id_proposta": 32,
+    "empresa": "CASP",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 300 m². Segmento: Silos, Secadores e Equipamentos Avícolas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear gerência de marketing na matriz de Amparo/SP e filial PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 52,
+    "lead_id": 53,
+    "codigo_evento": 11,
+    "id_proposta": 33,
+    "empresa": "Kepler Weber",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 350 m². Segmento: Silos e Engenharia Pós-Colheita.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Sondar agência de montagem ou gerência de eventos da Kepler Weber.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 53,
+    "lead_id": 54,
+    "codigo_evento": 11,
+    "id_proposta": 34,
+    "empresa": "GSI Brasil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 300 m². Segmento: Armazenagem, Secagem e Confinamento (AGCO).",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Localizar setor de eventos da AGCO Grãos & Proteína em Marau/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 54,
+    "lead_id": 55,
+    "codigo_evento": 11,
+    "id_proposta": 35,
+    "empresa": "Agromarau / Cumberland",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 120 m² a 200 m². Segmento: Equipamentos para Avicultura e Suinocultura.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar coordenação de feiras em Marau/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 55,
+    "lead_id": 56,
+    "codigo_evento": 11,
+    "id_proposta": 36,
+    "empresa": "Pagé Silos",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 150 m². Segmento: Equipamentos para Armazenagem e Transporte de Grãos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar comercial de feiras em Araranguá/SC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 56,
+    "lead_id": 57,
+    "codigo_evento": 11,
+    "id_proposta": 37,
+    "empresa": "Cool seed",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 60 m² a 100 m². Segmento: Resfriamento Artificial e Conservação de Grãos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Buscar decisor comercial na fábrica em Curitiba/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 57,
+    "lead_id": 58,
+    "codigo_evento": 11,
+    "id_proposta": 38,
+    "empresa": "Jan Implementos",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 300 m² a 600 m². Segmento: Implementos Agrícolas, Distribuidores e Carretas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear coordenação de marketing em Não-Me-Toque/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 58,
+    "lead_id": 59,
+    "codigo_evento": 11,
+    "id_proposta": 39,
+    "empresa": "Baldan",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 400 m² a 800 m². Segmento: Semeadoras, Arados e Grades.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear área de marketing de feiras em Matão/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 59,
+    "lead_id": 60,
+    "codigo_evento": 11,
+    "id_proposta": 40,
+    "empresa": "GTS do Brasil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 250 m² a 500 m². Segmento: Plataformas de Milho e Carretas Graneleiras.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing em Lages/SC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 60,
+    "lead_id": 61,
+    "codigo_evento": 11,
+    "id_proposta": 41,
+    "empresa": "Indutar Tecno Metal",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 400 m². Segmento: Carretas Graneleiras, Rolos-Faca e Drenagem.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing da Indutar em Ibirubá/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 61,
+    "lead_id": 62,
+    "codigo_evento": 11,
+    "id_proposta": 42,
+    "empresa": "KF Implementos",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 300 m². Segmento: Semeadoras e Plantadeiras de Precisão.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar gerência de vendas e feiras em Cândido Godói/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 62,
+    "lead_id": 63,
+    "codigo_evento": 11,
+    "id_proposta": 43,
+    "empresa": "Jumil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 400 m². Segmento: Plantadeiras e Distribuidores de Adubo.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear marketing da Jumil em Batatais/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 63,
+    "lead_id": 64,
+    "codigo_evento": 11,
+    "id_proposta": 44,
+    "empresa": "Tatu Marchesan",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 300 m² a 600 m². Segmento: Implementos e Peças Agrícolas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar departamento de eventos e feiras da Marchesan em Matão/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 64,
+    "lead_id": 65,
+    "codigo_evento": 11,
+    "id_proposta": 45,
+    "empresa": "LS Tractor",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 300 m² a 600 m². Segmento: Tratores Agrícolas de Média Potência.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear setor de feiras e marketing da LS Mtron em Garuva/SC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 65,
+    "lead_id": 66,
+    "codigo_evento": 11,
+    "id_proposta": 46,
+    "empresa": "Agrale",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 350 m². Segmento: Tratores, Chasis e Utilitários.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar setor de marketing em Caxias do Sul/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 66,
+    "lead_id": 67,
+    "codigo_evento": 11,
+    "id_proposta": 47,
+    "empresa": "São José Industrial",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Distribuidores de Adubo, Carretas e Tanques.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing da São José em São José do Inhacorá/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 67,
+    "lead_id": 68,
+    "codigo_evento": 11,
+    "id_proposta": 48,
+    "empresa": "Biotrop",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Bioinsumos e Defensivos Biológicos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear coordenação de feiras da Biotrop no LinkedIn.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 68,
+    "lead_id": 69,
+    "codigo_evento": 11,
+    "id_proposta": 49,
+    "empresa": "Timac Agro",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Fertilizantes Especiais e Bioestimulantes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear coordenação de eventos na sede da Timac em Porto Alegre/RS.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 69,
+    "lead_id": 70,
+    "codigo_evento": 11,
+    "id_proposta": 50,
+    "empresa": "Yara Brasil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Nutrição de Plantas e Fertilizantes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar equipe de marketing da regional Sul da Yara.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 70,
+    "lead_id": 71,
+    "codigo_evento": 11,
+    "id_proposta": 51,
+    "empresa": "Mosaic Fertilizantes",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Fertilizantes e Nutrição de Solo.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear equipe corporativa de feiras da Mosaic no Brasil.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 71,
+    "lead_id": 72,
+    "codigo_evento": 11,
+    "id_proposta": 52,
+    "empresa": "Adama Brasil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 300 m². Segmento: Defensivos Químicos e Soluções Digitais.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar gerência de comunicação/feiras em Londrina/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 72,
+    "lead_id": 73,
+    "codigo_evento": 11,
+    "id_proposta": 53,
+    "empresa": "Microgeo",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 120 m². Segmento: Biotecnologia Agrícola e Biotransformação.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Localizar setor de marketing da Microgeo em Limeira/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 73,
+    "lead_id": 74,
+    "codigo_evento": 11,
+    "id_proposta": 54,
+    "empresa": "Vittia",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 180 m². Segmento: Inoculantes, Adjuvantes e Fertilizantes Foliares.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear equipe de Trade Marketing da Vittia em São Joaquim da Barra/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 74,
+    "lead_id": 75,
+    "codigo_evento": 11,
+    "id_proposta": 55,
+    "empresa": "UPL Brasil",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 350 m². Segmento: Proteção de Cultivos e Bioestimulantes.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear agência de feiras e equipe de marketing da UPL em Campinas/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 75,
+    "lead_id": 76,
+    "codigo_evento": 11,
+    "id_proposta": 56,
+    "empresa": "FMC Agricultural Solutions",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 300 m². Segmento: Químicos e Biológicos para Proteção de Cultivos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Identificar coordenador de eventos da FMC em Campinas/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 76,
+    "lead_id": 77,
+    "codigo_evento": 11,
+    "id_proposta": 57,
+    "empresa": "Nórdica Veículos (Volvo)",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 250 m² a 400 m². Segmento: Concessionária de Caminhões Pesados e Semipesados.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar diretoria de marketing da Nórdica em Curitiba/Cascavel.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 77,
+    "lead_id": 78,
+    "codigo_evento": 11,
+    "id_proposta": 58,
+    "empresa": "Cotrasa (Scania)",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 250 m² a 400 m². Segmento: Concessionária de Caminhões Pesados Scania.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing da Cotrasa em Cascavel/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 78,
+    "lead_id": 79,
+    "codigo_evento": 11,
+    "id_proposta": 59,
+    "empresa": "Grupo Barigüi",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 300 m² a 500 m². Segmento: Concessionária Multimarcas (Picapes, Utilitários e Automóveis).",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear área de eventos do Grupo Barigüi.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 79,
+    "lead_id": 80,
+    "codigo_evento": 11,
+    "id_proposta": 60,
+    "empresa": "Fipal Concessionárias",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 300 m² a 600 m². Segmento: Rede Fiat, Jeep e RAM no Paraná.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar diretoria da Fipal em Cascavel/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 80,
+    "lead_id": 81,
+    "codigo_evento": 11,
+    "id_proposta": 61,
+    "empresa": "Grupo Open (Hyundai)",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Utilitários Comerciais Leves e HR.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar gerência regional de vendas/eventos.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 81,
+    "lead_id": 82,
+    "codigo_evento": 11,
+    "id_proposta": 62,
+    "empresa": "Divesa (Mercedes-Benz)",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 200 m² a 350 m². Segmento: Concessionária de Caminhões Mercedes-Benz.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar setor de marketing da Divesa Caminhões.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 82,
+    "lead_id": 83,
+    "codigo_evento": 11,
+    "id_proposta": 63,
+    "empresa": "L8 Energy",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 180 m². Segmento: Sistemas Fotovoltaicos, Inversores e Armazenamento.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear marketing da L8 Energy em Curitiba/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 83,
+    "lead_id": 84,
+    "codigo_evento": 11,
+    "id_proposta": 64,
+    "empresa": "Bionova Energia Solar",
+    "contato": "Thiago Tomazoli / José Berta",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 150 m². Segmento: Projetos de Energia Solar Rural e Industrial.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar diretoria da Bionova no Paraná.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 84,
+    "lead_id": 85,
+    "codigo_evento": 11,
+    "id_proposta": 65,
+    "empresa": "WEG Solar / Equipamentos",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Motores, Geradores e Energia Solar.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear equipe de feiras corporativas da WEG em Jaraguá do Sul/SC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 85,
+    "lead_id": 86,
+    "codigo_evento": 11,
+    "id_proposta": 66,
+    "empresa": "Rotoplast Climatizadores",
+    "contato": "Isabela",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 60 m² a 100 m². Segmento: Climatização Evaporativa Industrial e Aviários.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing da Rotoplast em Maravilha/SC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 86,
+    "lead_id": 87,
+    "codigo_evento": 11,
+    "id_proposta": 67,
+    "empresa": "TOTVS Agro",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 60 m² a 100 m². Segmento: Sistemas de Gestão Rural (ERP) e Usinas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear gerência de eventos da TOTVS Agro em Ribeirão Preto/São Paulo.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 87,
+    "lead_id": 88,
+    "codigo_evento": 11,
+    "id_proposta": 68,
+    "empresa": "Siagri / Aliare",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 50 m² a 80 m². Segmento: Softwares para Revendas, Armazéns e Produtores.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing do ecossistema Aliare em Goiânia/GO.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 88,
+    "lead_id": 89,
+    "codigo_evento": 11,
+    "id_proposta": 69,
+    "empresa": "Solinftec",
+    "contato": "Mariana Finta (Marketing) / Camila Pedroso (Eventos)",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 80 m² a 120 m². Segmento: Inteligência Artificial, Robótica e Telemetria.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar marketing da Solinftec em Araçatuba/SP.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 89,
+    "lead_id": 90,
+    "codigo_evento": 11,
+    "id_proposta": 70,
+    "empresa": "Sensix Agro",
+    "contato": "Carlos Ribeiro (CEO) / Thomaz Lemos (COO)",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 30 m² a 50 m². Segmento: Sensoriamento Remoto e Mapas de Fertilidade.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar liderança comercial da Sensix.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 90,
+    "lead_id": 91,
+    "codigo_evento": 11,
+    "id_proposta": 71,
+    "empresa": "ArPAC Drones",
+    "contato": "Eduardo Goerl (CEO)",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 40 m² a 60 m². Segmento: Serviços e Equipamentos de Drones Agrícolas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Localizar setor comercial/eventos da ArPAC.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 91,
+    "lead_id": 92,
+    "codigo_evento": 11,
+    "id_proposta": 72,
+    "empresa": "Cresol",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 150 m² a 250 m². Segmento: Cooperativa de Crédito Rural.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Mapear gerência de comunicação e eventos da Cresol Central em Francisco Beltrão/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 92,
+    "lead_id": 93,
+    "codigo_evento": 11,
+    "id_proposta": 73,
+    "empresa": "BRDE",
+    "contato": null,
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e qualificado para o Show Rural 2027 (Meta 20 estandes).",
+    "detalhes": "Porte previsto: 100 m² a 150 m². Segmento: Banco de Desenvolvimento da Região Sul.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Contatar setor de comunicação e eventos do BRDE em Curitiba/PR.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 93,
+    "lead_id": 16,
+    "codigo_evento": 11,
+    "id_proposta": 11,
+    "empresa": "Pippi Pneus",
+    "contato": "Stephani Simon",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Alinhamento Interno",
+    "resumo": "Projeto em desenvolvimento interno na DCarvalho.",
+    "detalhes": "Augusto confirmou que a DCarvalho está desenvolvendo ativamente o projeto cenográfico para a Pippi Pneus (10x10m em terreno 12x20m).",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Finalizar projeto e orçamento para apresentação comercial.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 94,
+    "lead_id": 35,
+    "codigo_evento": 11,
+    "id_proposta": 91,
+    "empresa": "IMEVE",
+    "contato": "Thais",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "IMEVE vai enviar o briefing na próxima semana.",
+    "detalhes": "Augusto confirmou que a equipe da IMEVE transmitirá o briefing detalhado do estande do Show Rural 2027 na semana de 23/11/2026.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Receber briefing com a Thais e iniciar estudo de layout.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 95,
+    "lead_id": 94,
+    "codigo_evento": 11,
+    "id_proposta": 74,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-16",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "MSD com projeto em desenvolvimento na DCarvalho.",
+    "detalhes": "Augusto informou que a DCarvalho está desenvolvendo o projeto cenográfico para a MSD Saúde Animal no Show Rural 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Concluir projeto e orçamento para entrega da proposta.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 96,
+    "lead_id": 19,
+    "codigo_evento": 11,
+    "id_proposta": 19,
+    "empresa": "The Group / BASF",
+    "contato": "Rodrigo Barreto",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Abordagem Show Rural / Conta BASF com fábrica própria",
+    "detalhes": "Augusto enviou em 16/11 às 16:29-16:30: Boa tarde. Rodrigo, tudo bem? Sei que a The Group toca as feiras da BASF aqui no Sul. Como temos fábrica própria de marcenaria aqui no Oeste do Paraná (Foz e Cascavel), atendemos agências de SP como braço de montagem local, o que elimina frete de carreta e deslocamento de equipe de fora. Vocês já bateram o martelo da montagem da BASF no Show Rural ou vale cotarmos o projeto executivo de vocês aqui na região?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta; se sem retorno até 20/11, ligar por telefone.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 97,
+    "lead_id": 90,
+    "codigo_evento": 11,
+    "id_proposta": 70,
+    "empresa": "Sensix Agro",
+    "contato": "Carlos Ribeiro (CEO) / Thomaz Lemos (COO)",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Primeiro contato enviado via WhatsApp corporativo.",
+    "detalhes": "Augusto enviou sequência institucional profissional às 16:40-16:47 apresentando a DCarvalho, fábrica regional e consultando sobre briefing para o Show Rural 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta no WhatsApp até 20/11.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 98,
+    "lead_id": 91,
+    "codigo_evento": 11,
+    "id_proposta": 71,
+    "empresa": "ArPAC Drones",
+    "contato": "Eduardo Goerl (CEO)",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Números iniciais sem WhatsApp ativo",
+    "detalhes": "Augusto testou os números (14) 99772-2942 e (51) 99925-3973 no WhatsApp Web e constatou que nenhum dos dois possui conta ativa.",
+    "anexos": [],
+    "proxima_acao_gerada": null,
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 99,
+    "lead_id": 91,
+    "codigo_evento": 11,
+    "id_proposta": 71,
+    "empresa": "ArPAC Drones",
+    "contato": "Eduardo Goerl (CEO)",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Empresa encerrou atividades",
+    "detalhes": "Abordagem enviada para +55 51 9725-3973. Eduardo Goerl respondeu às 17:34 confirmando que a ArPAC fechou as portas. Lead marcado como descartado.",
+    "anexos": [],
+    "proxima_acao_gerada": null,
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 100,
+    "lead_id": 86,
+    "codigo_evento": 11,
+    "id_proposta": 66,
+    "empresa": "Rotoplast Climatizadores",
+    "contato": "Isabela",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Mapeamento de decisora de feiras",
+    "detalhes": "Augusto contatou a recepção no WhatsApp (49 98875-1588). A recepcionista direcionou o assunto Show Rural para Isabela via feiras@rotoplast.com.br.",
+    "anexos": [],
+    "proxima_acao_gerada": null,
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 101,
+    "lead_id": 86,
+    "codigo_evento": 11,
+    "id_proposta": 66,
+    "empresa": "Rotoplast Climatizadores",
+    "contato": "Isabela",
+    "data_interacao": "2026-11-16",
+    "canal": "E-mail",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Proposta Financeira",
+    "resumo": "E-mail institucional com portfólio para Isabela",
+    "detalhes": "E-mail enviado para feiras@rotoplast.com.br citando a indicação da recepção, fábrica própria em Foz, diminuição de custo, entrega em tempo hábil e oferta de criação de projeto + orçamento sem compromisso.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Follow-up de retorno",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 102,
+    "lead_id": 7,
+    "codigo_evento": 11,
+    "id_proposta": 5,
+    "empresa": "ATM Energia",
+    "contato": "Felipe Carreira — Marketing",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Felipe (Marketing) informou que aguarda retorno da diretoria para avançar",
+    "detalhes": "Augusto contatou Felipe via WhatsApp as 11:16 perguntando sobre os preparativos e propondo criar o projeto para o Show Rural 2027. Felipe respondeu as 17:48: Infelizmente ainda nao tenho nenhum retorno da diretoria por aqui... Estou dependendo deles pra seguir. Augusto respondeu ficando no aguardo e destacando a importancia de ter um briefing com antecedencia para criar o projeto em tempo habil. Felipe confirmou as 17:56: Claro, pode deixar.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Acompanhar retorno do briefing pela diretoria. Se nao houver envio espontaneo, realizar novo follow-up no inicio de dezembro.",
+      "data_prevista": "2026-12-01"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 103,
+    "lead_id": 46,
+    "codigo_evento": 11,
+    "id_proposta": 26,
+    "empresa": "Bransales Pneus",
+    "contato": "Gabriela (Marketing) / João Paulo Gonsales (VP)",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Atendente Leonardo confirmou João Paulo e passou telefone fixo",
+    "detalhes": "Augusto contatou Leonardo no WhatsApp oficial (+55 49 8831-4096). Leonardo instruiu ligar no (49) 3319-0800 e pedir para falar direto com João Paulo.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Ligar para (49) 3319-0800 e falar com João Paulo Gonsales sobre Show Rural 2027",
+      "data_prevista": "2026-11-17"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 104,
+    "lead_id": 46,
+    "codigo_evento": 11,
+    "id_proposta": 26,
+    "empresa": "Bransales Pneus",
+    "contato": "Gabriela (Marketing) / João Paulo Gonsales (VP)",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Contato com Gabriela (Marketing) e envio de portfólios",
+    "detalhes": "Após direcionamento interno, Augusto iniciou conversa no WhatsApp com Gabriela (Marketing da Bransales). Apresentou a DCarvalho, localização em Foz, enviou Portifolio.pdf (15 pág) e AGRO.pdf (28 pág) com foco em marcenaria construída, e perguntou sobre a criação e orçamento de projetos para o Show Rural.",
+    "anexos": [
+      "Portifolio.pdf",
+      "AGRO.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta no WhatsApp até 20/11/2026 para follow-up",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 105,
+    "lead_id": 95,
+    "codigo_evento": 11,
+    "id_proposta": 75,
+    "empresa": "Next Implementos",
+    "contato": "Equipe de Marketing",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Recebimento de Briefing",
+    "resumo": "Next Implementos enviou briefing oficial do estande por e-mail",
+    "detalhes": "Augusto recebeu o briefing com anexos enviado pela equipe de Marketing da Next Implementos para o Show Rural 2027. Oportunidade confirmada para a própria Next Implementos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Analisar dimensões do lote, necessidades construtivas e passar diretrizes para Cristiano Projetista.",
+      "data_prevista": "2026-11-18"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 106,
+    "lead_id": 84,
+    "codigo_evento": 11,
+    "id_proposta": 64,
+    "empresa": "Bionova Energia Solar",
+    "contato": "Thiago Tomazoli / José Berta",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Abordagem no WhatsApp da Bionova Cascavel solicitando contato do Diretor Thiago Tomazoli",
+    "detalhes": "Augusto enviou mensagem no WhatsApp da unidade de Cascavel ((45) 98807-9553), atendido por Isabella/Carolina. Solicitou encaminhamento direto para Thiago Tomazoli ou responsável pelo estande do Show Rural 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta da triagem no WhatsApp ou envio de e-mail direto para thiago@bionovasolar.com.br",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 107,
+    "lead_id": 90,
+    "codigo_evento": 11,
+    "id_proposta": 70,
+    "empresa": "Sensix Agro",
+    "contato": "Carlos Ribeiro (CEO) / Thomaz Lemos (COO)",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Carlos Ribeiro (CEO) informou que não participam de feiras",
+    "detalhes": "Carlos Ribeiro respondeu no WhatsApp informando que não têm participado de feiras nos últimos anos e que estão mais focados no marketing digital. Augusto agradeceu o retorno com elegância e deixou porta aberta para quando voltarem a expor.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Lead encerrado para o Show Rural 2027. Manter no radar apenas para futuro.",
+      "data_prevista": null
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 108,
+    "lead_id": 89,
+    "codigo_evento": 11,
+    "id_proposta": 69,
+    "empresa": "Solinftec",
+    "contato": "Mariana Finta (Marketing) / Camila Pedroso (Eventos)",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Camila Pedroso solicitou envio de e-mail para conectar ao time responsável",
+    "detalhes": "Camila Pedroso respondeu positivamente no WhatsApp, solicitou o envio das informações por e-mail (camilapedroso@outras.com.br) para colocar a DCarvalho em contato direto com o time responsável pelo Show Rural 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Disparar e-mail com apresentação e portfólios anexados para camilapedroso@outras.com.br",
+      "data_prevista": "2026-11-17"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 109,
+    "lead_id": 84,
+    "codigo_evento": 11,
+    "id_proposta": 64,
+    "empresa": "Bionova Energia Solar",
+    "contato": "Thiago Tomazoli / José Berta",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Isabella compartilhou contato direto do Diretor Thiago Tomazoli",
+    "detalhes": "Isabella da Bionova Cascavel respondeu no WhatsApp compartilhando o cartão de contato do Diretor-Geral Thiago Tomazoli.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Abordar Thiago Tomazoli no WhatsApp/E-mail com a ponte da Isabella",
+      "data_prevista": "2026-11-18"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 110,
+    "lead_id": 89,
+    "codigo_evento": 11,
+    "id_proposta": 69,
+    "empresa": "Solinftec",
+    "contato": "Mariana Finta (Marketing) / Camila Pedroso (Eventos)",
+    "data_interacao": "2026-11-17",
+    "canal": "E-mail",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "E-mail com portfólios institucionais e do agro enviado para Camila Pedroso",
+    "detalhes": "Augusto enviou e-mail para camilapedroso@outras.com.br com Portifolio.pdf e AGRO.pdf anexados, conforme solicitado por ela no WhatsApp, para conexão com a equipe responsável pelo estande no Show Rural 2027.",
+    "anexos": [
+      "Portifolio.pdf",
+      "AGRO.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Acompanhar retorno por e-mail ou WhatsApp com a Camila até 20/11/2026.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 111,
+    "lead_id": 84,
+    "codigo_evento": 11,
+    "id_proposta": 64,
+    "empresa": "Bionova Energia Solar",
+    "contato": "Thiago Tomazoli / José Berta",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Sequência comercial enviada diretamente para o WhatsApp de Thiago Tomazoli",
+    "detalhes": "Augusto disparou a abordagem em micro-balões para o Diretor-Geral Thiago Tomazoli após ponte da Isabella de Cascavel. Destacou proximidade geográfica, fábrica própria, mobiliário próprio, alívio de dor de cabeça e oferta de projeto/orçamento sem compromisso a partir do briefing para o Show Rural 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta no WhatsApp por 3 dias úteis. Follow-up em 20/11/2026.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 112,
+    "lead_id": 15,
+    "codigo_evento": 11,
+    "id_proposta": 10,
+    "empresa": "MAXLOADER",
+    "contato": "Bruna (Marketing) / Tilara",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Tilara orientou retomar contato com Bruna na próxima semana; evento Show Rural 2027 confirmado",
+    "detalhes": "Tilara informou no WhatsApp da Equipe de Marketing que a Bruna não está disponível esta semana e pediu para entrar em contato na próxima semana. Augusto enviou o PDF AGRO.pdf relembrando que a DCarvalho já realizou montagens anteriores para a própria Maxloader.",
+    "anexos": [
+      "AGRO.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Entrar em contato com Bruna no WhatsApp na segunda-feira 23/11/2026 para alinhar o estande do Show Rural 2027.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 113,
+    "lead_id": 94,
+    "codigo_evento": 26,
+    "id_proposta": 92,
+    "empresa": "MSD Saúde Animal",
+    "contato": "Egle",
+    "data_interacao": "2026-11-17",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Proposta Financeira",
+    "resumo": "Proposta de R$ 78.000,00 entregue para o Show Rural; Egle cobrou stand de Rio Verde",
+    "detalhes": "Augusto entregou o projeto ESTANDE MSD-SHOW RURAL.pdf com proposta comercial de R$ 78.000,00 para o Show Rural 2027. Egle informou: Oie... até segunda teremos retorno. Egle também cobrou o status do projeto do estande de Rio Verde (Tecnoshow Comigo).",
+    "anexos": [
+      "ESTANDE MSD-SHOW RURAL.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno de aprovação do Show Rural com Egle na segunda-feira 23/11 e alinhar projeto de Rio Verde com projetista.",
+      "data_prevista": "2026-11-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 114,
+    "lead_id": 19,
+    "codigo_evento": 11,
+    "id_proposta": 19,
+    "empresa": "The Group / BASF",
+    "contato": "Rodrigo Barreto",
+    "data_interacao": "2026-09-30",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Primeiro Contato",
+    "resumo": "Apresentação de apoio operacional e montagem local no Paraná",
+    "detalhes": "Augusto enviou: ...montagem, produção e apoio operacional no Paraná e região Sul. Vocês costumam trabalhar com fornecedores locais nesses projetos? Se fizer sentido, posso te apresentar nossa estrutura e alguns trabalhos já realizados.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno para follow-up",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 115,
+    "lead_id": 19,
+    "codigo_evento": 11,
+    "id_proposta": 19,
+    "empresa": "The Group / BASF",
+    "contato": "Rodrigo Barreto",
+    "data_interacao": "2026-10-21",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Toque rápido no WhatsApp perguntando se pode falar",
+    "detalhes": "Augusto enviou mensagem às 15:03: Boa tarde, Rodrigo! Pode falar?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno ou tentar ligação",
+      "data_prevista": "2026-10-29"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 116,
+    "lead_id": 21,
+    "codigo_evento": 10,
+    "id_proposta": 99,
+    "empresa": "C&L Eventos (Agência Syngenta, Ourofino, NK, Nidera)",
+    "contato": "Pedro Cezar",
+    "data_interacao": "2026-09-30",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Apresentação de parceria regional e envio do portfólio AGRO.pdf",
+    "detalhes": "Augusto contatou Pedro Cezar apresentando a DCarvalho para Dia de Campo C.Vale e Show Rural, citando as contas da C&L (Syngenta, Golden Harvest, Nidera, NK, Ourofino). Pedro solicitou portfólio. Augusto enviou o AGRO.pdf (28 pág) no WhatsApp. Pedro confirmou recebimento: Opa deu certo ver sim.",
+    "anexos": [
+      "AGRO.pdf"
+    ],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar análise do material para follow-up",
+      "data_prevista": "2026-10-06"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 117,
+    "lead_id": 21,
+    "codigo_evento": 11,
+    "id_proposta": 98,
+    "empresa": "C&L Eventos (Agência Syngenta, Ourofino, NK, Nidera)",
+    "contato": "Pedro Cezar",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Solicitação de inclusão da DCarvalho nos próximos orçamentos para feiras agro",
+    "detalhes": "Augusto enviou mensagem às 11:30-11:31: Bom dia, Pedro! Tudo bem!? Com relação a cotações para novas contratações para feiras agro, chegou a analisar nosso material? Seria possível incluir a DCarvalho nos seus próximos orçamentos?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta no WhatsApp por 3 a 4 dias úteis. Follow-up em 20/11/2026.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 118,
+    "lead_id": 4,
+    "codigo_evento": 11,
+    "id_proposta": 2,
+    "empresa": "ProSolus",
+    "contato": "Rafaela Santos",
+    "data_interacao": "2026-09-22",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Pergunta sobre definição de eventos para 2027",
+    "detalhes": "Augusto enviou mensagem às 08:52-08:53: Bom dia, Rafaela! Tudo bem!? A ProSolus definiu que eventos em 2027 irão ou não participar?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-09-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 119,
+    "lead_id": 4,
+    "codigo_evento": 11,
+    "id_proposta": 2,
+    "empresa": "ProSolus",
+    "contato": "Rafaela Santos",
+    "data_interacao": "2026-09-25",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Áudio explicativo enviado no WhatsApp (0:23)",
+    "detalhes": "Augusto enviou mensagem de áudio de 23 segundos às 11:35 contextualizando a atuação da DCarvalho para feiras agro de 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta",
+      "data_prevista": "2026-10-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 120,
+    "lead_id": 4,
+    "codigo_evento": 11,
+    "id_proposta": 2,
+    "empresa": "ProSolus",
+    "contato": "Rafaela Santos",
+    "data_interacao": "2026-11-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Pergunta sobre organização e convite para criar projeto",
+    "detalhes": "Augusto enviou mensagem às 11:18: Bom dia, Rafaela! Tudo bem? Como esta a organização para o Show Rural? Vamos criar um projeto?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno até 20/11/2026. Se não responder, follow-up telefônico.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 121,
+    "lead_id": 6,
+    "codigo_evento": 11,
+    "id_proposta": 4,
+    "empresa": "Bianchi Lubrificantes",
+    "contato": "Kauany — Marketing",
+    "data_interacao": "2026-09-29",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Checagem de avaliação do projeto e orçamento",
+    "detalhes": "Augusto enviou mensagem às 17:03-17:04: Boa tarde, Kauany! Tudo bem? Conseguiram avaliar o projeto e o orçamento?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta",
+      "data_prevista": "2026-10-16"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 122,
+    "lead_id": 6,
+    "codigo_evento": 11,
+    "id_proposta": 4,
+    "empresa": "Bianchi Lubrificantes",
+    "contato": "Kauany — Marketing",
+    "data_interacao": "2026-10-16",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retomada de orçamento e disponibilidade para ajustes",
+    "detalhes": "Augusto enviou às 09:41: Bom dia, Kauany! Tudo bem? Estou retomando o orçamento que te enviei para o Show Rural 2027. Você comentou que encaminharia o material para a diretoria e queria saber se já houve alguma definição ou se o projeto ainda está em análise. Caso precisem de algum ajuste no projeto ou no escopo para essa avaliação, fico à disposição.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-10-19"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 123,
+    "lead_id": 6,
+    "codigo_evento": 11,
+    "id_proposta": 4,
+    "empresa": "Bianchi Lubrificantes",
+    "contato": "Kauany — Marketing",
+    "data_interacao": "2026-10-28",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Decisão / Fechamento",
+    "resumo": "Kauany informou que o projeto está em análise da diretoria",
+    "detalhes": "Kauany respondeu às 09:11: bom dia, eles estão em analise....se o seu projeto for o escolhido, entraremos em contato...mas até o momento não tem definição. obrigada. Projeto e orçamento da DCarvalho estão na mesa da diretoria concorrendo.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar decisão e retomar preventivamente no final de novembro caso não haja retorno espontâneo.",
+      "data_prevista": "2026-11-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 124,
+    "lead_id": 11,
+    "codigo_evento": 27,
+    "id_proposta": 93,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-07-28",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Gislana pediu portfólio e confirmou calendário oficial de feiras",
+    "detalhes": "Augusto contatou Gislana (Marketing). Gislana respondeu: Por enquanto ainda não cotamos! Vc tem portfólio? Augusto enviou portfólio. Gislana listou os eventos que sempre participam: Show Rural, Agrishow, Expocafé, Fenicafé e Agroleite.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Acompanhar envio de briefing para 2027",
+      "data_prevista": "2026-07-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 125,
+    "lead_id": 11,
+    "codigo_evento": 11,
+    "id_proposta": 7,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-07-30",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Toque de acompanhamento",
+    "detalhes": "Augusto enviou mensagem às 14:36: Boa tarde, Gislana, tudo bem?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-08-27"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 126,
+    "lead_id": 11,
+    "codigo_evento": 11,
+    "id_proposta": 7,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-08-27",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Áudio de acompanhamento (0:08)",
+    "detalhes": "Augusto enviou mensagem de áudio de 8 segundos às 08:59.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar resposta",
+      "data_prevista": "2026-09-22"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 127,
+    "lead_id": 11,
+    "codigo_evento": 27,
+    "id_proposta": 93,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-09-22",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Checagem de análise de projetos e orçamentos",
+    "detalhes": "Augusto enviou mensagem às 08:51-08:52: Bom dia! Estão analisando projetos e orçamentos para o Show Rural e Agrishow?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-09-29"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 128,
+    "lead_id": 11,
+    "codigo_evento": 11,
+    "id_proposta": 7,
+    "empresa": "Granfinale Sistemas Agrícolas",
+    "contato": "Gislana",
+    "data_interacao": "2026-10-26",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Pergunta sobre início do planejamento do Show Rural",
+    "detalhes": "Augusto enviou às 10:12: Bom dia, Gislana! Tudo bem? A Granfinale começou a planejar o Show Rural?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Realizar ligação telefônica ou nova abordagem direcionada no final de novembro.",
+      "data_prevista": "2026-11-20"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 129,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2025-11-03",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Portfólio",
+    "resumo": "Apresentação institucional para maratona de eventos agro",
+    "detalhes": "Augusto contatou Luis Elicker apresentando a DCarvalho para o Show Rural e oferecendo pacote para o calendário agro.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-07-27"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 130,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-07-30",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Luis respondeu e Augusto perguntou sobre análise de projetos 2027",
+    "detalhes": "Após tentativas em 27 e 28/07, Luis respondeu às 14:27: Boa Tarde, tudo bem!. Augusto perguntou às 14:28: Para os eventos de 2027, estão analisando projetos?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-09-09"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 131,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-09-09",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Pergunta sobre definição de eventos 2027",
+    "detalhes": "Augusto enviou às 16:50: Boa tarde, Luis! Tudo bem? A Bouwman tem os eventos de 2027 que irão participar definidos?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-09-23"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 132,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-09-23",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Pergunta sobre briefing do Show Rural para criação de projeto",
+    "detalhes": "Augusto enviou às 13:35-13:36: Tudo bem, Luis!? Como esta? Tem algum briefing para o Show Rural para criarmos um projeto para sua análise?",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno",
+      "data_prevista": "2026-10-15"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 133,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-10-15",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Retomada sobre fornecedores de montagem e inclusão na cotação",
+    "detalhes": "Augusto enviou às 12:29: Bom dia, Luis! Tudo bem? Estou retomando nosso contato sobre o Show Rural. Sei que a Bouwman tem uma participação forte no evento e queria verificar se o projeto do estande para 2027 já está definido ou se ainda estão avaliando fornecedores para a montagem. Caso ainda esteja em aberto, gostaria de colocar a DCarvalho na cotação e desenvolver uma proposta para vocês.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Alinhar por telefone e enviar portfólio",
+      "data_prevista": "2026-10-21"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 134,
+    "lead_id": 101,
+    "codigo_evento": 34,
+    "id_proposta": 110,
+    "empresa": "Brasfixo",
+    "contato": "Equipe Comercial / Feiras",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e confirmado para EXPOMAFE 2027 (Estande I050)",
+    "detalhes": "Fabricante de elementos de fixação industrial e dispositivos mecânicos de Joinville/SC com estande próprio de 50m² confirmado na EXPOMAFE 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 135,
+    "lead_id": 102,
+    "codigo_evento": 34,
+    "id_proposta": 111,
+    "empresa": "Balmer",
+    "contato": "Departamento Comercial / Marketing",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e confirmado para EXPOMAFE 2027 (Estande D208)",
+    "detalhes": "Fabricante de fontes de solda e corte plasma de Porto Alegre/RS com estande de 60m² na EXPOMAFE 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 136,
+    "lead_id": 103,
+    "codigo_evento": 34,
+    "id_proposta": 112,
+    "empresa": "Erzinger",
+    "contato": "Comercial / Marketing",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e confirmado para EXPOMAFE 2027 (Estande H018)",
+    "detalhes": "Fabricante de linhas completas de pintura industrial de Joinville/SC com estande de 55m² na EXPOMAFE 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 137,
+    "lead_id": 104,
+    "codigo_evento": 34,
+    "id_proposta": 113,
+    "empresa": "Schulz S.A.",
+    "contato": "Comunicação e Marketing",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Expositor mapeado e confirmado para EXPOMAFE 2027 (Estande D110)",
+    "detalhes": "Líder em compressores de ar e soluções industriais de Joinville/SC com estande de 80m² na EXPOMAFE 2027.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 138,
+    "lead_id": 105,
+    "codigo_evento": 25,
+    "id_proposta": 120,
+    "empresa": "SRCOM (Agência Fundação Itaú)",
+    "contato": "Atendimento e Produção",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Agência mapeada para ANPEC 2026 em Foz do Iguaçu (Conta Fundação Itaú)",
+    "detalhes": "Agência de live marketing de SP/RJ responsável pela ativação institucional da Fundação Itaú no Recanto Cataratas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Abordar atendimento/produção da agência oferecendo a DCarvalho como braço fabril e operacional local em Foz.",
+      "data_prevista": "2026-11-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 139,
+    "lead_id": 106,
+    "codigo_evento": 25,
+    "id_proposta": 121,
+    "empresa": "AKM Performma (Agência Bradesco)",
+    "contato": "Atendimento e Produção",
+    "data_interacao": "2026-11-23",
+    "canal": "Sistema / Mapeamento Interno",
+    "direcao": "Interna (Registro de Sistema)",
+    "tipo_interacao": "Mapeamento / Cadastro em Funil",
+    "resumo": "Agência mapeada para ANPEC 2026 em Foz do Iguaçu (Conta Bradesco)",
+    "detalhes": "Agência de brand experience de SP responsável pelo estande/cenografia do Bradesco no Recanto Cataratas.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Abordar atendimento/produção da agência oferecendo a DCarvalho como braço fabril e operacional local em Foz.",
+      "data_prevista": "2026-11-25"
+    },
+    "responsavel": "Augusto E. da Silva"
+  }
+]
