@@ -38,8 +38,11 @@
 
     <!-- Ações e Integrações -->
     <div class="actions-section">
-      <button id="btn-import-json" class="btn btn-primary">
-        <span>📥</span> Aplicar JSON de Eventos
+      <button id="btn-import-propostas" class="btn btn-outline" title="Importar ou atualizar lista de propostas comerciais ativas">
+        <span>💼</span> Carregar Propostas
+      </button>
+      <button id="btn-import-json" class="btn btn-primary" title="Importar ou atualizar lista de eventos comerciais">
+        <span>📅</span> Aplicar Eventos JSON
       </button>
     </div>
   </header>
@@ -100,6 +103,27 @@
       <div class="modal-footer">
         <button class="btn btn-outline modal-close-btn">Cancelar</button>
         <button id="btn-save-json" class="btn btn-primary">Aplicar Eventos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Importador de JSON de Propostas Ativas -->
+  <div id="import-propostas-modal" class="modal-backdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Carregar Payload JSON de Propostas Ativas</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="import-help">Cole abaixo a lista de propostas comerciais no formato JSON ou selecione o arquivo local <code>propostas_ativas.json</code>. As propostas serão interligadas aos eventos automaticamente pelo campo <code>codigo_evento</code>.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <input type="file" id="propostas-file-input" accept=".json" class="btn btn-sm btn-outline">
+        </div>
+        <textarea id="propostas-import-textarea" class="import-textarea" spellcheck="false" placeholder="[ { &quot;id_proposta&quot;: 74, &quot;codigo_evento&quot;: 11, ... } ]"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-close-btn">Cancelar</button>
+        <button id="btn-save-propostas" class="btn btn-primary">Aplicar Propostas</button>
       </div>
     </div>
   </div>
