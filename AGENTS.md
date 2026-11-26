@@ -181,7 +181,8 @@ Os dados são carregados automaticamente da pasta `data/`:
     "acao": "Reunião de alinhamento pós-diretoria",
     "data_prevista": "2026-11-27"
   },
-  "responsavel": "Augusto E. da Silva"
+  "responsavel": "Augusto E. da Silva",
+  "ativo": true
 }
 ```
 
@@ -222,7 +223,8 @@ Os dados são carregados automaticamente da pasta `data/`:
         "data_prevista": { "type": "string", "format": "date" }
       }
     },
-    "responsavel": { "type": "string" }
+    "responsavel": { "type": "string" },
+    "ativo": { "type": "boolean", "default": true }
   }
 }
 ```

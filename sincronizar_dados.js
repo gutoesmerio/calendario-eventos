@@ -89,7 +89,7 @@ class InteracoesStore {
   }
 
   getInteracoes() {
-    return this.interacoes;
+    return this.interacoes.filter(item => item.ativo !== false);
   }
 
   /**
@@ -98,7 +98,7 @@ class InteracoesStore {
    */
   getInteracoesByProposta(prop) {
     if (!prop) return [];
-    return this.interacoes.filter(item => {
+    return this.getInteracoes().filter(item => {
       if (item.id_proposta && prop.id_proposta && Number(item.id_proposta) === Number(prop.id_proposta)) {
         return true;
       }

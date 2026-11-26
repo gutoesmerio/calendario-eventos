@@ -17,7 +17,8 @@
       "acao": "Confirmar envio da apresentação; retomar no início de jan/2027.",
       "data_prevista": "2027-01-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 2,
@@ -37,7 +38,8 @@
       "acao": "Revisar exatamente a pendência do credenciamento/termo antes de contatar.",
       "data_prevista": "2026-10-16"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 3,
@@ -57,7 +59,8 @@
       "acao": "Aguardar resposta; se não houver retorno, novo toque curto.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 4,
@@ -77,7 +80,8 @@
       "acao": "Aguardar resposta.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 5,
@@ -100,7 +104,8 @@
       "acao": "Aguardar retorno. Se Luis não responder, retomar contato em 8 dias para acompanhar a evolução da ideia/projeto do Show Rural 2027 e verificar abertura para cotação/montagem.",
       "data_prevista": "2026-10-29"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 6,
@@ -120,7 +125,8 @@
       "acao": "Tentar nova ligação mais tarde, em outro horário. Se não atender novamente, não acumular mensagens no WhatsApp hoje; manter acompanhamento do projeto/orçamento com a diretoria.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 7,
@@ -140,7 +146,8 @@
       "acao": "Retomar Felipe a partir de 05/11/2026. Prioridade: confirmar participação da ATM no Show Rural 2027 e, se confirmada, verificar se já abriu o processo de projeto/cotação do estande.",
       "data_prevista": "2026-11-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 8,
@@ -160,7 +167,8 @@
       "acao": "Aguardar resposta. Não perguntar novamente sobre participação em Show Rural/C.Vale enquanto ela não responder ou surgir confirmação pública concreta.",
       "data_prevista": "2026-10-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 9,
@@ -180,7 +188,8 @@
       "acao": "Retomar em janela comercial de 2027, não é prioridade para fev/2027.",
       "data_prevista": "2027-01-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 10,
@@ -200,7 +209,8 @@
       "acao": "Retomar contato com Gabrielle Cardoso para verificar a conclusão da definição dos eventos de 2027 (Show Rural Coopavel 2027).",
       "data_prevista": "2026-11-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 11,
@@ -220,7 +230,8 @@
       "acao": "6ª ligação da fila: ligar por telefone. Houve várias tentativas sem resposta desde o último retorno; confirmar calendário 2027 e se já abriram briefing/cotações para Show Rural/Agrishow.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 12,
@@ -240,7 +251,8 @@
       "acao": "Não cobrar Gustavo nem Rodrigo sobre esta edição. Preservar relacionamento para futuras oportunidades e usar a perda por preço como inteligência comercial.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 13,
@@ -260,7 +272,8 @@
       "acao": "Encerrar esta edição. Manter Rodrigo como relacionamento para futuras oportunidades e registrar preço como fator de perda para revisão de estratégia comercial.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 14,
@@ -280,7 +293,8 @@
       "acao": "Monitorar novos congressos/feiras; não pressionar agora.",
       "data_prevista": "2027-01-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 15,
@@ -300,7 +314,8 @@
       "acao": "Identificar evento/participação e fazer follow-up com contexto.",
       "data_prevista": "2026-10-17"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 16,
@@ -320,7 +335,8 @@
       "acao": "Priorizar elaboração/checagem interna do projeto e orçamento. Não fazer follow-up genérico; contatar Stephani para entregar proposta ou sanar dúvida objetiva do briefing.",
       "data_prevista": "2026-10-16"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 17,
@@ -340,7 +356,8 @@
       "acao": "Não insistir no C.Vale 2026. Retomar preventivamente no fim de junho/início de julho de 2027, antes da janela de análise, aplicando a premissa comercial: primeiro entender objetivo/necessidade do espaço e só depois propor projeto.",
       "data_prevista": "2027-06-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 18,
@@ -360,7 +377,8 @@
       "acao": "Aguardar contato da pessoa responsável pelo Dia de Campo C.Vale. Não cobrar Rogério agora; se ninguém retornar até 20/10, fazer um toque curto.",
       "data_prevista": "2026-10-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 19,
@@ -380,7 +398,8 @@
       "acao": "4ª ligação da fila: ligar por telefone. Duas abordagens sem resposta; validar se a TG já está mobilizando C.Vale/BASF e Show Rural e se há espaço para fornecedor regional.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 20,
@@ -400,7 +419,8 @@
       "acao": "Aguardar retorno. Se não houver resposta, reavaliar follow-up com base na proximidade do evento e possível participação confirmada.",
       "data_prevista": "2026-10-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 21,
@@ -420,7 +440,8 @@
       "acao": "Pesquisar eventos ativos da agência e retomar com oportunidade específica.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 22,
@@ -440,7 +461,8 @@
       "acao": "Aguardar retorno ao WhatsApp até amanhã. Não enviar nova mensagem hoje. Se não houver retorno, fazer nova tentativa de ligação em horário diferente e buscar uma definição objetiva sobre aprovação, ajustes ou perda da oportunidade.",
       "data_prevista": "2026-10-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 23,
@@ -460,7 +482,8 @@
       "acao": "Aguardar. Se ele não confirmar antes, na segunda-feira à tarde combinar o horário da conversa de terça.",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 24,
@@ -480,7 +503,8 @@
       "acao": "Enviar follow-up curto pedindo a pessoa responsável por eventos/estandes.",
       "data_prevista": "2026-10-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 25,
@@ -500,7 +524,8 @@
       "acao": "Não insistir no ASBAI 2026; manter contato para futuros congressos.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 26,
@@ -520,7 +545,8 @@
       "acao": "Aguardar retorno e fazer acompanhamento sem excesso.",
       "data_prevista": "2026-10-17"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 27,
@@ -540,7 +566,8 @@
       "acao": "Encerrar 2026 e manter relacionamento para próximos congressos.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 28,
@@ -560,7 +587,8 @@
       "acao": "Manter Patricia como contato para eventos futuros.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 29,
@@ -580,7 +608,8 @@
       "acao": "Não contornar a decisão; cultivar para eventos futuros.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 30,
@@ -600,7 +629,8 @@
       "acao": "Manter relacionamento para próximos eventos.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 31,
@@ -620,7 +650,8 @@
       "acao": "Acompanhar oportunidades futuras; não cobrar participação no ASBAI.",
       "data_prevista": "2026-11-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 32,
@@ -640,7 +671,8 @@
       "acao": "Manter contato para próximos congressos.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 33,
@@ -660,7 +692,8 @@
       "acao": "Pesquisar participação antes de abordar como expositor.",
       "data_prevista": "2026-10-16"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 34,
@@ -680,7 +713,8 @@
       "acao": "Retomar na terça-feira, 03/11/2026. Verificar se a mensagem foi entregue e, se necessário, fazer novo toque curto. Objetivo: identificar quem define o briefing e quem conduz a contratação do estande institucional.",
       "data_prevista": "2026-11-03"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 35,
@@ -700,7 +734,8 @@
       "acao": "Mapear decisor de Trade Marketing / Eventos no LinkedIn/Apollo para verificar concorrência de montagem.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 36,
@@ -720,7 +755,8 @@
       "acao": "Identificar coordenador de eventos da marca Tortuga para sondar processo de cotação do estande de pecuária.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 37,
@@ -740,7 +776,8 @@
       "acao": "Buscar contato de compras/marketing corporativo de eventos da Nutron/Cargill.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 38,
@@ -760,7 +797,8 @@
       "acao": "Levantar contato de eventos/marketing para apresentar portfólio fabril da DCarvalho.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 39,
@@ -780,7 +818,8 @@
       "acao": "Contatar regional de vendas/eventos do Paraná para sondar montagem do estande 2027.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 40,
@@ -800,7 +839,8 @@
       "acao": "Mapear analista/coordenador de eventos no LinkedIn para apresentar credenciamento DCarvalho.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 41,
@@ -820,7 +860,8 @@
       "acao": "Identificar responsável comercial/eventos regional PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 42,
@@ -840,7 +881,8 @@
       "acao": "Mapear decisor de Trade Marketing na matriz brasileira (Chapecó/SC) com atuação no PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 43,
@@ -860,7 +902,8 @@
       "acao": "Sondar participação no pavilhão de pecuária ou área comercial.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 44,
@@ -880,7 +923,8 @@
       "acao": "Localizar equipe de marketing da Phibro Brasil para apresentação de proposta regional.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 45,
@@ -900,7 +944,8 @@
       "acao": "Contatar diretoria comercial em Cascavel/PR para oferecer projeto cenográfico completo.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 46,
@@ -920,7 +965,8 @@
       "acao": "Mapear agência ou coordenador de feiras da Titan América Latina.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 47,
@@ -940,7 +986,8 @@
       "acao": "Mapear área de feiras e trade da Prometeon Tyre Group.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 48,
@@ -960,7 +1007,8 @@
       "acao": "Identificar importador e gerente de marketing BKT Brasil.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 49,
@@ -980,7 +1028,8 @@
       "acao": "Contatar departamento de marketing da Trelleborg Wheel Systems.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 50,
@@ -1000,7 +1049,8 @@
       "acao": "Mapear área de eventos do canal B2B/Agro da distribuidora.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 51,
@@ -1020,7 +1070,8 @@
       "acao": "Mapear gerência de marketing na matriz de Amparo/SP e filial PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 52,
@@ -1040,7 +1091,8 @@
       "acao": "Sondar agência de montagem ou gerência de eventos da Kepler Weber.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 53,
@@ -1060,7 +1112,8 @@
       "acao": "Localizar setor de eventos da AGCO Grãos & Proteína em Marau/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 54,
@@ -1080,7 +1133,8 @@
       "acao": "Contatar coordenação de feiras em Marau/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 55,
@@ -1100,7 +1154,8 @@
       "acao": "Contatar comercial de feiras em Araranguá/SC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 56,
@@ -1120,7 +1175,8 @@
       "acao": "Buscar decisor comercial na fábrica em Curitiba/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 57,
@@ -1140,7 +1196,8 @@
       "acao": "Mapear coordenação de marketing em Não-Me-Toque/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 58,
@@ -1160,7 +1217,8 @@
       "acao": "Mapear área de marketing de feiras em Matão/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 59,
@@ -1180,7 +1238,8 @@
       "acao": "Contatar marketing em Lages/SC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 60,
@@ -1200,7 +1259,8 @@
       "acao": "Contatar marketing da Indutar em Ibirubá/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 61,
@@ -1220,7 +1280,8 @@
       "acao": "Contatar gerência de vendas e feiras em Cândido Godói/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 62,
@@ -1240,7 +1301,8 @@
       "acao": "Mapear marketing da Jumil em Batatais/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 63,
@@ -1260,7 +1322,8 @@
       "acao": "Contatar departamento de eventos e feiras da Marchesan em Matão/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 64,
@@ -1280,7 +1343,8 @@
       "acao": "Mapear setor de feiras e marketing da LS Mtron em Garuva/SC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 65,
@@ -1300,7 +1364,8 @@
       "acao": "Contatar setor de marketing em Caxias do Sul/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 66,
@@ -1320,7 +1385,8 @@
       "acao": "Contatar marketing da São José em São José do Inhacorá/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 67,
@@ -1340,7 +1406,8 @@
       "acao": "Mapear coordenação de feiras da Biotrop no LinkedIn.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 68,
@@ -1360,7 +1427,8 @@
       "acao": "Mapear coordenação de eventos na sede da Timac em Porto Alegre/RS.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 69,
@@ -1380,7 +1448,8 @@
       "acao": "Contatar equipe de marketing da regional Sul da Yara.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 70,
@@ -1400,7 +1469,8 @@
       "acao": "Mapear equipe corporativa de feiras da Mosaic no Brasil.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 71,
@@ -1420,7 +1490,8 @@
       "acao": "Contatar gerência de comunicação/feiras em Londrina/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 72,
@@ -1440,7 +1511,8 @@
       "acao": "Localizar setor de marketing da Microgeo em Limeira/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 73,
@@ -1460,7 +1532,8 @@
       "acao": "Mapear equipe de Trade Marketing da Vittia em São Joaquim da Barra/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 74,
@@ -1480,7 +1553,8 @@
       "acao": "Mapear agência de feiras e equipe de marketing da UPL em Campinas/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 75,
@@ -1500,7 +1574,8 @@
       "acao": "Identificar coordenador de eventos da FMC em Campinas/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 76,
@@ -1520,7 +1595,8 @@
       "acao": "Contatar diretoria de marketing da Nórdica em Curitiba/Cascavel.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 77,
@@ -1540,7 +1616,8 @@
       "acao": "Contatar marketing da Cotrasa em Cascavel/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 78,
@@ -1560,7 +1637,8 @@
       "acao": "Mapear área de eventos do Grupo Barigüi.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 79,
@@ -1580,7 +1658,8 @@
       "acao": "Contatar diretoria da Fipal em Cascavel/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 80,
@@ -1600,7 +1679,8 @@
       "acao": "Contatar gerência regional de vendas/eventos.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 81,
@@ -1620,7 +1700,8 @@
       "acao": "Contatar setor de marketing da Divesa Caminhões.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 82,
@@ -1640,7 +1721,8 @@
       "acao": "Mapear marketing da L8 Energy em Curitiba/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 83,
@@ -1660,7 +1742,8 @@
       "acao": "Contatar diretoria da Bionova no Paraná.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 84,
@@ -1680,7 +1763,8 @@
       "acao": "Mapear equipe de feiras corporativas da WEG em Jaraguá do Sul/SC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 85,
@@ -1700,7 +1784,8 @@
       "acao": "Contatar marketing da Rotoplast em Maravilha/SC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 86,
@@ -1720,7 +1805,8 @@
       "acao": "Mapear gerência de eventos da TOTVS Agro em Ribeirão Preto/São Paulo.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 87,
@@ -1740,7 +1826,8 @@
       "acao": "Contatar marketing do ecossistema Aliare em Goiânia/GO.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 88,
@@ -1760,7 +1847,8 @@
       "acao": "Contatar marketing da Solinftec em Araçatuba/SP.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 89,
@@ -1780,7 +1868,8 @@
       "acao": "Contatar liderança comercial da Sensix.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 90,
@@ -1800,7 +1889,8 @@
       "acao": "Localizar setor comercial/eventos da ArPAC.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 91,
@@ -1820,7 +1910,8 @@
       "acao": "Mapear gerência de comunicação e eventos da Cresol Central em Francisco Beltrão/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 92,
@@ -1840,7 +1931,8 @@
       "acao": "Contatar setor de comunicação e eventos do BRDE em Curitiba/PR.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 93,
@@ -1860,7 +1952,8 @@
       "acao": "Finalizar projeto e orçamento para apresentação comercial.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 94,
@@ -1880,7 +1973,8 @@
       "acao": "Receber briefing com a Thais e iniciar estudo de layout.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 95,
@@ -1900,7 +1994,8 @@
       "acao": "Concluir projeto e orçamento para entrega da proposta.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 96,
@@ -1920,7 +2015,8 @@
       "acao": "Aguardar resposta; se sem retorno até 20/11, ligar por telefone.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 97,
@@ -1940,7 +2036,8 @@
       "acao": "Aguardar resposta no WhatsApp até 20/11.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 98,
@@ -1957,7 +2054,8 @@
     "detalhes": "Augusto testou os números (14) 99772-2942 e (51) 99925-3973 no WhatsApp Web e constatou que nenhum dos dois possui conta ativa.",
     "anexos": [],
     "proxima_acao_gerada": null,
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 99,
@@ -1974,7 +2072,8 @@
     "detalhes": "Abordagem enviada para +55 51 9725-3973. Eduardo Goerl respondeu às 17:34 confirmando que a ArPAC fechou as portas. Lead marcado como descartado.",
     "anexos": [],
     "proxima_acao_gerada": null,
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 100,
@@ -1991,7 +2090,8 @@
     "detalhes": "Augusto contatou a recepção no WhatsApp (49 98875-1588). A recepcionista direcionou o assunto Show Rural para Isabela via feiras@rotoplast.com.br.",
     "anexos": [],
     "proxima_acao_gerada": null,
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 101,
@@ -2011,7 +2111,8 @@
       "acao": "Follow-up de retorno",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 102,
@@ -2031,7 +2132,8 @@
       "acao": "Acompanhar retorno do briefing pela diretoria. Se nao houver envio espontaneo, realizar novo follow-up no inicio de dezembro.",
       "data_prevista": "2026-12-01"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 103,
@@ -2051,7 +2153,8 @@
       "acao": "Ligar para (49) 3319-0800 e falar com João Paulo Gonsales sobre Show Rural 2027",
       "data_prevista": "2026-11-17"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 104,
@@ -2074,7 +2177,8 @@
       "acao": "Realizar ligação telefônica para a Gabriela (Marketing) / João Paulo para cobrar retorno da apresentação do Show Rural 2027 enviada em 17/11.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 105,
@@ -2094,7 +2198,8 @@
       "acao": "Analisar dimensões do lote, necessidades construtivas e passar diretrizes para Cristiano Projetista.",
       "data_prevista": "2026-11-18"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 106,
@@ -2114,7 +2219,8 @@
       "acao": "Aguardar resposta da triagem no WhatsApp ou envio de e-mail direto para thiago@bionovasolar.com.br",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 107,
@@ -2134,7 +2240,8 @@
       "acao": "Lead encerrado para o Show Rural 2027. Manter no radar apenas para futuro.",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 108,
@@ -2154,7 +2261,8 @@
       "acao": "Disparar e-mail formal com Portifolio.pdf e AGRO.pdf para camilapedroso@outras.com.br.",
       "data_prevista": "2026-11-17"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 109,
@@ -2174,7 +2282,8 @@
       "acao": "Abordar Thiago Tomazoli no WhatsApp/E-mail com a ponte da Isabella",
       "data_prevista": "2026-11-18"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 110,
@@ -2197,7 +2306,8 @@
       "acao": "Acompanhar retorno por e-mail ou WhatsApp com a Camila até 20/11/2026.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 111,
@@ -2217,7 +2327,8 @@
       "acao": "Aguardar resposta no WhatsApp por 3 dias úteis. Follow-up em 20/11/2026.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 112,
@@ -2239,7 +2350,8 @@
       "acao": "Retomar contato com Bruna no WhatsApp hoje (23/11/2026) para alinhamento e cotação do estande do Show Rural 2027.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 113,
@@ -2259,7 +2371,8 @@
       "acao": "Aguardar retorno da diretoria ou nova cobrança.",
       "data_prevista": "2026-11-18"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 114,
@@ -2279,7 +2392,8 @@
       "acao": "Aguardar retorno para follow-up",
       "data_prevista": "2026-10-16"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 115,
@@ -2299,7 +2413,8 @@
       "acao": "Aguardar retorno ou tentar ligação",
       "data_prevista": "2026-10-29"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 116,
@@ -2321,7 +2436,8 @@
       "acao": "Aguardar análise do material para follow-up",
       "data_prevista": "2026-10-06"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 117,
@@ -2341,7 +2457,8 @@
       "acao": "Aguardar resposta no WhatsApp por 3 a 4 dias úteis. Follow-up em 20/11/2026.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 118,
@@ -2361,7 +2478,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-09-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 119,
@@ -2381,7 +2499,8 @@
       "acao": "Aguardar resposta",
       "data_prevista": "2026-10-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 120,
@@ -2401,7 +2520,8 @@
       "acao": "Aguardar retorno até 20/11/2026. Se não responder, follow-up telefônico.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 121,
@@ -2421,7 +2541,8 @@
       "acao": "Aguardar resposta",
       "data_prevista": "2026-10-16"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 122,
@@ -2441,7 +2562,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-10-19"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 123,
@@ -2461,7 +2583,8 @@
       "acao": "Aguardar decisão e retomar preventivamente no final de novembro caso não haja retorno espontâneo.",
       "data_prevista": "2026-11-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 124,
@@ -2481,7 +2604,8 @@
       "acao": "Acompanhar envio de briefing para 2027",
       "data_prevista": "2026-07-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 125,
@@ -2501,7 +2625,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-08-27"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 126,
@@ -2521,7 +2646,8 @@
       "acao": "Aguardar resposta",
       "data_prevista": "2026-09-22"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 127,
@@ -2541,7 +2667,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-09-29"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 128,
@@ -2561,7 +2688,8 @@
       "acao": "Realizar ligação telefônica ou nova abordagem direcionada no final de novembro.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 129,
@@ -2581,7 +2709,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-07-27"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 130,
@@ -2601,7 +2730,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-09-09"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 131,
@@ -2621,7 +2751,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-09-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 132,
@@ -2641,7 +2772,8 @@
       "acao": "Aguardar retorno",
       "data_prevista": "2026-10-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 133,
@@ -2661,7 +2793,8 @@
       "acao": "Alinhar por telefone e enviar portfólio",
       "data_prevista": "2026-10-21"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 134,
@@ -2681,7 +2814,8 @@
       "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 135,
@@ -2701,7 +2835,8 @@
       "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 136,
@@ -2721,7 +2856,8 @@
       "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 137,
@@ -2741,7 +2877,8 @@
       "acao": "Executar triagem comercial com decisor de marketing/eventos para oferta de projeto de cenografia.",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 138,
@@ -2761,7 +2898,8 @@
       "acao": "Abordar atendimento/produção da agência oferecendo a DCarvalho como braço fabril e operacional local em Foz.",
       "data_prevista": "2026-11-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 139,
@@ -2781,7 +2919,8 @@
       "acao": "Abordar atendimento/produção da agência oferecendo a DCarvalho como braço fabril e operacional local em Foz.",
       "data_prevista": "2026-11-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 140,
@@ -2804,7 +2943,8 @@
       "acao": "Aguardar avaliação do layout pela Egle.",
       "data_prevista": "2026-11-18"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 141,
@@ -2824,7 +2964,8 @@
       "acao": "Alinhar com projetista os ajustes solicitados na fachada e imagens de produto nas salas.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 142,
@@ -2844,7 +2985,8 @@
       "acao": "Executar ajustes na modelagem 3D com o projetista.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 143,
@@ -2864,7 +3006,8 @@
       "acao": "Aguardar posicionamento final de aprovação da diretoria.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 144,
@@ -2887,7 +3030,8 @@
       "acao": "Avaliar regulamento técnico e mapear dimensões do estande.",
       "data_prevista": "2026-11-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 145,
@@ -2907,7 +3051,8 @@
       "acao": "Encaminhar para Cristiano Projetista elaborar a modelagem 3D.",
       "data_prevista": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 146,
@@ -2929,7 +3074,8 @@
       "acao": "Aguardar retorno de validação da Docket e calcular planilha orçamentária.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 147,
@@ -2951,7 +3097,8 @@
       "acao": "Encaminhar planta/referência ao Cristiano Projetista para replicar o padrão do ano anterior e rodar orçamento executivo.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 148,
@@ -2971,7 +3118,8 @@
       "acao": "Finalizar modelagem 3D com Cristiano Projetista até 24/11 no fim da tarde e planilha de custos na manhã de 25/11.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 149,
@@ -2991,7 +3139,8 @@
       "acao": "Entrar em contato em fevereiro com Jociandro Almeida para o Ibusiness 2028.",
       "data_prevista": "2027-02-01"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 150,
@@ -3011,7 +3160,8 @@
       "acao": "Retornar e-mail para Diane solicitando ligação telefônica para validar briefing e salas do estande de 180m².",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 151,
@@ -3035,7 +3185,8 @@
       "acao": "Acompanhar confirmação de leitura e retorno de Daiane sobre o orçamento de 180m².",
       "data_prevista": "2026-11-17"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 152,
@@ -3055,7 +3206,8 @@
       "acao": "Follow-up comercial com Daiane para verificar o retorno da diretoria sobre o orçamento e projeto do Show Rural 2027.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 153,
@@ -3075,7 +3227,8 @@
       "acao": "Retomar contato para o ciclo de eventos e montagens de 2027.",
       "data_prevista": "2026-07-27"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 154,
@@ -3097,7 +3250,8 @@
       "acao": "Follow-up comercial para propor reunião de alinhamento do briefing.",
       "data_prevista": "2026-09-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 155,
@@ -3117,7 +3271,8 @@
       "acao": "Realizar ligação telefônica para Janaina (Marketing CASE IH) para retomar contato e solicitar o briefing para o Show Rural 2027.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 156,
@@ -3137,7 +3292,8 @@
       "acao": "Enviar e-mail formal de apresentação da DCarvalho e portfólio para barbara@aczinox.com.br referente à Mercopar 2027.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 157,
@@ -3157,7 +3313,8 @@
       "acao": "Enviar portfólio institucional para marketing@altus.com.br referente ao calendário de feiras de 2027.",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 158,
@@ -3177,7 +3334,8 @@
       "acao": "Enviar e-mail formal de apresentação da DCarvalho com portfólio anexo para Mariana de Castro Amancio (mariana.amancio@ourofino.com).",
       "data_prevista": "2026-11-24"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 159,
@@ -3199,7 +3357,8 @@
       "acao": "Follow-up em setembro para verificar a definição do calendário de eventos de 2027.",
       "data_prevista": "2026-09-09"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 160,
@@ -3219,7 +3378,8 @@
       "acao": "Retornar por telefone para a STEMAC hoje (26/11/2026) às 14:00 para falar com Helena.",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 161,
@@ -3239,7 +3399,8 @@
       "acao": "Direcionar prospecção do estande conjunto para a controladora Kepler Weber (Lead 53).",
       "data_prevista": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 162,
@@ -3259,7 +3420,8 @@
       "acao": "Aguardar retorno do recado deixado na caixa postal para Thiago Tomazoli.",
       "data_prevista": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 163,
@@ -3279,7 +3441,8 @@
       "acao": "Aguardar retorno de Stephani Simon para continuidade da negociação.",
       "data_prevista": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 164,
@@ -3299,7 +3462,8 @@
       "acao": "Aguardar retorno da equipe de marketing da MAXLOADER sobre o briefing do Show Rural 2027.",
       "data_prevista": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 165,
@@ -3319,7 +3483,8 @@
       "acao": "Aguardar contato do time de marketing da Solinftec após encaminhamento feito por Camila Pedroso.",
       "data_prevista": "2026-12-01"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 166,
@@ -3339,7 +3504,8 @@
       "acao": "Aguardar retorno da Docket Marketing após análise da diretoria sobre os valores de 16m² (R$ 22.400,00) e 20m² (R$ 28.000,00).",
       "data_prevista": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 167,
@@ -3359,7 +3525,8 @@
       "acao": "Retomar contato na próxima semana (01/12/2026) após o retorno de férias de Ubirajara.",
       "data_prevista": "2026-12-01"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 168,
@@ -3379,7 +3546,8 @@
       "acao": "Retornar contato com o marketing da Next Implementos na terça-feira, 01/12/2026.",
       "data_prevista": "2026-12-01"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_interacao": 169,
@@ -3399,6 +3567,7 @@
       "acao": "Nenhuma ação — Não entrar mais em contato para outros eventos (possui carreta stand própria).",
       "data_prevista": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   }
 ]
