@@ -26,7 +26,8 @@
       "valor_ponderado": 66300,
       "data_previsao_fechamento": "2026-11-23"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 92,
@@ -55,7 +56,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 75,
@@ -84,7 +86,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 4,
@@ -113,7 +116,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-11-25"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 11,
@@ -142,7 +146,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 3,
@@ -171,7 +176,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": null
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": false
   },
   {
     "id_proposta": 5,
@@ -200,7 +206,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-10"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 91,
@@ -229,7 +236,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 19,
@@ -258,7 +266,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-15"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 98,
@@ -287,7 +296,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 110,
@@ -316,7 +326,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 111,
@@ -345,7 +356,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 112,
@@ -374,7 +386,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 113,
@@ -403,7 +416,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-01-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 120,
@@ -432,7 +446,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 121,
@@ -461,7 +476,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 122,
@@ -490,7 +506,8 @@
       "valor_ponderado": 16800,
       "data_previsao_fechamento": "2026-11-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 123,
@@ -519,7 +536,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-02-28"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 124,
@@ -548,7 +566,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-05"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 125,
@@ -577,7 +596,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-12-20"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 126,
@@ -606,7 +626,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-04-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 127,
@@ -635,7 +656,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-04-30"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 128,
@@ -664,7 +686,8 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2027-02-28"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": true
   },
   {
     "id_proposta": 129,
@@ -693,6 +716,7 @@
       "valor_ponderado": 0,
       "data_previsao_fechamento": "2026-11-26"
     },
-    "responsavel": "Augusto E. da Silva"
+    "responsavel": "Augusto E. da Silva",
+    "ativo": false
   }
 ]

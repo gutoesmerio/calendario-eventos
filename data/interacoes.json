@@ -105,7 +105,7 @@
       "data_prevista": "2026-10-29"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 6,
@@ -210,7 +210,7 @@
       "data_prevista": "2026-11-25"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 11,
@@ -252,7 +252,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 13,
@@ -273,7 +273,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 14,
@@ -525,7 +525,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 26,
@@ -567,7 +567,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 28,
@@ -588,7 +588,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 29,
@@ -609,7 +609,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 30,
@@ -630,7 +630,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 31,
@@ -672,7 +672,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 33,
@@ -1869,7 +1869,7 @@
       "data_prevista": "2026-11-20"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 90,
@@ -1890,7 +1890,7 @@
       "data_prevista": "2026-11-20"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 91,
@@ -2037,7 +2037,7 @@
       "data_prevista": "2026-11-20"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 98,
@@ -2055,7 +2055,7 @@
     "anexos": [],
     "proxima_acao_gerada": null,
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 99,
@@ -2073,7 +2073,7 @@
     "anexos": [],
     "proxima_acao_gerada": null,
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 100,
@@ -2241,7 +2241,7 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 108,
@@ -2710,7 +2710,7 @@
       "data_prevista": "2026-07-27"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 130,
@@ -2731,7 +2731,7 @@
       "data_prevista": "2026-09-09"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 131,
@@ -2752,7 +2752,7 @@
       "data_prevista": "2026-09-23"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 132,
@@ -2773,7 +2773,7 @@
       "data_prevista": "2026-10-15"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 133,
@@ -2794,7 +2794,7 @@
       "data_prevista": "2026-10-21"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 134,
@@ -3358,7 +3358,7 @@
       "data_prevista": "2026-09-09"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 160,
@@ -3400,7 +3400,7 @@
       "data_prevista": "2026-11-26"
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   },
   {
     "id_interacao": 162,
@@ -3568,6 +3568,6 @@
       "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva",
-    "ativo": true
+    "ativo": false
   }
 ]
