@@ -74,15 +74,15 @@
       "tipo_estande": "Construído em Marcenaria",
       "metragem_m2": null,
       "localizacao_estande": "Pavilhão de Máquinas e Implementos",
-      "status_projeto": "Briefing Recebido"
+      "status_projeto": "Projeto 3D Apresentado"
     },
     "comercial": {
-      "estagio_proposta": "Briefing em Concepção",
+      "estagio_proposta": "Em Análise da Diretoria",
       "temperatura": "Quente",
       "valor_proposta": 0,
-      "probabilidade_fechamento_pct": 0,
+      "probabilidade_fechamento_pct": 65,
       "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-12-10"
+      "data_previsao_fechamento": "2026-12-05"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -132,15 +132,15 @@
       "tipo_estande": "Construído em Marcenaria",
       "metragem_m2": 100,
       "localizacao_estande": "Rua Principal de Peças e Pneus",
-      "status_projeto": "Modelagem 3D em Finalização (Entrega 24/11)"
+      "status_projeto": "Projeto 3D Apresentado"
     },
     "comercial": {
-      "estagio_proposta": "Modelagem 3D em Elaboração",
+      "estagio_proposta": "Proposta Enviada",
       "temperatura": "Quente",
       "valor_proposta": 0,
-      "probabilidade_fechamento_pct": 0,
+      "probabilidade_fechamento_pct": 70,
       "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-11-25"
+      "data_previsao_fechamento": "2026-11-30"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -164,12 +164,12 @@
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Quente",
+      "estagio_proposta": "Desqualificada",
+      "temperatura": "Frio",
       "valor_proposta": 0,
       "probabilidade_fechamento_pct": 0,
       "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-12-05"
+      "data_previsao_fechamento": null
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -480,15 +480,15 @@
       "tipo_estande": "Construído em Marcenaria",
       "metragem_m2": 16,
       "localizacao_estande": "Pavilhão de Exposições Recanto Cataratas",
-      "status_projeto": "Projeto em Revisão (Adequação ao Modelo 2026)"
+      "status_projeto": "Projeto 3D Apresentado"
     },
     "comercial": {
-      "estagio_proposta": "Estudo 3D em Revisão",
+      "estagio_proposta": "Proposta Enviada",
       "temperatura": "Quente",
-      "valor_proposta": 0,
-      "probabilidade_fechamento_pct": 60,
-      "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-11-27"
+      "valor_proposta": 22400,
+      "probabilidade_fechamento_pct": 75,
+      "valor_ponderado": 16800,
+      "data_previsao_fechamento": "2026-11-30"
     },
     "responsavel": "Augusto E. da Silva"
   },
@@ -686,12 +686,12 @@
       "status_projeto": "Aguardando Briefing"
     },
     "comercial": {
-      "estagio_proposta": "Alinhamento Inicial / Triagem",
-      "temperatura": "Morno",
+      "estagio_proposta": "Perdida / Concorrente",
+      "temperatura": "Frio",
       "valor_proposta": 0,
-      "probabilidade_fechamento_pct": 30,
+      "probabilidade_fechamento_pct": 0,
       "valor_ponderado": 0,
-      "data_previsao_fechamento": "2026-12-20"
+      "data_previsao_fechamento": "2026-11-26"
     },
     "responsavel": "Augusto E. da Silva"
   }

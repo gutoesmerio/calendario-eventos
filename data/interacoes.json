@@ -348,10 +348,10 @@
     "codigo_evento": 11,
     "id_proposta": 12,
     "empresa": "IHARA",
-    "contato": "Rogério Cardoso",
+    "contato": "Ubirajara (Responsável Show Rural) / Rogério Cardoso",
     "data_interacao": "2026-10-16",
     "canal": "WhatsApp",
-    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "direcao": "Receptiva (Retorno do Cliente)",
     "tipo_interacao": "Follow-up Comercial",
     "resumo": "Status: Encaminhamento interno",
     "detalhes": "Rogério respondeu em 16/10 que vai verificar com a pessoa responsável por esse evento e que, se necessário, ela retornará diretamente ao Augusto.",
@@ -2999,7 +2999,7 @@
     "codigo_evento": 11,
     "id_proposta": 124,
     "empresa": "STEMAC Grupos Geradores",
-    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "contato": "Daiane Onorato da Silva / Helena / Jaqueline Rodrigues",
     "data_interacao": "2026-10-06",
     "canal": "WhatsApp",
     "direcao": "Ativa (Enviada pela DCarvalho)",
@@ -3019,7 +3019,7 @@
     "codigo_evento": 11,
     "id_proposta": 124,
     "empresa": "STEMAC Grupos Geradores",
-    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "contato": "Daiane Onorato da Silva / Helena / Jaqueline Rodrigues",
     "data_interacao": "2026-11-16",
     "canal": "E-mail",
     "direcao": "Ativa (Enviada pela DCarvalho)",
@@ -3043,7 +3043,7 @@
     "codigo_evento": 11,
     "id_proposta": 124,
     "empresa": "STEMAC Grupos Geradores",
-    "contato": "Daiane Onorato da Silva / Jaqueline Rodrigues",
+    "contato": "Daiane Onorato da Silva / Helena / Jaqueline Rodrigues",
     "data_interacao": "2026-11-17",
     "canal": "E-mail",
     "direcao": "Receptiva (Retorno do Cliente)",
@@ -3198,6 +3198,206 @@
     "proxima_acao_gerada": {
       "acao": "Follow-up em setembro para verificar a definição do calendário de eventos de 2027.",
       "data_prevista": "2026-09-09"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 160,
+    "lead_id": 109,
+    "codigo_evento": 11,
+    "id_proposta": 124,
+    "empresa": "STEMAC Grupos Geradores",
+    "contato": "Daiane Onorato da Silva / Helena / Jaqueline Rodrigues",
+    "data_interacao": "2026-11-26",
+    "canal": "Ligação Telefônica",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Contato com a STEMAC referente ao Show Rural 2027; agendado retorno telefônico às 14:00 para falar com Helena",
+    "detalhes": "Contato realizado hoje (26/11/2026) com a STEMAC Grupos Geradores sobre a proposta do estande de 180 m² no Show Rural Coopavel 2027. Solicitado retorno por telefone às 14:00 de hoje (26/11/2026) para falar diretamente com Helena.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retornar por telefone para a STEMAC hoje (26/11/2026) às 14:00 para falar com Helena.",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 161,
+    "lead_id": 10,
+    "codigo_evento": 11,
+    "id_proposta": 129,
+    "empresa": "Procer",
+    "contato": "Gabrielle Cardoso",
+    "data_interacao": "2026-11-26",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Decisão / Fechamento",
+    "resumo": "Gabrielle respondeu informando que a Procer fechou o estande do Show Rural 2027 em conjunto com a Kepler Weber (oportunidade encerrada/perdida)",
+    "detalhes": "Em contato hoje (26/11/2026), Gabrielle respondeu informando que fecharam a participação no Show Rural Coopavel 2027 em conjunto com a controladora Kepler Weber (detentora de 62,6% da Procer). Oportunidade individual da Procer encerrada/marcada como fechado/perdido para o Show Rural 2027, redirecionando o alvo para a Kepler Weber (Lead 53).",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Direcionar prospecção do estande conjunto para a controladora Kepler Weber (Lead 53).",
+      "data_prevista": "2026-11-26"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 162,
+    "lead_id": 84,
+    "codigo_evento": 11,
+    "id_proposta": 64,
+    "empresa": "Bionova Energia Solar",
+    "contato": "Thiago Tomazoli / José Berta",
+    "data_interacao": "2026-11-26",
+    "canal": "Ligação Telefônica",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Alinhamento Telefônico",
+    "resumo": "Ligação para Thiago Tomazoli (Bionova); deixado recado na caixa postal",
+    "detalhes": "Augusto ligou hoje (26/11/2026) para Thiago Tomazoli (Diretor-Geral da Bionova Energia Solar) referente ao Show Rural Coopavel 2027, deixou recado na caixa postal e aguarda o retorno dele.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno do recado deixado na caixa postal para Thiago Tomazoli.",
+      "data_prevista": "2026-11-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 163,
+    "lead_id": 16,
+    "codigo_evento": 11,
+    "id_proposta": 11,
+    "empresa": "Pippi Pneus",
+    "contato": "Stephani Simon",
+    "data_interacao": "2026-11-26",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Proposta Financeira",
+    "resumo": "Projeto 3D e orçamento financeiro enviados para Stephani Simon (Pippi Pneus); aguardando retorno",
+    "detalhes": "Projeto 3D e valor do orçamento do estande de 100 m² da Pippi Pneus para o Show Rural Coopavel 2027 enviados para Stephani Simon. Aguardando retorno da Stephani para dar continuidade à negociação.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno de Stephani Simon para continuidade da negociação.",
+      "data_prevista": "2026-11-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 164,
+    "lead_id": 15,
+    "codigo_evento": 11,
+    "id_proposta": 10,
+    "empresa": "MAXLOADER",
+    "contato": "Bruna (Marketing) / Tilara",
+    "data_interacao": "2026-11-26",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Solicitação de Briefing",
+    "resumo": "Follow-up no WhatsApp com equipe de marketing da MAXLOADER cobrando briefing do Show Rural 2027",
+    "detalhes": "Em 25/11/2026 às 17:20-17:21, Augusto enviou mensagem para o grupo EQUIPE MARKETING | MAXLOADER perguntando como está a organização para o Show Rural 2027 e se já definiram algum briefing para o espaço. Hoje (26/11/2026) às 09:21 enviou \"Bom dia!!!\" e aguarda retorno.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno da equipe de marketing da MAXLOADER sobre o briefing do Show Rural 2027.",
+      "data_prevista": "2026-11-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 165,
+    "lead_id": 89,
+    "codigo_evento": 11,
+    "id_proposta": 69,
+    "empresa": "Solinftec",
+    "contato": "Mariana Finta (Marketing) / Camila Pedroso (Eventos)",
+    "data_interacao": "2026-11-25",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Camila Pedroso respondeu confirmando recebimento do e-mail e encaminhamento ao time de marketing da Solinftec",
+    "detalhes": "Em 25/11/2026 às 17:39, Augusto perguntou no WhatsApp se o e-mail havia chegado para Camila Pedroso. Às 17:40, Camila respondeu: \"Boa tarde! Já encaminhei ao time de mkt 🙏\". Às 17:43, Augusto respondeu: \"Obrigado, vou aguardar o contato !\".",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar contato do time de marketing da Solinftec após encaminhamento feito por Camila Pedroso.",
+      "data_prevista": "2026-12-01"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 166,
+    "lead_id": 107,
+    "codigo_evento": 39,
+    "id_proposta": 122,
+    "empresa": "Docket",
+    "contato": "Docket Marketing",
+    "data_interacao": "2026-11-25",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Envio de Proposta Financeira",
+    "resumo": "Docket enviou mapa da ExpoCONAC e Augusto enviou proposta financeira: R$ 22.400,00 (16m²) e R$ 28.000,00 (20m²)",
+    "detalhes": "Em 25/11/2026 às 09:35, Docket enviou o mapa do evento ExpoCONAC 2027. Augusto confirmou às 09:37/09:41 (áudio de 0:53) que os estandes são ilhas. Às 09:47, a cliente solicitou o custo de 16m² e 20m² para aprovação com a diretoria. Às 17:07-17:09, Augusto enviou a proposta oficial: R$ 22.400,00 para 16m² e R$ 28.000,00 para 20m², baseados no projeto aprovado com lonas impressas respectivas, frigobar e balcão dentro do depósito, tomadas nos balcões e TV de 55\" na parede.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Aguardar retorno da Docket Marketing após análise da diretoria sobre os valores de 16m² (R$ 22.400,00) e 20m² (R$ 28.000,00).",
+      "data_prevista": "2026-11-30"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 167,
+    "lead_id": 18,
+    "codigo_evento": 11,
+    "id_proposta": 12,
+    "empresa": "IHARA",
+    "contato": "Ubirajara (Responsável Show Rural) / Rogério Cardoso",
+    "data_interacao": "2026-11-24",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Follow-up Comercial",
+    "resumo": "Rogério Cardoso (IHARA) informou que o responsável pelo Show Rural 2027 é Ubirajara, em férias com retorno na próxima semana",
+    "detalhes": "Em 24/11/2026 às 15:50-15:51, Augusto perguntou no WhatsApp quem é o responsável pela organização da IHARA no Show Rural Coopavel 2027. Rogério respondeu às 15:51: \"Ubirajara. Ele está de férias. Retorna na próxima semana\". Às 15:52-15:53, Augusto pediu para Rogério solicitar que Ubirajara entre em contato ao retornar de férias (pedindo também o e-mail dele). Às 16:33, Rogério respondeu: \"Falo sim, claro 🙏\".",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retomar contato na próxima semana (01/12/2026) após o retorno de férias de Ubirajara.",
+      "data_prevista": "2026-12-01"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 168,
+    "lead_id": 95,
+    "codigo_evento": 11,
+    "id_proposta": 75,
+    "empresa": "Next Implementos",
+    "contato": "Equipe de Marketing",
+    "data_interacao": "2026-11-24",
+    "canal": "WhatsApp",
+    "direcao": "Receptiva (Retorno do Cliente)",
+    "tipo_interacao": "Mensagem de Áudio",
+    "resumo": "Next Implementos respondeu por áudio (0:19) informando que analisará o projeto no fim de semana e início da próxima semana; retorno em 01/12",
+    "detalhes": "Em 23/11/2026, Augusto cobrou retorno sobre o projeto 3D e o marketing da Next explicou que na sexta foi feriado e avaliaria após reunião. Em 24/11/2026 às 09:28, Augusto perguntou novamente (\"Conseguiu analisar o projeto?\") e às 09:47 a cliente respondeu com áudio de 0:19 informando que só analisará o projeto no final de semana e início da próxima semana. Retorno agendado para terça-feira, 01/12/2026.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Retornar contato com o marketing da Next Implementos na terça-feira, 01/12/2026.",
+      "data_prevista": "2026-12-01"
+    },
+    "responsavel": "Augusto E. da Silva"
+  },
+  {
+    "id_interacao": 169,
+    "lead_id": 5,
+    "codigo_evento": 11,
+    "id_proposta": 3,
+    "empresa": "Bouwman",
+    "contato": "Luis Elicker",
+    "data_interacao": "2026-11-26",
+    "canal": "WhatsApp",
+    "direcao": "Ativa (Enviada pela DCarvalho)",
+    "tipo_interacao": "Desqualificação",
+    "resumo": "Bouwman possui carreta stand própria e não utiliza montadoras; não contatar para outros eventos",
+    "detalhes": "Em 26/11/2026 foi registrado que a Bouwman utiliza carreta stand própria em suas participações em feiras e eventos, não contratando serviços de montadoras. Lead desqualificado permanentemente no CRM para não receber novas abordagens comerciais em outros eventos.",
+    "anexos": [],
+    "proxima_acao_gerada": {
+      "acao": "Nenhuma ação — Não entrar mais em contato para outros eventos (possui carreta stand própria).",
+      "data_prevista": null
     },
     "responsavel": "Augusto E. da Silva"
   }
