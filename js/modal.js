@@ -507,10 +507,11 @@ class ModalManager {
   /**
    * Abre a view em modal flutuante das interações de um cliente específico em um evento
    */
-  showClienteInteracoesModal(interacaoRef) {
+  showClienteInteracoesModal(interacaoRef, options = {}) {
     if (!this.clienteInteracoesModal || !interacaoRef) return;
 
-    const allInteracoes = window.interacoesStore ? window.interacoesStore.getInteracoes() : [];
+    const onlyActive = options.onlyActive !== false;
+    const allInteracoes = window.interacoesStore ? window.interacoesStore.getInteracoes(onlyActive) : [];
     
     // Filtrar interações do mesmo cliente no mesmo evento
     const clienteInteracoes = allInteracoes.filter(i => {

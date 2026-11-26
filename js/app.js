@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Instância do Gerenciador de Interações
   const interacoesView = new window.InteracoesViewManager({
-    onCardClick: (interacaoItem) => {
+    onCardClick: (interacaoItem, opts) => {
       // Abre o modal flutuante com a linha do tempo do cliente naquele evento específico
-      modalManager.showClienteInteracoesModal(interacaoItem);
+      modalManager.showClienteInteracoesModal(interacaoItem, opts);
     }
   });
 

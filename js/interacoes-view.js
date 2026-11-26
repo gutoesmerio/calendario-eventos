@@ -9,8 +9,10 @@ class InteracoesViewManager {
     this.onCardClick = options.onCardClick || null;
     this.searchQuery = "";
     this.filterCanal = "todos";
+    this.onlyActive = true;
     this.boundSearchHandler = null;
     this.boundCanalHandler = null;
+    this.boundActiveHandler = null;
   }
 
   /**
@@ -65,7 +67,7 @@ class InteracoesViewManager {
    * Obtém todas as interações ordenadas em ordem decrescente por data e ID
    */
   getAllInteracoesSorted() {
-    const interacoes = window.interacoesStore ? window.interacoesStore.getInteracoes() : [];
+    const interacoes = window.interacoesStore ? window.interacoesStore.getInteracoes(this.onlyActive) : [];
     return [...interacoes].sort((a, b) => {
       const dataDiff = (b.data_interacao || "").localeCompare(a.data_interacao || "");
       if (dataDiff !== 0) return dataDiff;
@@ -151,6 +153,11 @@ class InteracoesViewManager {
                 <option value="Reunião Online" ${this.filterCanal === "Reunião Online" ? "selected" : ""}>💻 Reunião Online</option>
               </select>
             </div>
+
+            <label class="interacoes-active-toggle" title="Quando marcado, retorna apenas interações ativas; desmarque para exibir todas">
+              <input type="checkbox" id="checkbox-interacoes-ativos" ${this.onlyActive ? "checked" : ""} />
+              <span>Somente ativos</span>
+            </label>
           </div>
         </div>
 
@@ -188,6 +195,15 @@ class InteracoesViewManager {
         this.renderCardsOnly();
       };
       selectCanal.addEventListener("change", this.boundCanalHandler);
+    }
+
+    const activeCheckbox = this.container.querySelector("#checkbox-interacoes-ativos");
+    if (activeCheckbox) {
+      this.boundActiveHandler = (e) => {
+        this.onlyActive = e.target.checked;
+        this.renderCardsOnly();
+      };
+      activeCheckbox.addEventListener("change", this.boundActiveHandler);
     }
 
     // Renderizar os cards
@@ -234,13 +250,16 @@ class InteracoesViewManager {
       const direcaoClass = isReceptiva ? "dir-inbound" : "dir-outbound";
       const canalLabel = channelIcons[item.canal] || item.canal || "Contato";
 
+      const isInactive = item.ativo === false;
+
       html += `
-        <article class="interacao-feed-card" data-index="${index}">
+        <article class="interacao-feed-card${isInactive ? " is-inactive" : ""}" data-index="${index}">
           <!-- Cabeçalho do Card: Data, Evento e Canal -->
           <div class="card-meta-header">
             <span class="card-date-badge">📅 ${this.formatDateBR(item.data_interacao)}</span>
             <span class="card-event-badge" title="Evento associado">${this.escapeHtml(nomeEvento)}</span>
             <div class="card-meta-right">
+              ${isInactive ? `<span class="card-inactive-badge">Inativa</span>` : ""}
               <span class="card-channel-pill">${canalLabel}</span>
               <span class="card-dir-pill ${direcaoClass}">${isReceptiva ? "Receptiva" : "Ativa"}</span>
             </div>
@@ -294,7 +313,7 @@ class InteracoesViewManager {
         const idx = card.getAttribute("data-index");
         const item = filtered[idx];
         if (typeof this.onCardClick === "function" && item) {
-          this.onCardClick(item);
+          this.onCardClick(item, { onlyActive: this.onlyActive });
         }
       });
     });
@@ -314,6 +333,11 @@ class InteracoesViewManager {
       const selectCanal = this.container.querySelector("#select-interacoes-canal");
       if (selectCanal && this.boundCanalHandler) {
         selectCanal.removeEventListener("change", this.boundCanalHandler);
+      }
+
+      const activeCheckbox = this.container.querySelector("#checkbox-interacoes-ativos");
+      if (activeCheckbox && this.boundActiveHandler) {
+        activeCheckbox.removeEventListener("change", this.boundActiveHandler);
       }
 
       // Descarrega o DOM

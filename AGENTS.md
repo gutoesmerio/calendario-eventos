@@ -271,7 +271,7 @@ Dentro da visualização da proposta, há duas abas dedicadas:
 3. **Feed de Cards de Interações (Opção A):**
    - Lista completa de contatos em ordem decrescente de data (e hora/ID).
    - Cada card exibe: Data formatada, Tag do Evento associado, Canal e Direção (Ativa/Receptiva), Empresa Cliente, Interlocutor, Tipo de Contato, Resumo, Detalhes e Próxima Ação Gerada.
-   - Barra de busca em tempo real (filtra por empresa, contato, evento, tipo ou assunto) e filtro por canal de comunicação.
+   - Barra de busca em tempo real (filtra por empresa, contato, evento, tipo ou assunto), filtro por canal de comunicação e seleção **`Somente ativos`** (marcada por padrão; quando desmarcada, exibe todas as interações, incluindo as com `ativo: false`).
 4. **Visualização Detalhada do Cliente no Evento (Opção 2 - Modal Flutuante):**
    - Ao clicar em qualquer card do feed, abre-se o modal flutuante de tratamento comercial.
    - O modal carrega sob demanda **apenas as interações daquele cliente naquele evento específico em ordem decrescente**.

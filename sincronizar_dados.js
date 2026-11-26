@@ -88,17 +88,20 @@ class InteracoesStore {
     this.listeners = [];
   }
 
-  getInteracoes() {
-    return this.interacoes.filter(item => item.ativo !== false);
+  getInteracoes(onlyActive = true) {
+    if (onlyActive) {
+      return this.interacoes.filter(item => item.ativo !== false);
+    }
+    return this.interacoes;
   }
 
   /**
    * Retorna as interações filtradas para uma proposta específica
    * Conecta por id_proposta OU (lead_id + codigo_evento)
    */
-  getInteracoesByProposta(prop) {
+  getInteracoesByProposta(prop, onlyActive = true) {
     if (!prop) return [];
-    return this.getInteracoes().filter(item => {
+    return this.getInteracoes(onlyActive).filter(item => {
       if (item.id_proposta && prop.id_proposta && Number(item.id_proposta) === Number(prop.id_proposta)) {
         return true;
       }
